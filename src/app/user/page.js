@@ -45,6 +45,7 @@ import p2 from "../../../public/images/Ellipse220.svg";
 import p3 from "../../../public/images/Ellipse321.svg";
 import p4 from "../../../public/images/Ellipse422.svg";
 import day from "../../../public/images/day.svg";
+import sidemanu from "../../../public/images/side-menu.svg";
 
 import Link from "next/link";
 
@@ -52,23 +53,13 @@ const LandingPage = () => {
   return (
     <>
       <section>
-        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] ">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] flex justify-between items-center">
+        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between items-center">
             <div className="w-1/3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="text-white w-[48px] h-[40px]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
-                />
-              </svg>
+              <Image
+                src={sidemanu}
+                className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+              />
             </div>
             <div className="w-1/3 ">
               <Image src={logo} className="nav_logo" />
@@ -88,7 +79,7 @@ const LandingPage = () => {
               Where’s your next food destination?
             </h1>
             <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5">
-              <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] xl:text-[16px] xl:px-3 xl:py-1">
+              <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[16px] xl:px-3 xl:py-1">
                 Explore Dishes
               </button>
             </div>
@@ -104,9 +95,9 @@ const LandingPage = () => {
         </div>
         {/* ===================Third================== */}
 
-        <div className="flex justify-center 2xl:my-20 xl:my-14 lg:my-8">
+        <div className="flex justify-center 2xl:my-20 xl:my-14 lg:my-8 hidden lg:block">
           <div className="">
-            <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] flex justify-between mx-auto">
+            <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto">
               <div className="">
                 <h1 className="third_head">Select your cuisine</h1>
               </div>
@@ -123,7 +114,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
                   <div className="">
-                    <select className="  2xl:w-[153px] third_select  ">
+                    <select className="  2xl:w-[153px]  third_select  ">
                       <option disabled selected>
                         All Cuisines
                       </option>
@@ -257,20 +248,20 @@ const LandingPage = () => {
         </div>
 
         {/* ===================Four================== */}
-        <div className="flex justify-center 2xl:my-20 xl:my-10 lg:my-10">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] ">
+        <div className="flex justify-center 2xl:my-20 xl:my-10 lg:my-10 my-10">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] ">
             <div className="flex">
               <h1 className="four_head">Popular Dishes</h1>
             </div>
-            <div className="flex flex-wrap justify-between">
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+            <div className="flex flex-col md:flex-row justify-center flex-wrap lg:justify-between md:my-5 lg:my-0">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 ">
                 <div>
                   <Image src={Rectangle1} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5">
+                <div className="2xl:my-5 xl:my-5  my-5">
                   <div>
                     <h1 className="fourth_title">Spaghetti</h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                       <Image src={p1} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Radha</h1>
                     </div>
@@ -286,37 +277,41 @@ const LandingPage = () => {
                   </button>
                 </div>
               </div>
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
                   <Image src={Rectangle2} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5">
+                <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
-                    <h1 className="fourth_title">Spaghetti</h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                    <h1 className="fourth_title">
+                      Cheese, honey, omelette sandwich
+                    </h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                       <Image src={p2} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Kumari</h1>
                     </div>
                   </div>
-                  <p className="fourth_p">Chef Cuisine - Indian & Italian</p>
-                  <p className="fourth_p">Dietary Specialty - Veg only</p>
+                  <p className="fourth_p">Chef Cuisine - Indian</p>
+                  <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
-                    <p className="fourth_day">Wednesday</p>
+                    <p className="fourth_day">Friday</p>
                   </button>
                 </div>
               </div>
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
                   <Image src={Rectangle3} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5">
+                <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
-                    <h1 className="fourth_title">Spaghetti</h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                    <h1 className="fourth_title">Chicken kabab</h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                       <Image src={p3} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Dinesh</h1>
                     </div>
@@ -328,41 +323,43 @@ const LandingPage = () => {
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
-                    <p className="fourth_day">Wednesday</p>
+                    <p className="fourth_day">Monday</p>
                   </button>
                 </div>
               </div>
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
                   <Image src={Rectangle4} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5">
+                <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
-                    <h1 className="fourth_title">Spaghetti</h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                    <h1 className="fourth_title">Paneer butter masala</h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                       <Image src={p4} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Rajesh</h1>
                     </div>
                   </div>
-                  <p className="fourth_p">Chef Cuisine - Indian & Italian</p>
-                  <p className="fourth_p">Dietary Specialty - Veg only</p>
+                  <p className="fourth_p">Chef Cuisine - Indian</p>
+                  <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
-                    <p className="fourth_day">Wednesday</p>
+                    <p className="fourth_day">Sunday</p>
                   </button>
                 </div>
               </div>
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
                   <Image src={Rectangle5} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5">
+                <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
-                    <h1 className="fourth_title">Spaghetti</h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                    <h1 className="fourth_title">Indian Thali</h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                       <Image src={p1} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Radha</h1>
                     </div>
@@ -378,37 +375,41 @@ const LandingPage = () => {
                   </button>
                 </div>
               </div>
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
                   <Image src={Rectangle6} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5">
+                <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
-                    <h1 className="fourth_title">Spaghetti</h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                    <h1 className="fourth_title">
+                      Cheese, honey, omelette sandwich
+                    </h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                       <Image src={p2} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Kumari</h1>
                     </div>
                   </div>
-                  <p className="fourth_p">Chef Cuisine - Indian & Italian</p>
-                  <p className="fourth_p">Dietary Specialty - Veg only</p>
+                  <p className="fourth_p">Chef Cuisine - Indian</p>
+                  <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
-                    <p className="fourth_day">Wednesday</p>
+                    <p className="fourth_day">Friday</p>
                   </button>
                 </div>
               </div>
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
                   <Image src={Rectangle7} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5"></div>
+                <div className="2xl:my-5 xl:my-5  my-5 mx-auto"></div>
                 <div>
-                  <h1 className="fourth_title">Spaghetti</h1>
-                  <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                  <h1 className="fourth_title">Chicken kabab</h1>
+                  <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                     <Image src={p3} className="four_img2 " />
                     <h1 className="fourth_name ">Chef Dinesh</h1>
                   </div>
@@ -420,29 +421,30 @@ const LandingPage = () => {
                     src={day}
                     className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                   />
-                  <p className="fourth_day">Wednesday</p>
+                  <p className="fourth_day">Monday</p>
                 </button>
               </div>
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] 2xl:my-5 lg:my-4">
+
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
                   <Image src={Rectangle8} className="four_img" />
                 </div>
-                <div className="2xl:my-5 xl:my-5">
+                <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
-                    <h1 className="fourth_title">Spaghetti</h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2 xl:my-3 lg:my-2">
+                    <h1 className="fourth_title">Paneer butter masala</h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
                       <Image src={p4} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Rajesh</h1>
                     </div>
                   </div>
-                  <p className="fourth_p">Chef Cuisine - Indian & Italian</p>
-                  <p className="fourth_p">Dietary Specialty - Veg only</p>
+                  <p className="fourth_p">Chef Cuisine - Indian</p>
+                  <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
-                    <p className="fourth_day">Wednesday</p>
+                    <p className="fourth_day">Sunday</p>
                   </button>
                 </div>
               </div>
@@ -452,11 +454,11 @@ const LandingPage = () => {
 
         {/* ===================Five================== */}
 
-        <div className=" flex justify-center">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] mx-auto">
+        <div className=" flex justify-center ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-2/3  mx-auto">
             <div className=" flex justify-center ">
-              <div>
-                <h1 className="five_head alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] text-center mx-auto xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[35px]">
+              <div className="mx-5 sm:mx-0">
+                <h1 className=" alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] text-center mx-auto xl:text-[35px] xl:leading-[45px] text-[25px] leading-[35px]">
                   How does Authentichef work?
                 </h1>
                 <p className="five_p">
@@ -468,16 +470,16 @@ const LandingPage = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-around 2xl:my-16 xl:my-10 lg:my-5">
-              <div className="2xl:w-[425px]   xl:w-[350px] ">
+            <div className="flex flex-col lg:flex-row justify-center lg:justify-around 2xl:my-16 xl:my-10 my-5">
+              <div className="2xl:w-[425px] lg:w-[350px] sm:w-1/2 w-2/3 mx-auto lg:mx-0 my-5 ">
                 <div>
                   <div>
                     <Image
                       src={maggie}
-                      className="mx-auto 2xl:w-[77.89px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px]"
+                      className="mx-auto 2xl:w-[77.89px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
                   </div>
-                  <h1 className="five_head 2xl:w-auto xl:w-[302px] lg:w-[250px]">
+                  <h1 className="five_head2 2xl:w-auto xl:w-[302px] lg:w-[250px]">
                     Select dishes based on your dietary preferences
                   </h1>
                   <p className="five_p2   ">
@@ -485,15 +487,15 @@ const LandingPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="2xl:w-[425px]  xl:w-[350px] ">
+              <div className="2xl:w-[425px] lg:w-[350px] sm:w-1/2 mx-auto lg:mx-0 my-5 ">
                 <div>
                   <div>
                     <Image
                       src={calen}
-                      className="mx-auto 2xl:w-[89.2px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px]"
+                      className="mx-auto 2xl:w-[89.2px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
                   </div>
-                  <h1 className="five_head">
+                  <h1 className="five_head2">
                     Choose your preferred delivery date
                   </h1>
                   <p className="five_p2 ">
@@ -502,15 +504,15 @@ const LandingPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="2xl:w-[425px] xl:w-[350px]">
+              <div className="2xl:w-[425px]  lg:w-[350px] sm:w-1/2 mx-auto lg:mx-0 my-5 ">
                 <div>
                   <div>
                     <Image
                       src={microweb}
-                      className="mx-auto 2xl:w-[94px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px]"
+                      className="mx-auto 2xl:w-[94px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
                   </div>
-                  <h1 className="five_head">Heat and enjoy the experience</h1>
+                  <h1 className="five_head2">Heat and enjoy the experience</h1>
                   <p className="five_p2 2xl:w-[392px] xl:w-[302px] lg:w-[260px]">
                     Dishes delivered frozen ready to heat and eat, or store in
                     your freezer, whenever you need
@@ -522,14 +524,16 @@ const LandingPage = () => {
         </div>
         {/* ===================Six================== */}
 
-        <div className="flex justify-center 2xl:my-28 xl:my-10 lg:my-10">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] flex flex-wrap">
-            <div>
-              <h1 className="six_head ">Our Commitment</h1>
-              <div className=" flex justify-between flex-wrap">
+        <div className="flex justify-center 2xl:my-28 xl:my-10 lg:my-10 my-10">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex flex-wrap ">
+            <div className="mx-20 sm:mx-auto">
+              <div className="flex justify-center lg:justify-start">
+                <h1 className="six_head ">Our Commitment</h1>
+              </div>
+              <div className=" flex flex-col lg:flex-row justify-center lg:justify-between flex-wrap">
                 {" "}
-                <div className="w-1/2 flex 2xl:my-10 ">
-                  <div className="flex  items-center">
+                <div className="lg:w-1/2 flex 2xl:my-10 ">
+                  <div className="my-3 lg:my-0 lg:flex items-center">
                     <Image src={plate1} className="six_img " />
 
                     <p className="six_p">
@@ -538,8 +542,8 @@ const LandingPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-1/2 flex 2xl:my-10 ">
-                  <div className="flex items-center">
+                <div className="lg:w-1/2 flex 2xl:my-10 ">
+                  <div className="my-3 lg:my-0 lg:flex items-center">
                     <Image src={plate2} className="six_img" />
 
                     <p className="six_p">
@@ -548,8 +552,8 @@ const LandingPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-1/2 flex 2xl:my-10 ">
-                  <div className="flex items-center">
+                <div className="lg:w-1/2 flex 2xl:my-10 ">
+                  <div className="my-3 lg:my-0 lg:flex items-center">
                     <Image src={plate3} className="six_img" />
 
                     <p className="six_p">
@@ -558,8 +562,8 @@ const LandingPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-1/2 flex 2xl:my-10 ">
-                  <div className="flex items-center">
+                <div className="lg:w-1/2 flex 2xl:my-10 ">
+                  <div className="my-3 lg:my-0 lg:flex items-center">
                     <Image src={plate4} className="six_img" />
 
                     <p className="six_p">
@@ -573,32 +577,32 @@ const LandingPage = () => {
         </div>
         {/* ===================Seven================== */}
 
-        <div className="yellow-bg 2xl:h-[884px] xl:h-[600px] lg:h-[500px] flex justify-center items-center">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] ">
+        <div className="yellow-bg 2xl:h-[884px] xl:h-[600px] lg:h-[500px]  md:w-full lg:flex justify-center items-center hidden lg:block">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] ">
             <h1 className="seven_head">Our Chef Community</h1>
             <p className="seven_p">
               Our independent chefs create dishes from their country of origin.
               Made with love and care to give you a culinary experience without
               the need of a passport
             </p>
-            <div className="flex justify-between my-10">
-              <div className="w-[286px]">
+            <div className="flex justify-between md:my-5 lg:my-10">
+              <div className="w-[160px] lg:w-[286px]">
                 <Image src={person1} className="seven_img" />
                 <h2 className="seven_name">Uncle Roger Hendrics</h2>
               </div>
-              <div className="w-[286px]">
+              <div className="w-[160px] lg:w-[286px]">
                 <Image src={person2} className="seven_img" />
                 <h2 className="seven_name">Jason Bosh</h2>
               </div>
-              <div className="w-[286px]">
+              <div className="w-[160px] lg:w-[286px]">
                 <Image src={person3} className="seven_img" />
                 <h2 className="seven_name">Mathew Kaymer</h2>
               </div>
-              <div className="w-[286px]">
+              <div className="w-[160px] lg:w-[286px]">
                 <Image src={person4} className="seven_img" />
                 <h2 className="seven_name">Scarlet Carter</h2>
               </div>
-              <div className="w-[286px]">
+              <div className="w-[160px] lg:w-[286px]">
                 <Image src={person5} className="seven_img" />
                 <h2 className="seven_name">Karan Malhotra</h2>
               </div>
@@ -611,9 +615,9 @@ const LandingPage = () => {
 
         {/* ===================Eight================== */}
 
-        <div className="flex justify-center xl:my-28 lg:my-14">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] flex">
-            <div className="w-1/2">
+        <div className="flex justify-center xl:py-28 lg:py-14 md:py-8 py-5 border-b-[1px] border-[#B1B1B1]">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex flex-col-reverse lg:flex-row">
+            <div className="mx-10 sm:w-1/2 sm:mx-auto lg:mx-0">
               <h1 className=" eight_head ">Food Safety</h1>
               <p className="eight_p">
                 At authentichef, all our chefs prepare and handle food with care
@@ -623,142 +627,150 @@ const LandingPage = () => {
                 added peace of mind. Join our chef community and share your
                 memories and love by serving others.
               </p>
-              <button className=" eight_btn ">Join the Chef Community</button>
+              <div className="flex justify-center lg:justify-start">
+                <button className=" eight_btn ">Join the Chef Community</button>
+              </div>
             </div>
-            <div className="w-1/2">
+            <div className="mx-10 sm:w-1/2 flex sm:mx-auto my-5 lg:my-0 lg:flex-none">
               <Image
                 src={eightPoster}
-                className="2xl:w-[814px] 2xl:h-[507px]"
+                className="2xl:w-[814px] 2xl:h-[507px] mx-auto"
               />{" "}
             </div>
           </div>
         </div>
 
         {/* ===================Nine================== */}
-        <div className="flex justify-center lg:my-14 xl:my-28">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]">
+        <div className="flex justify-center lg:my-14 xl:my-28 my-10">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]">
             <h1 className="nine_head">Testimonials</h1>
             <p className="nine_p">
               All our chefs have fans raving about their food
             </p>
 
-            <div className="lg:flex justify-around 2xl:my-10 xl:my-8 lg:my-6">
-              <div>
+            <div className="lg:flex justify-around 2xl:my-10 xl:my-8 lg:my-6 my-3">
+              <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                 <div>
-                  <Image src={review1} className="nine_img" />
+                  <div>
+                    <Image src={review1} className="nine_img" />
+                  </div>
+                  <div className="rating flex justify-center nine_start">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                      checked
+                    />
+                  </div>
+                  <p className="nine_p2">
+                    Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem
+                    odio Quis 33 galisum molestias ut voluptas fuga et quia
+                    voluptate ut pariatur aperiam.
+                  </p>
+                  <p className="nine_name">Mayank Jaiswal</p>
                 </div>
-                <div className="rating flex justify-center my-4">
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                    checked
-                  />
-                </div>
-                <p className="nine_p2">
-                  Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem odio
-                  Quis 33 galisum molestias ut voluptas fuga et quia voluptate
-                  ut pariatur aperiam.
-                </p>
-                <p className="nine_name">Mayank Jaiswal</p>
               </div>
               <div>
-                <div>
-                  <Image src={review2} className="nine_img" />
+                <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
+                  <div>
+                    <Image src={review2} className="nine_img" />
+                  </div>
+                  <div className="rating flex justify-center nine_start">
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                      checked
+                    />
+                  </div>
+                  <p className="nine_p2">
+                    Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem
+                    odio Quis 33 galisum molestias ut voluptas fuga et quia
+                    voluptate ut pariatur aperiam.
+                  </p>
+                  <p className="nine_name">Rohit Thakur</p>
                 </div>
-                <div className="rating flex justify-center my-4">
-                  <input
-                    type="radio"
-                    name="rating-3"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-3"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-3"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-3"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-3"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                    checked
-                  />
-                </div>
-                <p className="nine_p2">
-                  Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem odio
-                  Quis 33 galisum molestias ut voluptas fuga et quia voluptate
-                  ut pariatur aperiam.
-                </p>
-                <p className="nine_name">Rohit Thakur</p>
               </div>
               <div>
-                <div>
-                  <Image src={review3} className="nine_img" />
+                <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
+                  <div>
+                    <Image src={review3} className="nine_img" />
+                  </div>
+                  <div className="rating flex justify-center  nine_start">
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      className="mask mask-star-2 bg-[#DB5353]"
+                      checked
+                    />
+                  </div>
+                  <p className="nine_p2">
+                    Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem
+                    odio Quis 33 galisum molestias ut voluptas fuga et quia
+                    voluptate ut pariatur aperiam.
+                  </p>
+                  <p className="nine_name">Shubham Sharma</p>
                 </div>
-                <div className="rating flex justify-center my-4">
-                  <input
-                    type="radio"
-                    name="rating-4"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-4"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-4"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-4"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-4"
-                    className="mask mask-star-2 bg-[#DB5353]"
-                    checked
-                  />
-                </div>
-                <p className="nine_p2">
-                  Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem odio
-                  Quis 33 galisum molestias ut voluptas fuga et quia voluptate
-                  ut pariatur aperiam.
-                </p>
-                <p className="nine_name">Shubham Sharma</p>
               </div>
             </div>
           </div>
@@ -766,10 +778,10 @@ const LandingPage = () => {
 
         {/* ===================Footer================== */}
         <footer className="bg-[#F6F6F6] flex justify-center">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] 2xl:mt-[100px] xl:mt-[50px] lg:mt-[35px]">
-            <div className="flex justify-between">
-              <div className="">
-                <div>
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:mt-[100px] xl:mt-[50px] lg:mt-[35px] sm:mt-[30px] mt-[20px]">
+            <div className="flex  md:justify-between flex-wrap">
+              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
+                <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Quick Links</h1>
                   <p className="footer_text">Our Story</p>
                   <p className="footer_text">Food Safety</p>
@@ -777,8 +789,8 @@ const LandingPage = () => {
                   <p className="footer_text">Global Cuisines</p>
                 </div>
               </div>
-              <div className="">
-                <div>
+              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
+                <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Resources</h1>
                   <p className="footer_text">
                     Become a chef
@@ -787,8 +799,8 @@ const LandingPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="">
-                <div>
+              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
+                <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Other Links</h1>
                   <p className="footer_text">Log In</p>
                   <p className="footer_text">Sign Up</p>
@@ -796,10 +808,10 @@ const LandingPage = () => {
                   <p className="footer_text">Terms of Service</p>
                 </div>
               </div>
-              <div className="">
-                <div>
+              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-4 lg:my-0">
+                <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Connect with us</h1>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 justify-center lg:justify-start">
                     <div>
                       <Link href="https://www.facebook.com/" target="_blank">
                         <Image src={fb} className="2xl:w-[30px] 2xl:h-[30px]" />
@@ -853,13 +865,13 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <hr className="2xl:mt-[56px] xl:mt-[25px] lg:mt-[15px]" />
+            <hr className="2xl:mt-[56px] xl:mt-[25px] lg:mt-[15px] first-letter sm:mt-[15px] mt-[10px]" />
             <div>
-              <div className="flex justify-between 2xl:my-5 xl:my-3 lg:my-2">
-                <h1 className="footer_text_b">
+              <div className="flex flex-col sm:flex-row justify-center sm:justify-between 2xl:my-5 xl:my-3 lg:my-2 sm:my-2">
+                <h1 className="footer_text_b ">
                   © 2024 Authentichef | All Rights Reserved
                 </h1>
-                <h1 className="footer_text_b">Developed by ControlF5</h1>
+                <h1 className="footer_text_b ">Developed by ControlF5</h1>
               </div>
             </div>
           </div>
