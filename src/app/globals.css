@@ -227,7 +227,7 @@ body {
 }
 
 .nav_signup {
-  @apply alata font-[400] text-[#F38181] bg-white 2xl:p-1 2xl:text-[24px] xl:text-[18px] xl:leading-[30px] lg:text-[12px] lg:leading-[20px] 2xl:leading-[36px] 2xl:w-[134px] 2xl:h-[48px] rounded-[5px] xl:px-2 lg:px-2  text-[12px] leading-[20px] sm:px-2 sm:py-1
+  @apply alata font-[400] text-[#F38181] bg-white 2xl:p-1 2xl:text-[24px] xl:text-[18px] xl:leading-[30px] lg:text-[12px] lg:leading-[20px] 2xl:leading-[36px] 2xl:w-[134px] 2xl:h-[48px] rounded-[5px] xl:px-2 lg:px-2  text-[12px] leading-[20px] sm:px-2 sm:py-1 px-2
 }
 
 
