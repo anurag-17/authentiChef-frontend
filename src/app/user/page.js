@@ -1,7 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
+import { Carousel } from "flowbite-react";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import logo from "../../../public/images/logo.svg";
 import cap from "../../../public/images/cap.svg";
@@ -46,7 +47,9 @@ import p3 from "../../../public/images/Ellipse321.svg";
 import p4 from "../../../public/images/Ellipse422.svg";
 import day from "../../../public/images/day.svg";
 import sidemanu from "../../../public/images/side-menu.svg";
-
+import { Splide, SplideSlide } from "@splidejs/splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@splidejs/react-splide/css/core";
 import Link from "next/link";
 
 const LandingPage = () => {
@@ -79,7 +82,7 @@ const LandingPage = () => {
               Where’s your next food destination?
             </h1>
             <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
-              <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[16px] xl:px-3 xl:py-1 lg:px-3 lg:py-1 px-3 py-1 ">
+              <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
                 Explore Dishes
               </button>
             </div>
@@ -876,6 +879,52 @@ const LandingPage = () => {
             </div>
           </div>
         </footer>
+
+        <div className="carousel carousel-center rounded-box ">
+          <div className="carousel-item ">
+            <img
+              src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
+              alt="Pizza"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+              alt="Pizza"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+              alt="Pizza"
+            />
+          </div>
+          
+          <div className="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
+              alt="Pizza"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+              alt="Pizza"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+              alt="Pizza"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+              alt="Pizza"
+            />
+          </div>
+        </div>
       </section>
     </>
   );

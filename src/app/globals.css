@@ -360,7 +360,7 @@ body {
 }
 
 .nine_head {
-  @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] text-center xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[30px] sm:text-[25px] sm:leading-[30px] text-[20px] leading-[25px]
+  @apply text-center alata font-[400] 2xl:text-[55px] 2xl:leading-[75px]  xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[30px] sm:text-[25px] sm:leading-[30px] text-[20px] leading-[25px]
 }
 
 .nine_p {
