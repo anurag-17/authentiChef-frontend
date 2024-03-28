@@ -1,4 +1,4 @@
-"use client";
+
 import dynamic from "next/dynamic";
 import React from "react";
 import Image from "next/image";
@@ -49,6 +49,7 @@ import "@splidejs/react-splide/css/core";
 import Link from "next/link";
 
 const LandingPage = () => {
+
   return (
     <>
       <section>
