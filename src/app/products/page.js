@@ -428,7 +428,7 @@ const Products = ({ item }) => {
                             onClick={() => {
                               handleDecrement(item?.id);
                               removeFromCart(item.id);
-                              toast.success("Removed from cart");
+                              alert("Removed from cart");
                             }}
                           >
                             <Image
