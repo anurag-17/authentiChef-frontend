@@ -144,10 +144,7 @@ const Products = ({ item }) => {
       setCount(count - 1);
     }
   };
-  cart.map((item) => {
-    const itemSubtotal = item.price * item.count;
-    subtotalPrice += itemSubtotal;
-  });
+
   return (
     <>
       <section className="bg-[#EFEFEF]">

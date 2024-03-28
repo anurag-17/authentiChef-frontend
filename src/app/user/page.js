@@ -1,7 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import { Carousel } from "flowbite-react";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import logo from "../../../public/images/logo.svg";
 import cap from "../../../public/images/cap.svg";
@@ -46,8 +45,6 @@ import p3 from "../../../public/images/Ellipse321.svg";
 import p4 from "../../../public/images/Ellipse422.svg";
 import day from "../../../public/images/day.svg";
 import sidemanu from "../../../public/images/side-menu.svg";
-import { Splide, SplideSlide } from "@splidejs/splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css/core";
 import Link from "next/link";
 
@@ -855,7 +852,7 @@ const LandingPage = () => {
                 width={80}
                 alt="image"
                 src={eightPoster}
-                className="2xl:w-[814px] 2xl:h-[507px] mx-auto"
+                className="2xl:w-[814px] 2xl:h-[507px] w-auto h-auto mx-auto"
               />{" "}
             </div>
           </div>
@@ -1058,7 +1055,7 @@ const LandingPage = () => {
                           width={80}
                           alt="image"
                           src={fb}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
@@ -1072,7 +1069,7 @@ const LandingPage = () => {
                           width={80}
                           alt="image"
                           src={linkedin}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
@@ -1086,7 +1083,7 @@ const LandingPage = () => {
                           width={80}
                           alt="image"
                           src={insta}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
@@ -1100,7 +1097,7 @@ const LandingPage = () => {
                           width={80}
                           alt="image"
                           src={google}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
@@ -1114,7 +1111,7 @@ const LandingPage = () => {
                           width={80}
                           alt="image"
                           src={twiter}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
