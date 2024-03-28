@@ -1,7 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
 import { Carousel } from "flowbite-react";
-
 import React, { useEffect } from "react";
 import Image from "next/image";
 import logo from "../../../public/images/logo.svg";
@@ -60,12 +59,21 @@ const LandingPage = () => {
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
               <Image
+                height={80}
+                width={80}
+                alt="image"
                 src={sidemanu}
                 className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
               />
             </div>
             <div className="w-1/3 ">
-              <Image src={logo} className="nav_logo" />
+              <Image
+                height={80}
+                width={80}
+                alt="image"
+                src={logo}
+                className="nav_logo"
+              />
             </div>
             <div className="flex md:gap-7  gap-2">
               <button className="nav_login">Log In</button>
@@ -106,7 +114,13 @@ const LandingPage = () => {
               </div>
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
                 <div className="flex gap-3 ">
-                  <Image src={cap} className="third_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={cap}
+                    className="third_img"
+                  />
                   <p className="alata font-[400] 2xl:text-[16px] 2xl:leading-[20px] xl:text-[12px] lg:text-[10px] lg:leading-[20px]">
                     Recommended chef
                   </p>
@@ -177,6 +191,9 @@ const LandingPage = () => {
                   <Image
                     className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food1}
+                    height={80}
+                    width={80}
+                    alt="image"
                   />
                   <h1
                     className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:my-4 xl:text-[14px] xl:leading-[20px] xl:my-4
@@ -187,6 +204,9 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
+                    height={80}
+                    width={80}
+                    alt="image"
                     className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food2}
                   />
@@ -199,6 +219,9 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
+                    height={80}
+                    width={80}
+                    alt="image"
                     className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food3}
                   />
@@ -211,6 +234,9 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
+                    height={80}
+                    width={80}
+                    alt="image"
                     className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food4}
                   />
@@ -223,6 +249,9 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
+                    height={80}
+                    width={80}
+                    alt="image"
                     className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food5}
                   />
@@ -235,6 +264,9 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
+                    height={80}
+                    width={80}
+                    alt="image"
                     className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food6}
                   />
@@ -259,13 +291,25 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row justify-center flex-wrap lg:justify-between md:my-5 lg:my-0">
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 ">
                 <div>
-                  <Image src={Rectangle1} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle1}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5">
                   <div>
                     <h1 className="fourth_title">Spaghetti</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image src={p1} className="four_img2 " />
+                      <Image
+                        height={80}
+                        width={80}
+                        alt="image"
+                        src={p1}
+                        className="four_img2 "
+                      />
                       <h1 className="fourth_name ">Chef Radha</h1>
                     </div>
                   </div>
@@ -273,6 +317,9 @@ const LandingPage = () => {
                   <p className="fourth_p">Dietary Specialty - Veg only</p>
                   <button className="four_btn">
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
@@ -283,7 +330,13 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image src={Rectangle2} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle2}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -291,7 +344,13 @@ const LandingPage = () => {
                       Cheese, honey, omelette sandwich
                     </h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image src={p2} className="four_img2 " />
+                      <Image
+                        height={80}
+                        width={80}
+                        alt="image"
+                        src={p2}
+                        className="four_img2 "
+                      />
                       <h1 className="fourth_name ">Chef Kumari</h1>
                     </div>
                   </div>
@@ -299,6 +358,9 @@ const LandingPage = () => {
                   <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
@@ -309,13 +371,25 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image src={Rectangle3} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle3}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
                     <h1 className="fourth_title">Chicken kabab</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image src={p3} className="four_img2 " />
+                      <Image
+                        height={80}
+                        width={80}
+                        alt="image"
+                        src={p3}
+                        className="four_img2 "
+                      />
                       <h1 className="fourth_name ">Chef Dinesh</h1>
                     </div>
                   </div>
@@ -323,6 +397,9 @@ const LandingPage = () => {
                   <p className="fourth_p">Dietary Specialty - Veg only</p>
                   <button className="four_btn">
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
@@ -333,13 +410,25 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image src={Rectangle4} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle4}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
                     <h1 className="fourth_title">Paneer butter masala</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image src={p4} className="four_img2 " />
+                      <Image
+                        height={80}
+                        width={80}
+                        alt="image"
+                        src={p4}
+                        className="four_img2 "
+                      />
                       <h1 className="fourth_name ">Chef Rajesh</h1>
                     </div>
                   </div>
@@ -347,6 +436,9 @@ const LandingPage = () => {
                   <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
@@ -357,13 +449,25 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image src={Rectangle5} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle5}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
                     <h1 className="fourth_title">Indian Thali</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image src={p1} className="four_img2 " />
+                      <Image
+                        height={80}
+                        width={80}
+                        alt="image"
+                        src={p1}
+                        className="four_img2 "
+                      />
                       <h1 className="fourth_name ">Chef Radha</h1>
                     </div>
                   </div>
@@ -371,6 +475,9 @@ const LandingPage = () => {
                   <p className="fourth_p">Dietary Specialty - Veg only</p>
                   <button className="four_btn">
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
@@ -381,7 +488,13 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image src={Rectangle6} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle6}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -389,7 +502,13 @@ const LandingPage = () => {
                       Cheese, honey, omelette sandwich
                     </h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image src={p2} className="four_img2 " />
+                      <Image
+                        height={80}
+                        width={80}
+                        alt="image"
+                        src={p2}
+                        className="four_img2 "
+                      />
                       <h1 className="fourth_name ">Chef Kumari</h1>
                     </div>
                   </div>
@@ -397,6 +516,9 @@ const LandingPage = () => {
                   <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
@@ -407,13 +529,25 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image src={Rectangle7} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle7}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto"></div>
                 <div>
                   <h1 className="fourth_title">Chicken kabab</h1>
                   <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                    <Image src={p3} className="four_img2 " />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={p3}
+                      className="four_img2 "
+                    />
                     <h1 className="fourth_name ">Chef Dinesh</h1>
                   </div>
                 </div>
@@ -421,6 +555,9 @@ const LandingPage = () => {
                 <p className="fourth_p">Dietary Specialty - Veg only</p>
                 <button className="four_btn">
                   <Image
+                    height={80}
+                    width={80}
+                    alt="image"
                     src={day}
                     className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                   />
@@ -430,13 +567,25 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image src={Rectangle8} className="four_img" />
+                  <Image
+                    height={80}
+                    width={80}
+                    alt="image"
+                    src={Rectangle8}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
                     <h1 className="fourth_title">Paneer butter masala</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image src={p4} className="four_img2 " />
+                      <Image
+                        height={80}
+                        width={80}
+                        alt="image"
+                        src={p4}
+                        className="four_img2 "
+                      />
                       <h1 className="fourth_name ">Chef Rajesh</h1>
                     </div>
                   </div>
@@ -444,6 +593,9 @@ const LandingPage = () => {
                   <p className="fourth_p">Dietary Specialty - Veg & Nonveg</p>
                   <button className="four_btn">
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={day}
                       className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
                     />
@@ -478,6 +630,9 @@ const LandingPage = () => {
                 <div>
                   <div>
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={maggie}
                       className="mx-auto 2xl:w-[77.89px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
@@ -494,6 +649,9 @@ const LandingPage = () => {
                 <div>
                   <div>
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={calen}
                       className="mx-auto 2xl:w-[89.2px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
@@ -511,6 +669,9 @@ const LandingPage = () => {
                 <div>
                   <div>
                     <Image
+                      height={80}
+                      width={80}
+                      alt="image"
                       src={microweb}
                       className="mx-auto 2xl:w-[94px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
@@ -537,7 +698,13 @@ const LandingPage = () => {
                 {" "}
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image src={plate1} className="six_img " />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={plate1}
+                      className="six_img "
+                    />
 
                     <p className="six_p">
                       Authentic homemade food made by independent chefs from
@@ -547,7 +714,13 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image src={plate2} className="six_img" />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={plate2}
+                      className="six_img"
+                    />
 
                     <p className="six_p">
                       No dish will be made in a factory or in a large-scale
@@ -557,7 +730,13 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image src={plate3} className="six_img" />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={plate3}
+                      className="six_img"
+                    />
 
                     <p className="six_p">
                       Small batch cooking to ensure the highest quality dish,
@@ -567,7 +746,13 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image src={plate4} className="six_img" />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={plate4}
+                      className="six_img"
+                    />
 
                     <p className="six_p">
                       Use vegan packaging materials ensuring food safety
@@ -590,23 +775,53 @@ const LandingPage = () => {
             </p>
             <div className="flex justify-between md:my-5 lg:my-10">
               <div className="w-[160px] lg:w-[286px]">
-                <Image src={person1} className="seven_img" />
+                <Image
+                  height={80}
+                  width={80}
+                  alt="image"
+                  src={person1}
+                  className="seven_img"
+                />
                 <h2 className="seven_name">Uncle Roger Hendrics</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image src={person2} className="seven_img" />
+                <Image
+                  height={80}
+                  width={80}
+                  alt="image"
+                  src={person2}
+                  className="seven_img"
+                />
                 <h2 className="seven_name">Jason Bosh</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image src={person3} className="seven_img" />
+                <Image
+                  height={80}
+                  width={80}
+                  alt="image"
+                  src={person3}
+                  className="seven_img"
+                />
                 <h2 className="seven_name">Mathew Kaymer</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image src={person4} className="seven_img" />
+                <Image
+                  height={80}
+                  width={80}
+                  alt="image"
+                  src={person4}
+                  className="seven_img"
+                />
                 <h2 className="seven_name">Scarlet Carter</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image src={person5} className="seven_img" />
+                <Image
+                  height={80}
+                  width={80}
+                  alt="image"
+                  src={person5}
+                  className="seven_img"
+                />
                 <h2 className="seven_name">Karan Malhotra</h2>
               </div>
             </div>
@@ -636,6 +851,9 @@ const LandingPage = () => {
             </div>
             <div className="mx-10 sm:w-1/2 flex sm:mx-auto my-5 lg:my-0 lg:flex-none">
               <Image
+                height={80}
+                width={80}
+                alt="image"
                 src={eightPoster}
                 className="2xl:w-[814px] 2xl:h-[507px] mx-auto"
               />{" "}
@@ -655,7 +873,13 @@ const LandingPage = () => {
               <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                 <div>
                   <div>
-                    <Image src={review1} className="nine_img" />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={review1}
+                      className="nine_img"
+                    />
                   </div>
                   <div className="rating flex justify-center nine_start">
                     <input
@@ -696,7 +920,13 @@ const LandingPage = () => {
               <div>
                 <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                   <div>
-                    <Image src={review2} className="nine_img" />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={review2}
+                      className="nine_img"
+                    />
                   </div>
                   <div className="rating flex justify-center nine_start">
                     <input
@@ -737,7 +967,13 @@ const LandingPage = () => {
               <div>
                 <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                   <div>
-                    <Image src={review3} className="nine_img" />
+                    <Image
+                      height={80}
+                      width={80}
+                      alt="image"
+                      src={review3}
+                      className="nine_img"
+                    />
                   </div>
                   <div className="rating flex justify-center  nine_start">
                     <input
@@ -817,7 +1053,13 @@ const LandingPage = () => {
                   <div className="flex gap-2 justify-center lg:justify-start">
                     <div>
                       <Link href="https://www.facebook.com/" target="_blank">
-                        <Image src={fb} className="2xl:w-[30px] 2xl:h-[30px]" />
+                        <Image
+                          height={80}
+                          width={80}
+                          alt="image"
+                          src={fb}
+                          className="2xl:w-[30px] 2xl:h-[30px]"
+                        />
                       </Link>
                     </div>
                     <div>
@@ -826,6 +1068,9 @@ const LandingPage = () => {
                         target="_blank"
                       >
                         <Image
+                          height={80}
+                          width={80}
+                          alt="image"
                           src={linkedin}
                           className="2xl:w-[30px] 2xl:h-[30px]"
                         />
@@ -837,6 +1082,9 @@ const LandingPage = () => {
                         target="_blank"
                       >
                         <Image
+                          height={80}
+                          width={80}
+                          alt="image"
                           src={insta}
                           className="2xl:w-[30px] 2xl:h-[30px]"
                         />
@@ -848,6 +1096,9 @@ const LandingPage = () => {
                         target="_blank"
                       >
                         <Image
+                          height={80}
+                          width={80}
+                          alt="image"
                           src={google}
                           className="2xl:w-[30px] 2xl:h-[30px]"
                         />
@@ -859,6 +1110,9 @@ const LandingPage = () => {
                         target="_blank"
                       >
                         <Image
+                          height={80}
+                          width={80}
+                          alt="image"
                           src={twiter}
                           className="2xl:w-[30px] 2xl:h-[30px]"
                         />
@@ -879,52 +1133,6 @@ const LandingPage = () => {
             </div>
           </div>
         </footer>
-
-        <div className="carousel carousel-center rounded-box ">
-          <div className="carousel-item ">
-            <img
-              src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-              alt="Pizza"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-              alt="Pizza"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-              alt="Pizza"
-            />
-          </div>
-          
-          <div className="carousel-item">
-            <img
-              src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-              alt="Pizza"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-              alt="Pizza"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-              alt="Pizza"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-              alt="Pizza"
-            />
-          </div>
-        </div>
       </section>
     </>
   );
