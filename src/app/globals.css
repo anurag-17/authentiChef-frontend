@@ -47,7 +47,7 @@ body {
 
 
 .poster-bg {
-  background-image: url('../../public/images/poster.png');
+  background-image: url('../../public/images/poster.webp');
   background-size: cover;
   background-position: center;
 }
