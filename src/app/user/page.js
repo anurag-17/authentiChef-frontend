@@ -31,13 +31,13 @@ import insta from "../../../public/images/insta.svg";
 import twiter from "../../../public/images/twiter.svg";
 import google from "../../../public/images/google.svg";
 import Rectangle1 from "../assets/Rectangle62.png";
-import Rectangle2 from "../assets/Rectangle114.png";
+import Rectangle2 from "../assets/Rectangle114.webp";
 import Rectangle3 from "../assets/Rectangle115.png";
 import Rectangle4 from "../assets/Rectangle116.png";
-import Rectangle5 from "../assets/Rectangle117.png";
-import Rectangle6 from "../assets/Rectangle118.png";
+import Rectangle5 from "../assets/Rectangle117.webp";
+import Rectangle6 from "../assets/Rectangle118.webp";
 import Rectangle7 from "../assets/Rectangle119.png";
-import Rectangle8 from "../assets/Rectangle120.png";
+import Rectangle8 from "../assets/Rectangle120.webp";
 import p1 from "../assets/Ellipse119.png";
 import p2 from "../assets/Ellipse220.png";
 import p3 from "../assets/Ellipse321.png";
@@ -101,7 +101,6 @@ const LandingPage = () => {
                 <h1 className="third_head">Select your cuisine</h1>
               </div>
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
-               
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
                   <div className="">
                     <select className="  2xl:w-[153px]  third_select  ">
@@ -258,13 +257,7 @@ const LandingPage = () => {
                   <div>
                     <h1 className="fourth_title">Spaghetti</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        height={80}
-                        width={80}
-                        alt="image"
-                        src={p1}
-                        className="four_img2 "
-                      />
+                      <Image alt="image" src={p1} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Radha</h1>
                     </div>
                   </div>
@@ -291,13 +284,7 @@ const LandingPage = () => {
                       Cheese, honey, omelette sandwich
                     </h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        height={80}
-                        width={80}
-                        alt="image"
-                        src={p2}
-                        className="four_img2 "
-                      />
+                      <Image alt="image" src={p2} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Kumari</h1>
                     </div>
                   </div>
@@ -322,13 +309,7 @@ const LandingPage = () => {
                   <div>
                     <h1 className="fourth_title">Chicken kabab</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        height={80}
-                        width={80}
-                        alt="image"
-                        src={p3}
-                        className="four_img2 "
-                      />
+                      <Image alt="image" src={p3} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Dinesh</h1>
                     </div>
                   </div>
@@ -353,13 +334,7 @@ const LandingPage = () => {
                   <div>
                     <h1 className="fourth_title">Paneer butter masala</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        height={80}
-                        width={80}
-                        alt="image"
-                        src={p4}
-                        className="four_img2 "
-                      />
+                      <Image alt="image" src={p4} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Rajesh</h1>
                     </div>
                   </div>
@@ -384,13 +359,7 @@ const LandingPage = () => {
                   <div>
                     <h1 className="fourth_title">Indian Thali</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        height={80}
-                        width={80}
-                        alt="image"
-                        src={p1}
-                        className="four_img2 "
-                      />
+                      <Image alt="image" src={p1} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Radha</h1>
                     </div>
                   </div>
@@ -417,13 +386,7 @@ const LandingPage = () => {
                       Cheese, honey, omelette sandwich
                     </h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        height={80}
-                        width={80}
-                        alt="image"
-                        src={p2}
-                        className="four_img2 "
-                      />
+                      <Image alt="image" src={p2} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Kumari</h1>
                     </div>
                   </div>
@@ -472,13 +435,7 @@ const LandingPage = () => {
                   <div>
                     <h1 className="fourth_title">Paneer butter masala</h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        height={80}
-                        width={80}
-                        alt="image"
-                        src={p4}
-                        className="four_img2 "
-                      />
+                      <Image alt="image" src={p4} className="four_img2 " />
                       <h1 className="fourth_name ">Chef Rajesh</h1>
                     </div>
                   </div>
