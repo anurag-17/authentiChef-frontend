@@ -72,7 +72,7 @@ const LandingPage = () => {
 
         {/* ===================Second================== */}
         <div className="hidden md:block 2xl:h-screen">
-          <div className="poster-bg  2xl:h-[834px] h-screen flex justify-center ">
+          <div className="poster-bg lazy-load  2xl:h-[834px] h-screen flex justify-center ">
             <div className="">
               <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[475px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
                 Where’s your next food destination?
