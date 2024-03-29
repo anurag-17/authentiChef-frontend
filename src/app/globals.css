@@ -59,14 +59,6 @@ body {
   background-position: center;
 }
 
-.lazy-load {
-  background-image: none;
-}
-
-.lazy-load.loaded {
-  background-image: none;
-}
-
 .yellow-bg {
   background-image: url('../../public/images/yellow-bg.svg');
   background-size: cover;
