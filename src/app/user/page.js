@@ -71,24 +71,47 @@ const LandingPage = () => {
         </nav>
 
         {/* ===================Second================== */}
-
-        <div className="poster-bg 2xl:h-[834px] h-screen  flex justify-center ">
-          <div className="">
-            <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[475px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
-              Where’s your next food destination?
-            </h1>
-            <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
-              <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
-                Explore Dishes
-              </button>
-            </div>
-            <div className="flex 2xl:mt-14 xl:mt-8 lg:mt-5 mt-4">
-              <h1
-                className="alata font-[400] mx-auto text-white 2xl:text-[40px] 2xl:leading-[20px] xl:text-[25px] xl:leading-[20px]
-              lg:text-[20px] lg:leading-[20px]  "
-              >
-                Save 30% on your first order
+        <div className="hidden md:block 2xl:h-screen">
+          <div className="poster-bg  2xl:h-[834px] h-screen flex justify-center ">
+            <div className="">
+              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[475px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
+                Where’s your next food destination?
               </h1>
+              <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
+                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
+                  Explore Dishes
+                </button>
+              </div>
+              <div className="flex 2xl:mt-14 xl:mt-8 lg:mt-5 mt-4">
+                <h1
+                  className="alata font-[400] mx-auto text-white 2xl:text-[40px] 2xl:leading-[20px] xl:text-[25px] xl:leading-[20px]
+              lg:text-[20px] lg:leading-[20px]  "
+                >
+                  Save 30% on your first order
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="md:hidden block">
+          <div className="poster-bg-m   2xl:h-[834px] h-screen flex justify-center ">
+            <div className="">
+              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[475px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
+                Where’s your next food destination?
+              </h1>
+              <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
+                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
+                  Explore Dishes
+                </button>
+              </div>
+              <div className="flex 2xl:mt-14 xl:mt-8 lg:mt-5 mt-4">
+                <h1
+                  className="alata font-[400] mx-auto text-white 2xl:text-[40px] 2xl:leading-[20px] xl:text-[25px] xl:leading-[20px]
+              lg:text-[20px] lg:leading-[20px]  "
+                >
+                  Save 30% on your first order
+                </h1>
+              </div>
             </div>
           </div>
         </div>
@@ -480,7 +503,7 @@ const LandingPage = () => {
                     <Image
                       alt="image"
                       src={maggie}
-                      className="mx-auto 2xl:w-[77.89px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
+                      className="mx-auto 2xl:w-[77.89px] 2xl:h-[94px] xl:w-[50px] xl:h-auto lg:w-auto lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
                   </div>
                   <h1 className="five_head2 2xl:w-auto xl:w-[302px] lg:w-[250px]">
@@ -497,7 +520,7 @@ const LandingPage = () => {
                     <Image
                       alt="image"
                       src={calen}
-                      className="mx-auto 2xl:w-[89.2px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
+                      className="mx-auto 2xl:w-[89.2px] 2xl:h-[94px] xl:w-[50px] xl:h-auto lg:w-[40px] lg:h-auto sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
                     />
                   </div>
                   <h1 className="five_head2">
@@ -531,7 +554,7 @@ const LandingPage = () => {
         {/* ===================Six================== */}
 
         <div className="flex justify-center 2xl:my-28 xl:my-10 lg:my-10 my-10">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex flex-wrap ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  flex flex-wrap ">
             <div className="mx-20 sm:mx-auto">
               <div className="flex justify-center lg:justify-start">
                 <h1 className="six_head ">Our Commitment</h1>

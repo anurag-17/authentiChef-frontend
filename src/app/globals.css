@@ -44,6 +44,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+.poster-bg-m{
+  background-image: url('../../public/images/poster-bg-m.png');
+  background-size: cover;
+  background-position: center;
+}
 .yellow-bg {
   background-image: url('../../public/images/yellow-bg.svg');
   background-size: cover;
