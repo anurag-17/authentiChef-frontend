@@ -94,7 +94,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="md:hidden block">
-          <div className="poster-bg-m  h-auto flex justify-center ">
+          <div className="poster-bg-m lazy-load  h-auto flex justify-center ">
             <div className="">
               <h1 className="alata font-[400] text-white  mt-[130%] mx-auto">
                 Where’s your next food destination?

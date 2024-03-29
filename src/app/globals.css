@@ -13,15 +13,18 @@
 body {
   font-family: Inter;
 }
+
 @font-face {
   font-display: swap;
   font-family: "poppins";
   src: url("../../src//font//Poppins//Poppins-Regular.ttf");
 }
+
 .poppins {
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
+
 @font-face {
   font-display: swap;
   font-family: "quicksand";
@@ -32,6 +35,7 @@ body {
   font-family: "quicksand", sans-serif;
   font-style: normal;
 }
+
 @font-face {
   font-display: swap;
   font-family: "alata";
@@ -42,103 +46,114 @@ body {
   font-family: "alata", sans-serif;
   font-style: normal;
 }
+
 .poster-bg {
   background-image: url('../../public/images/poster.webp');
   background-size: cover;
   background-position: center;
 }
-.poster-bg-m{
+
+.poster-bg-m {
   background-image: url('../../public/images/poster-bg-m.webp');
   background-size: cover;
   background-position: center;
 }
+
+.lazy-load {
+  background-image: none;
+}
+
+.lazy-load.loaded {
+  background-image: none;
+}
+
 .yellow-bg {
   background-image: url('../../public/images/yellow-bg.svg');
   background-size: cover;
   background-position: center;
 }
 
-  .login-input-label {
-    @apply text-[#262628] font-[500] text-[14px];
-  }
+.login-input-label {
+  @apply text-[#262628] font-[500] text-[14px];
+}
 
-  .login-input {
-    @apply w-full px-4 py-2 2xl:h-[50px] h-[48px] border border-[#E4E4E4] bg-white rounded-[3px] text-[#262628] text-[15px] font-[400px] leading-normal focus-visible:outline-none placeholder:text-[14px] placeholder:text-[#262628];
-  }
+.login-input {
+  @apply w-full px-4 py-2 2xl:h-[50px] h-[48px] border border-[#E4E4E4] bg-white rounded-[3px] text-[#262628] text-[15px] font-[400px] leading-normal focus-visible:outline-none placeholder:text-[14px] placeholder:text-[#262628];
+}
 
-  .login_button {
-    @apply w-full bg-primary font-medium text-white p-2 rounded-lg hover:bg-white hover:text-primary hover:border hover:border-[gray-300] h-[50px] transition-all ease-in-out delay-75 duration-700 hover:border-primary;
-  }
+.login_button {
+  @apply w-full bg-primary font-medium text-white p-2 rounded-lg hover:bg-white hover:text-primary hover:border hover:border-[gray-300] h-[50px] transition-all ease-in-out delay-75 duration-700 hover:border-primary;
+}
 
-  .input_search {
-    @apply focus-visible:outline-none border-none w-full rounded-[5px] font-normal text-[15px] text-[#6a6969] placeholder:text-[11px];
-  }
+.input_search {
+  @apply focus-visible:outline-none border-none w-full rounded-[5px] font-normal text-[15px] text-[#6a6969] placeholder:text-[11px];
+}
 
-  .search_btn {
-    @apply px-6 text-[12px] h-[32px] hover:text-[#f3f3f3] bg-black text-white font-medium;
-  }
+.search_btn {
+  @apply px-6 text-[12px] h-[32px] hover:text-[#f3f3f3] bg-black text-white font-medium;
+}
 
-  .clear_search_btn {
-    @apply px-1 rounded text-[12px] text-[gray] border border-[#6a696917] hover:text-black mr-1;
-  }
+.clear_search_btn {
+  @apply px-1 rounded text-[12px] text-[gray] border border-[#6a696917] hover:text-black mr-1;
+}
 
-  .outer_table {
-    @apply rounded-[10px] bg-white py-[30px]  mt-[20px] p-6 overflow-x-scroll w-full ;
-  }
+.outer_table {
+  @apply rounded-[10px] bg-white py-[30px] mt-[20px] p-6 overflow-x-scroll w-full;
+}
 
-  .table_head {
-    @apply py-3 px-5 text-left bg-white;
-  }
+.table_head {
+  @apply py-3 px-5 text-left bg-white;
+}
 
-  .table_data {
-    @apply text-[14px] font-[400] py-3 px-5;
-  }
+.table_data {
+  @apply text-[14px] font-[400] py-3 px-5;
+}
 
-  .table_btn_div {
-    @apply flex flex-col md:flex-row items-center gap-2 gap-x-5;
-  }
+.table_btn_div {
+  @apply flex flex-col md:flex-row items-center gap-2 gap-x-5;
+}
 
-  .no_data {
-    @apply py-4 px-4 w-full flex flex-col items-center justify-center border border-[#f3f3f3] bg-white rounded-[20px] mt-[10px];
-  }
+.no_data {
+  @apply py-4 px-4 w-full flex flex-col items-center justify-center border border-[#f3f3f3] bg-white rounded-[20px] mt-[10px];
+}
 
-  .form_col {
-    @apply grid grid-cols-2 py-[5px];
-  }
+.form_col {
+  @apply grid grid-cols-2 py-[5px];
+}
 
-  .form_label_head {
-    @apply 2xl:text-[16px] text-[15px] font-[400] leading-tight capitalize;
-  }
+.form_label_head {
+  @apply 2xl:text-[16px] text-[15px] font-[400] leading-tight capitalize;
+}
 
-  .form_info {
-    @apply 2xl:text-[16px] text-[15px] font-[500] leading-tight;
-  }
+.form_info {
+  @apply 2xl:text-[16px] text-[15px] font-[500] leading-tight;
+}
 
-  .form_heading {
-    @apply whitespace-nowrap capitalize leading-tight lg:text-[18px] text-[16px] font-medium;
-  }
+.form_heading {
+  @apply whitespace-nowrap capitalize leading-tight lg:text-[18px] text-[16px] font-medium;
+}
 
-  .delete_btn {
-    @apply px-4 text-[13px] border rounded py-1 md:py-2 text-red-700 border-[red] hover:bg-red-700 focus-visible:outline-none hover:text-white md:w-auto w-full;
-  }
+.delete_btn {
+  @apply px-4 text-[13px] border rounded py-1 md:py-2 text-red-700 border-[red] hover:bg-red-700 focus-visible:outline-none hover:text-white md:w-auto w-full;
+}
 
-  .primary_btn {
-    @apply px-4 text-[13px] border rounded text-white hover:bg-white hover:text-primary py-1 md:py-2 bg-black focus-visible:outline-none w-full md:w-auto hover:border-primary;
-  }
+.primary_btn {
+  @apply px-4 text-[13px] border rounded text-white hover:bg-white hover:text-primary py-1 md:py-2 bg-black focus-visible:outline-none w-full md:w-auto hover:border-primary;
+}
 
-  .secondary_btn {
-    @apply px-4 text-[13px] border border-primary rounded hover:text-white bg-white text-primary py-1 md:py-2 hover:bg-black focus-visible:outline-none w-full md:w-auto;
-  }
+.secondary_btn {
+  @apply px-4 text-[13px] border border-primary rounded hover:text-white bg-white text-primary py-1 md:py-2 hover:bg-black focus-visible:outline-none w-full md:w-auto;
+}
 
-  button {
-    @apply focus-visible:outline-none transition-all duration-500 delay-75 ease-in-out;
-  }
+button {
+  @apply focus-visible:outline-none transition-all duration-500 delay-75 ease-in-out;
+}
 
-  th,
-  td {
-    border: none !important;
-    border-bottom: 1px solid #81828345 !important;
-  }
+th,
+td {
+  border: none !important;
+  border-bottom: 1px solid #81828345 !important;
+}
 
 /* ===================navbar================== */
 .nav_logo {
@@ -150,7 +165,7 @@ body {
 }
 
 .nav_signup {
-  @apply alata font-[400] text-[#F38181] bg-white 2xl:p-1 2xl:text-[24px] xl:text-[18px] xl:leading-[30px] lg:text-[12px] lg:leading-[20px] 2xl:leading-[36px] 2xl:w-[134px] 2xl:h-[48px] rounded-[5px] xl:px-2 lg:px-2  text-[12px] leading-[20px] sm:px-2 sm:py-1 px-2
+  @apply alata font-[400] text-[#F38181] bg-white 2xl:p-1 2xl:text-[24px] xl:text-[18px] xl:leading-[30px] lg:text-[12px] lg:leading-[20px] 2xl:leading-[36px] 2xl:w-[134px] 2xl:h-[48px] rounded-[5px] xl:px-2 lg:px-2 text-[12px] leading-[20px] sm:px-2 sm:py-1 px-2
 }
 
 /* ===================Third================== */
@@ -169,13 +184,14 @@ body {
 .third_input {
   @apply alata font-[400] border-[1px] rounded-[3px] 2xl:text-[16px] 2xl:leading-[20px] 2xl:w-[215px] 2xl:h-[46px] 2xl:px-3 xl:text-[12px] xl:leading-[16px] xl:w-[160px] xl:h-[30px] lg:w-[150px] lg:h-[25px] px-1
 }
+
 /* ===================Four================== */
 .four_head {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] 2xl:my-8 mx-auto xl:text-[35px] xl:leading-[45px] xl:my-4 lg:text-[25px] lg:leading-[30px] lg:my-2 sm:text-[25px] sm:leading-[30px] sm:my-2
 }
 
 .four_img {
-  @apply 2xl:w-[373px] 2xl:h-[300px] xl:w-[250px] h-auto lg:w-[190px]  md:w-[260px] mx-0
+  @apply 2xl:w-[373px] 2xl:h-[300px] xl:w-[250px] h-auto lg:w-[190px] md:w-[260px] mx-0
 }
 
 .fourth_title {
@@ -208,7 +224,7 @@ body {
 }
 
 .five_p {
-  @apply alata font-[400] text-center 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[850px] 2xl:my-3 xl:text-[14px] xl:leading-[22px] xl:w-[600px] xl:my-2 sm:text-[12px] lg:leading-[22px] lg:w-[600px] lg:my-2 text-[12px] leading-[22px]  my-2  mx-5 sm:mx-0
+  @apply alata font-[400] text-center 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[850px] 2xl:my-3 xl:text-[14px] xl:leading-[22px] xl:w-[600px] xl:my-2 sm:text-[12px] lg:leading-[22px] lg:w-[600px] lg:my-2 text-[12px] leading-[22px] my-2 mx-5 sm:mx-0
 }
 
 .five_head2 {
@@ -218,10 +234,12 @@ body {
 .five_p2 {
   @apply alata font-[400] 2xl:text-[18px] 2xl:leading-[28px] 2xl:my-1 text-center mx-auto xl:text-[14px] xl:leading-[20px] lg:text-[12px] lg:leading-[20px]
 }
+
 /* =================Six================= */
 .six_head {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[35px] sm:text-[25px] sm:leading-[35px] text-[20px] leading-[30px]
 }
+
 .six_img {
   @apply 2xl:w-[327px] 2xl:h-[242px] xl:w-[210px] xl:h-auto lg:w-[160px] lg:h-auto sm:w-full my-4
 }
@@ -229,52 +247,66 @@ body {
 .six_p {
   @apply alata font-[400] 2xl:text-[25px] 2xl:leading-[35px] 2xl:p-14 2xl:w-auto xl:text-[16px] xl:leading-[28px] xl:pl-6 xl:w-[260px] lg:text-[12px] lg:leading-[20px] lg:pl-4 lg:w-[190px] sm:text-[14px] sm:leading-[20px] sm:pl-0 w-[300px]
 }
+
 /* =================Seven================= */
 .seven_head {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] text-center xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[30px]
 }
+
 .seven_p {
   @apply alata font-[400] text-center mx-auto 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[854px] 2xl:my-3 xl:text-[14px] xl:leading-[20px] xl:w-[606px] lg:my-1 lg:text-[12px] lg:leading-[18px] lg:w-[505px]
 }
 
 .seven_img {
-  @apply 2xl:w-[286px] 2xl:h-[323px] xl:w-[200px] h-auto lg:w-[200px]  md:w-[200px] 
+  @apply 2xl:w-[286px] 2xl:h-[323px] xl:w-[200px] h-auto lg:w-[200px] md:w-[200px]
 }
+
 .seven_name {
   @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] text-center 2xl:my-5 xl:text-[14px] xl:leading-[20px] lg:text-[12px] lg:leading-[18px] xl:my-0 lg:my-2
 }
+
 .seven_btn {
   @apply alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:w-[160px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] lg:w-[140px] lg:h-[30px] lg:text-[14px] lg:leading-[25px]
 }
+
 /* =================Eight================= */
 .eight_head {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] 2xl:my-8 xl:text-[35px] xl:leading-[45px] xl:my-4 lg:text-[25px] lg:leading-[30px] lg:my-3 sm:text-[25px] sm:leading-[30px] my-1 text-[20px] leading-[30px]
 }
+
 .eight_p {
   @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[646px] xl:text-[14px] xl:leading-[25px] xl:w-[446px] lg:text-[12px] lg:leading-[20px] lg:w-[386px] text-[12px] leading-[20px]
 }
+
 .eight_btn {
   @apply alata font-[400] bg-[#DB5353] text-white mx-auto lg:mx-0 rounded-[5px] 2xl:w-[310px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] 2xl:my-20 xl:w-[200px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] xl:my-14 lg:w-[180px] lg:h-[30px] lg:text-[14px] lg:leading-[25px] lg:my-10 w-[180px] h-[30px] text-[14px] leading-[25px] my-5
 }
+
 /* =================Nine================= */
 .nine_start {
   @apply 2xl:my-4 xl:my-2 mx-auto 2xl:w-[106.64px] 2xl:h-[18.74px] xl:w-[80.64px] xl:h-[15.74px] lg:w-[60.64px] lg:h-[12.74px] w-[60px] h-[12px]
 }
+
 .nine_head {
-  @apply text-center alata font-[400] 2xl:text-[55px] 2xl:leading-[75px]  xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[30px] sm:text-[25px] sm:leading-[30px] text-[20px] leading-[25px]
+  @apply text-center alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[30px] sm:text-[25px] sm:leading-[30px] text-[20px] leading-[25px]
 }
+
 .nine_p {
   @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[30px] text-center xl:text-[14px] xl:leading-[25px] lg:text-[12px] lg:leading-[16px] sm:text-[12px] sm:leading-[20px] text-[10px] leading-[16px]
 }
+
 .nine_img {
   @apply 2xl:w-[92px] 2xl:h-[92px] mx-auto xl:w-[55px] xl:h-[55px] lg:w-[50px] lg:h-[50px] w-[50px] h-[50px]
 }
+
 .nine_p2 {
   @apply alata font-[400] text-center 2xl:w-[352px] 2xl:text-[18px] 2xl:leading-[28px] 2xl:my-5 xl:w-[280px] xl:text-[14px] xl:leading-[20px] xl:my-5 lg:w-[230px] lg:text-[12px] lg:leading-[18px] lg:my-4 text-[12px] leading-[18px] my-2
 }
+
 .nine_name {
   @apply alata font-[400] text-[#DB5353] 2xl:text-[18px] 2xl:leading-[28px] text-center xl:text-[14px] xl:leading-[20px] lg:text-[12px] lg:leading-[18px] text-[12px] leading-[18px]
 }
+
 /* =================footer================= */
 .footer_text {
   @apply poppins font-[400] text-[#111111] 2xl:text-[16px] 2xl:leading-[30px] xl:text-[12px] xl:leading-[22px] lg:text-[10px] lg:leading-[18px] text-[10px] leading-[18px]
