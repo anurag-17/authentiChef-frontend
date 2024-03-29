@@ -97,7 +97,7 @@ const LandingPage = () => {
           <link rel="preload" href="/images/poster-bg-m.webp" as="image" />
         </Head> */}
         <div className="md:hidden block">
-          <div className=" poster-bg-m  h-auto flex justify-center ">
+          <div className=" poster-bg-m  h-screen flex justify-center ">
             <div className="">
               <h1 className="alata font-[400] text-white  mt-[130%] mx-auto">
                 Where’s your next food destination?
@@ -274,7 +274,7 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row justify-center flex-wrap lg:justify-between md:my-5 lg:my-0">
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 ">
                 <div>
-                  <Image alt="image" src={Rectangle1} className="four_img" />
+                  <Image alt="image" src={Rectangle1} className="four_img "  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5">
                   <div>
