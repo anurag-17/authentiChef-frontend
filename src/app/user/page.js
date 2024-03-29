@@ -46,6 +46,7 @@ import day from "../../../public/images/day.svg";
 import sidemanu from "../../../public/images/side-menu.svg";
 import "@splidejs/react-splide/css/core";
 import Link from "next/link";
+import Head from "next/head";
 
 const LandingPage = () => {
   return (
@@ -93,6 +94,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <Head>
+          <link rel="preload" href="/images/poster-bg-m.webp" as="image" />
+        </Head>
         <div className="md:hidden block">
           <div className="poster-bg-m  lazy-load  h-auto flex justify-center ">
             <div className="">
@@ -105,9 +109,7 @@ const LandingPage = () => {
                 </button>
               </div>
               <div className="flex mt-4">
-                <h1
-                  className="alata font-[400] mx-auto text-white"
-                >
+                <h1 className="alata font-[400] mx-auto text-white">
                   Save 30% on your first order
                 </h1>
               </div>
