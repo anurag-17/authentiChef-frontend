@@ -22,9 +22,9 @@ import plate1 from "../assets/Rectangle86.jpg";
 import plate2 from "../assets/Rectangle87.png";
 import plate3 from "../assets/Rectangle88.png";
 import plate4 from "../assets/Rectangle89.png";
-import review1 from "../../../public/images/Ellipse31.svg";
-import review2 from "../../../public/images/Ellipse32.svg";
-import review3 from "../../../public/images/Ellipse33.svg";
+import review1 from "../assets/Ellipse31.png";
+import review2 from "../assets/Ellipse32.png";
+import review3 from "../assets/Ellipse33.png";
 import fb from "../../../public/images/fb.svg";
 import linkedin from "../../../public/images/in.svg";
 import insta from "../../../public/images/insta.svg";
@@ -283,7 +283,7 @@ const LandingPage = () => {
                     <Image
                       alt="image"
                       src={day}
-                      className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
+                      className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] h-auto w-[10px]"
                     />
                     <p className="fourth_day">Wednesday</p>
                   </button>
