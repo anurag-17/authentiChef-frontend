@@ -9,7 +9,7 @@ import linkedin from "../../../public/images/in.svg";
 import insta from "../../../public/images/insta.svg";
 import twiter from "../../../public/images/twiter.svg";
 import google from "../../../public/images/google.svg";
-import foodPoster from "../assets/cartPoster.png";
+import foodPoster from "../assets/cartPoster.webp";
 import chef from "../../../public/images/chef.svg";
 import img1 from "../../../public/images/fi_4767107.svg";
 import img2 from "../../../public/images/fi_4718655.svg";

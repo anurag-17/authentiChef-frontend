@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import React from "react";
 import Image from "next/image";
 import logo from "../assets/logo.png.png";
-import cap from "../../../public/images/cap.svg";
 import food1 from "../assets/Rectangle51.png";
 import food2 from "../assets/Rectangle52.png";
 import food3 from "../assets/Rectangle53.png";
