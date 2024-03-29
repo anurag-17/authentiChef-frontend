@@ -97,7 +97,7 @@ const LandingPage = () => {
           <link rel="preload" href="/images/poster-bg-m.webp" as="image" />
         </Head> */}
         <div className="md:hidden block">
-          <div className="poster-bg-m h-auto flex justify-center ">
+          <div className=" h-auto flex justify-center ">
             <div className="">
               <h1 className="alata font-[400] text-white  mt-[130%] mx-auto">
                 Where’s your next food destination?
