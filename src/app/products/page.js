@@ -17,7 +17,7 @@ import img3 from "../../../public/images/fi_11493268.svg";
 import img4 from "../../../public/images/Group.svg";
 import Link from "next/link";
 import Rectangle1 from "../assets/Rectangle62.png";
-import Rectangle2 from "../assets/Rectangle114.png";
+import Rectangle2 from "../assets/Rectangle114.webp";
 import Rectangle3 from "../assets/Rectangle115.png";
 import Rectangle4 from "../assets/Rectangle116.png";
 import addCart from "../../../public/images/addCart.svg";
