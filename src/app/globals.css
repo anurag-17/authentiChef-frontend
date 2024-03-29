@@ -215,7 +215,7 @@ body {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[35px] sm:text-[25px] sm:leading-[35px] text-[20px] leading-[30px]
 }
 .six_img {
-  @apply 2xl:w-[327px] 2xl:h-[242px] xl:w-[210px] xl:h-[240px] lg:w-[160px] lg:h-[180px] sm:w-full my-4
+  @apply 2xl:w-[327px] 2xl:h-[242px] xl:w-[210px] xl:h-auto lg:w-[160px] lg:h-auto sm:w-full my-4
 }
 
 .six_p {

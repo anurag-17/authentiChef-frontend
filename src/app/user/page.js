@@ -19,7 +19,7 @@ import person3 from "../../../public/images/Rectangle13.svg";
 import person4 from "../../../public/images/Rectangle14.svg";
 import person5 from "../../../public/images/Rectangle15.svg";
 import eightPoster from "../../../public/images/eight-poster.svg";
-import plate1 from "../../../public/images/Rectangle86.svg";
+import plate1 from "../../../public/images/chicken-kabab.webp";
 import plate2 from "../../../public/images/Rectangle87.svg";
 import plate3 from "../../../public/images/Rectangle88.svg";
 import plate4 from "../../../public/images/Rectangle89.svg";
@@ -697,8 +697,8 @@ const LandingPage = () => {
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
                     <Image
-                      height={80}
-                      width={80}
+                      height={242}
+                      width={328}
                       alt="image"
                       src={plate1}
                       className="six_img "
