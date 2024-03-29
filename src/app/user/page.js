@@ -94,20 +94,19 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="md:hidden block">
-          <div className="poster-bg-m   2xl:h-[834px] h-screen flex justify-center ">
+          <div className="poster-bg-m  h-screen flex justify-center ">
             <div className="">
-              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[475px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
+              <h1 className="alata font-[400] text-white  mt-[130%] mx-auto">
                 Where’s your next food destination?
               </h1>
-              <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
-                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
+              <div className="flex mt-4">
+                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] px-3 py-1 ">
                   Explore Dishes
                 </button>
               </div>
-              <div className="flex 2xl:mt-14 xl:mt-8 lg:mt-5 mt-4">
+              <div className="flex mt-4">
                 <h1
-                  className="alata font-[400] mx-auto text-white 2xl:text-[40px] 2xl:leading-[20px] xl:text-[25px] xl:leading-[20px]
-              lg:text-[20px] lg:leading-[20px]  "
+                  className="alata font-[400] mx-auto text-white"
                 >
                   Save 30% on your first order
                 </h1>
