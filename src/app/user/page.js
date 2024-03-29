@@ -9,9 +9,9 @@ import food3 from "../assets/Rectangle53.png";
 import food4 from "../assets/Rectangle54.png";
 import food5 from "../assets/Rectangle55.png";
 import food6 from "../assets/Rectangle56.png";
-import maggie from "../../../public/images/maggie.svg";
-import calen from "../../../public/images/calender.svg";
-import microweb from "../../../public/images/microweb.svg";
+import maggie from "../assets/maggie.png";
+import calen from "../assets/calender.png";
+import microweb from "../assets/microweb.png";
 import person1 from "../assets/Rectangle7.png";
 import person2 from "../assets/Rectangle11.png";
 import person3 from "../assets/Rectangle12.png";
@@ -38,10 +38,10 @@ import Rectangle5 from "../assets/Rectangle117.png";
 import Rectangle6 from "../assets/Rectangle118.png";
 import Rectangle7 from "../assets/Rectangle119.png";
 import Rectangle8 from "../assets/Rectangle120.png";
-import p1 from "../../../public/images/Ellipse119.svg";
-import p2 from "../../../public/images/Ellipse220.svg";
-import p3 from "../../../public/images/Ellipse321.svg";
-import p4 from "../../../public/images/Ellipse422.svg";
+import p1 from "../assets/Ellipse119.png";
+import p2 from "../assets/Ellipse220.png";
+import p3 from "../assets/Ellipse321.png";
+import p4 from "../assets/Ellipse422.png";
 import day from "../../../public/images/day.svg";
 import sidemanu from "../../../public/images/side-menu.svg";
 import "@splidejs/react-splide/css/core";
@@ -101,16 +101,7 @@ const LandingPage = () => {
                 <h1 className="third_head">Select your cuisine</h1>
               </div>
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
-                <div className="flex gap-3 ">
-                  <Image alt="image" src={cap} className="third_img" />
-                  <p className="alata font-[400] 2xl:text-[16px] 2xl:leading-[20px] xl:text-[12px] lg:text-[10px] lg:leading-[20px]">
-                    Recommended chef
-                  </p>
-                  <input
-                    type="checkbox"
-                    className="toggle toggle-error bg-[#BFBFBF] "
-                  />
-                </div>
+               
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
                   <div className="">
                     <select className="  2xl:w-[153px]  third_select  ">
