@@ -93,9 +93,6 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        {/* <Head>
-          <link rel="preload" href="/images/poster-bg-m.webp" as="image" />
-        </Head> */}
         <div className="md:hidden block">
           <div className=" poster-bg-m  h-screen flex justify-center ">
             <div className="">

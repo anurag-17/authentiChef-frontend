@@ -16,19 +16,19 @@ import img2 from "../../../public/images/fi_4718655.svg";
 import img3 from "../../../public/images/fi_11493268.svg";
 import img4 from "../../../public/images/Group.svg";
 import Link from "next/link";
-import Rectangle1 from "../assets/Rectangle62.png";
-import Rectangle2 from "../assets/Rectangle114.webp";
-import Rectangle3 from "../assets/Rectangle115.png";
-import Rectangle4 from "../assets/Rectangle116.png";
+import Rectangle1 from "../assets/PopularDishes-Spaghetti.png";
+import Rectangle2 from "../assets/PopularDishes-Cheesesandwich.png";
+import Rectangle3 from "../assets/PopularDishes-Chickenkabab.png";
+import Rectangle4 from "../assets/PopularDishes-Paneerbuttermasala.png";
 import addCart from "../../../public/images/addCart.svg";
 import group from "../../../public/images/Group211.svg";
 import thumsUp from "../../../public/images/thumsUp.svg";
-import Rectangle5 from "../assets/Rectangle145.webp";
-import Rectangle6 from "../assets/Rectangle146.webp";
-import Rectangle7 from "../assets/Rectangle147.webp";
-import Rectangle8 from "../assets/Rectangle151.webp";
-import Rectangle9 from "../assets/Rectangle152.webp";
-import Rectangle10 from "../assets/Rectangle153.webp";
+import Rectangle5 from "../assets/Main-Items-BhindiSabjhi.png";
+import Rectangle6 from "../assets/Main-Items-AllooSabhji.png";
+import Rectangle7 from "../assets/Main-Items-VegPulav.png";
+import Rectangle8 from "../assets/Main-item-PalakPaneer.png";
+import Rectangle9 from "../assets/Main-Items-Paneer-butter-masala.png";
+import Rectangle10 from "../assets/Main-Items-AllooSabhji2nd.png";
 import emptyCart from "../../../public/images/emptyCart.svg";
 import { useCart } from "../create-context/cart-context";
 import { CartProvider } from "../create-context/cart-context";
@@ -281,7 +281,7 @@ const Products = ({ item }) => {
                     key={item.id}
                     className="bg-white 2xl:w-[216px] 2xl:h-[341px] xl:h-[250px] w-[18%] lg:h-[200px] h-[240px] relative  rounded-[5.8px] "
                   >
-                    <Image src={item.image} alt={item.title} className="" />
+                    <Image src={item.image} alt={item.title} className="rounded-[5px]" />
                     <div className="p-2">
                       <h1 className="alata font-[400] text-[#000000] xl:my-1 2xl:text-[16px] 2xl:leading-[20px]  xl:text-[12px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
                         {item.title}
@@ -334,7 +334,7 @@ const Products = ({ item }) => {
                     <Image
                       src={item.image}
                       alt={item.title}
-                      className="2xl:w-[365.5px] 2xl:h-[293.97px]"
+                      className="2xl:w-[365.5px] 2xl:h-[293.97px] rounded-[10px]"
                     />
                     <div className="p-4">
                       <h1 className="alata font-[400] text-[#000000] xl:my-1 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
