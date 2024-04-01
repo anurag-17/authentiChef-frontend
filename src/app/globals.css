@@ -12,6 +12,7 @@
 
 body {
   font-family: Inter;
+  background: #fff;
 }
 
 @font-face {
@@ -183,7 +184,7 @@ td {
 }
 
 .four_img {
-  @apply 2xl:w-[373px] 2xl:h-[300px] xl:w-[250px] h-auto lg:w-[190px] md:w-[260px] mx-0
+  @apply 2xl:w-[373px] 2xl:h-[300px] xl:w-[250px] h-auto lg:w-[190px] md:w-[260px] mx-0 rounded-[10px]
 }
 
 .fourth_title {
@@ -233,7 +234,7 @@ td {
 }
 
 .six_img {
-  @apply 2xl:w-[327px] 2xl:h-[242px] xl:w-[210px] xl:h-auto lg:w-[160px] lg:h-auto sm:w-full my-4
+  @apply 2xl:w-[327px] 2xl:h-[242px] xl:w-[210px] xl:h-auto lg:w-[160px] lg:h-auto sm:w-full my-4 rounded-[5px]
 }
 
 .six_p {
@@ -250,7 +251,7 @@ td {
 }
 
 .seven_img {
-  @apply 2xl:w-[286px] 2xl:h-[323px] xl:w-[200px] h-auto lg:w-[200px] md:w-[200px]
+  @apply 2xl:w-[286px] 2xl:h-[323px] xl:w-[200px] h-auto lg:w-[200px] md:w-[200px] rounded-[15px]
 }
 
 .seven_name {

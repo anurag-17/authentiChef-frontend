@@ -2,25 +2,25 @@ import dynamic from "next/dynamic";
 import React from "react";
 import Image from "next/image";
 import logo from "../assets/logo.png.png";
-import food1 from "../assets/Rectangle51.png";
-import food2 from "../assets/Rectangle52.png";
-import food3 from "../assets/Rectangle53.png";
-import food4 from "../assets/Rectangle54.png";
-import food5 from "../assets/Rectangle55.png";
-import food6 from "../assets/Rectangle56.png";
+import food1 from "../assets/Cuisine-india.png";
+import food2 from "../assets/Cuisine-American.png";
+import food3 from "../assets/Cuisine-Mexican.png";
+import food4 from "../assets/cuisine-Mediterranean.png";
+import food5 from "../assets/cuisine-Italian.png";
+import food6 from "../assets/cuisine-MiddleEastern.png";
 import maggie from "../assets/maggie.png";
 import calen from "../assets/calender.png";
 import microweb from "../assets/microweb.png";
-import person1 from "../assets/Rectangle7.png";
-import person2 from "../assets/Rectangle11.png";
-import person3 from "../assets/Rectangle12.png";
-import person4 from "../assets/Rectangle13.png";
-import person5 from "../assets/Rectangle18.png";
-import eightPoster from "../assets/Rectangle82.png";
-import plate1 from "../assets/Rectangle86.jpg";
-import plate2 from "../assets/Rectangle87.png";
-import plate3 from "../assets/Rectangle88.png";
-import plate4 from "../assets/Rectangle89.png";
+import person1 from "../assets/Chef-Roger-Hendrics.png";
+import person2 from "../assets/Chef-Jason-Bosh.png";
+import person3 from "../assets/Chef-Mathew-Kaymer.png";
+import person4 from "../assets/Chef-Scarlet-Carter.png";
+import person5 from "../assets/Chef-Karan-Malhotra.png";
+import eightPoster from "../assets/Food-Safety.png";
+import plate1 from "../assets/OurCommitment-1st.png";
+import plate2 from "../assets/OurCommitment-2nd.png";
+import plate3 from "../assets/OurCommitment-3rd.png";
+import plate4 from "../assets/OurCommitment-4rt.png";
 import review1 from "../assets/Ellipse31.png";
 import review2 from "../assets/Ellipse32.png";
 import review3 from "../assets/Ellipse33.png";
@@ -29,14 +29,14 @@ import linkedin from "../../../public/images/in.svg";
 import insta from "../../../public/images/insta.svg";
 import twiter from "../../../public/images/twiter.svg";
 import google from "../../../public/images/google.svg";
-import Rectangle1 from "../assets/Rectangle62.png";
-import Rectangle2 from "../assets/Rectangle114.webp";
-import Rectangle3 from "../assets/Rectangle115.png";
-import Rectangle4 from "../assets/Rectangle116.png";
-import Rectangle5 from "../assets/Rectangle117.webp";
-import Rectangle6 from "../assets/Rectangle118.webp";
-import Rectangle7 from "../assets/Rectangle119.png";
-import Rectangle8 from "../assets/Rectangle120.webp";
+import Rectangle1 from "../assets/PopularDishes-Spaghetti.png";
+import Rectangle2 from "../assets/PopularDishes-Cheesesandwich.png";
+import Rectangle3 from "../assets/PopularDishes-Chickenkabab.png";
+import Rectangle4 from "../assets/PopularDishes-Paneerbuttermasala.png";
+import Rectangle5 from "../assets/PopularDishes-IndianThali.png";
+import Rectangle6 from "../assets/PopularDishes-omelettesandwich.png";
+import Rectangle7 from "../assets/PopularDishes-Chickenkabab2nd.png";
+import Rectangle8 from "../assets/PopularDishes-fish.png";
 import p1 from "../assets/Ellipse119.png";
 import p2 from "../assets/Ellipse220.png";
 import p3 from "../assets/Ellipse321.png";
@@ -50,7 +50,7 @@ import Head from "next/head";
 const LandingPage = () => {
   return (
     <>
-      <section>
+      <section className="">
         <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
@@ -64,7 +64,7 @@ const LandingPage = () => {
               <Image alt="image" src={logo} className="nav_logo" />
             </div>
             <div className="flex md:gap-7  gap-2">
-              <button className="nav_login">Log Inn</button>
+              <button className="nav_login">Log In</button>
               <button className="nav_signup">Sign Up</button>
             </div>
           </div>
@@ -181,10 +181,10 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="flex justify-center 2xl:my-10 xl:my-8 lg:my-5">
-              <div className="carousel rounded-box 2xl:gap-14 xl:gap-7 lg:gap-5">
+              <div className="carousel  2xl:gap-14 xl:gap-7 lg:gap-5">
                 <div className="">
                   <Image
-                    className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food1}
                     alt="image"
                   />
@@ -198,7 +198,7 @@ const LandingPage = () => {
                 <div className="">
                   <Image
                     alt="image"
-                    className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food2}
                   />
                   <h1
@@ -211,7 +211,7 @@ const LandingPage = () => {
                 <div className="">
                   <Image
                     alt="image"
-                    className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food3}
                   />
                   <h1
@@ -224,7 +224,7 @@ const LandingPage = () => {
                 <div className="">
                   <Image
                     alt="image"
-                    className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food4}
                   />
                   <h1
@@ -237,7 +237,7 @@ const LandingPage = () => {
                 <div className="">
                   <Image
                     alt="image"
-                    className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food5}
                   />
                   <h1
@@ -250,7 +250,7 @@ const LandingPage = () => {
                 <div className="">
                   <Image
                     alt="image"
-                    className="2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food6}
                   />
                   <h1
@@ -564,8 +564,7 @@ const LandingPage = () => {
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
                     <Image
-                      height={242}
-                      width={328}
+                     
                       alt="image"
                       src={plate1}
                       className="six_img "
@@ -670,7 +669,7 @@ const LandingPage = () => {
               <Image
                 alt="image"
                 src={eightPoster}
-                className="2xl:w-[814px] 2xl:h-[507px] w-auto h-auto mx-auto"
+                className="2xl:w-[814px] 2xl:h-[507px] w-auto h-auto mx-auto rounded-[15px]"
               />{" "}
             </div>
           </div>
