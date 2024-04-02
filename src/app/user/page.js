@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import Image from "next/image";
-import logo from "../assets/logo.png.png";
+import logo from "../assets/logo.png";
 import food1 from "../assets/cuisine-india.png";
 import food2 from "../assets/cuisine-american.png";
 import food3 from "../assets/cuisine-mexican.png";
@@ -535,7 +535,8 @@ const LandingPage = () => {
                     <Image
                       alt="image"
                       src={microweb}
-                      className="mx-auto 2xl:w-[94px] 2xl:h-[94px] xl:w-[50px] xl:h-[60px] lg:w-[40px] lg:h-[50px] sm:w-[40px] sm:h-[50px] w-[35px] h-[35px]"
+                      className="mx-auto 2xl:w-[94px] 2xl:h-[calculated_height_2xl] xl:w-[50px] xl:h-[calculated_height_xl] lg:w-[40px] lg:h-[calculated_height_lg] sm:w-[40px] sm:h-[calculated_height_sm] w-[35px] h-[calculated_height_default];
+"
                     />
                   </div>
                   <h1 className="five_head2">Heat and enjoy the experience</h1>
