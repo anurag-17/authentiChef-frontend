@@ -61,12 +61,12 @@ const LandingPage = () => {
               />
             </div>
             <div className="w-1/3 ">
-             <a href="#">
-             <Image alt="logo" src={logo} className="nav_logo" />
-             </a>
+              <a href="#">
+                <Image alt="logo" src={logo} className="nav_logo" />
+              </a>
             </div>
             <div className="flex md:gap-7  gap-2">
-              <button className="nav_login">Log In</button>
+              <button className="nav_login">Log Inn</button>
               <button className="nav_signup">Sign Up</button>
             </div>
           </div>
