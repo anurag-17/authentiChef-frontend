@@ -123,7 +123,11 @@ const LandingPage = () => {
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
                   <div className="">
-                    <select className="2xl:w-[153px]  third_select  ">
+                    <label for="cuisines">All Cuisines:</label>
+                    <select
+                      id="cuisines"
+                      className="2xl:w-[153px] third_select"
+                    >
                       <option disabled selected>
                         All Cuisines
                       </option>
@@ -132,8 +136,10 @@ const LandingPage = () => {
                       <option>c</option>
                     </select>
                   </div>
+
                   <div className="">
-                    <select className="2xl:w-[126px] third_select">
+                    <label for="dietary">Dietary:</label>
+                    <select id="dietary" className="2xl:w-[126px] third_select">
                       <option disabled selected>
                         Dietary
                       </option>
@@ -142,16 +148,22 @@ const LandingPage = () => {
                       <option>f</option>
                     </select>
                   </div>
+
                   <div className="">
-                    <select className="2xl:w-[143px] third_select ">
+                    <label for="moreFilters">More Filters:</label>
+                    <select
+                      id="moreFilters"
+                      className="2xl:w-[143px] third_select"
+                    >
                       <option disabled selected>
-                        More fiters
+                        More filters
                       </option>
                       <option>x</option>
                       <option>y</option>
                       <option>z</option>
                     </select>
                   </div>
+
                   <div className="relative">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
