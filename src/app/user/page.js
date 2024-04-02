@@ -21,9 +21,9 @@ import plate1 from "../assets/ourcommitment-1st.png";
 import plate2 from "../assets/ourcommitment-2nd.png";
 import plate3 from "../assets/ourcommitment-3rd.png";
 import plate4 from "../assets/ourcommitment-4rt.png";
-import review1 from "../assets/ellipse31.png";
-import review2 from "../assets/ellipse32.png";
-import review3 from "../assets/ellipse33.png";
+import review1 from "../assets/testimonials-chef-mayank.png";
+import review2 from "../assets/testimonials-chef-rohit.png";
+import review3 from "../assets/testimonials-chef-shubham.png";
 import fb from "../../../public/images/fb.svg";
 import linkedin from "../../../public/images/in.svg";
 import insta from "../../../public/images/insta.svg";
@@ -61,7 +61,7 @@ const LandingPage = () => {
               />
             </div>
             <div className="w-1/3 ">
-              <Image alt="image" src={logo} className="nav_logo" />
+              <Image alt="logo" src={logo} className="nav_logo" />
             </div>
             <div className="flex md:gap-7  gap-2">
               <button className="nav_login">Log In</button>
@@ -183,7 +183,7 @@ const LandingPage = () => {
                   <Image
                     className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food1}
-                    alt="image"
+                    alt="cuisine-india"
                   />
                   <h1
                     className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:my-4 xl:text-[14px] xl:leading-[20px] xl:my-4
@@ -194,7 +194,7 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
-                    alt="image"
+                    alt="cuisine-american"
                     className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food2}
                   />
@@ -207,7 +207,7 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
-                    alt="image"
+                    alt="cuisine-mexican"
                     className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food3}
                   />
@@ -220,7 +220,7 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
-                    alt="image"
+                    alt="cuisine-mediterranean"
                     className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food4}
                   />
@@ -233,7 +233,7 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
-                    alt="image"
+                    alt="cuisine-italian"
                     className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food5}
                   />
@@ -246,7 +246,7 @@ const LandingPage = () => {
                 </div>
                 <div className="">
                   <Image
-                    alt="image"
+                    alt="cuisine-middleEastern"
                     className="rounded-[5px] 2xl:w-[216px] 2xl:h-[216px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
                     src={food6}
                   />
@@ -271,7 +271,7 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row justify-center flex-wrap lg:justify-between md:my-5 lg:my-0">
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 ">
                 <div>
-                  <Image alt="image" src={Rectangle1} className="four_img "  />
+                  <Image alt="spaghetti" src={Rectangle1} className="four_img "  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5">
                   <div>
@@ -296,7 +296,7 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="image" src={Rectangle2} className="four_img" />
+                  <Image alt="cheesesandwich" src={Rectangle2} className="four_img" />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -323,7 +323,7 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="image" src={Rectangle3} className="four_img" />
+                  <Image alt="chickenkabab" src={Rectangle3} className="four_img" />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -348,7 +348,7 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="image" src={Rectangle4} className="four_img" />
+                  <Image alt="paneerbuttermasala" src={Rectangle4} className="four_img" />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -373,7 +373,7 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="image" src={Rectangle5} className="four_img" />
+                  <Image alt="indianthali" src={Rectangle5} className="four_img" />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -398,7 +398,7 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="image" src={Rectangle6} className="four_img" />
+                  <Image alt="omelettesandwich" src={Rectangle6} className="four_img" />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -425,7 +425,7 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="image" src={Rectangle7} className="four_img" />
+                  <Image alt="chickenkabab2nd" src={Rectangle7} className="four_img" />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto"></div>
                 <div>
@@ -449,7 +449,7 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="image" src={Rectangle8} className="four_img" />
+                  <Image alt="fish" src={Rectangle8} className="four_img" />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -561,8 +561,7 @@ const LandingPage = () => {
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
                     <Image
-                     
-                      alt="image"
+                      alt="ourcommitmentimg"
                       src={plate1}
                       className="six_img "
                     />
@@ -575,7 +574,7 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image alt="image" src={plate2} className="six_img" />
+                    <Image alt="ourcommitmentimg" src={plate2} className="six_img" />
 
                     <p className="six_p">
                       No dish will be made in a factory or in a large-scale
@@ -585,7 +584,7 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image alt="image" src={plate3} className="six_img" />
+                    <Image alt="ourcommitmentimg" src={plate3} className="six_img" />
 
                     <p className="six_p">
                       Small batch cooking to ensure the highest quality dish,
@@ -595,7 +594,7 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image alt="image" src={plate4} className="six_img" />
+                    <Image alt="ourcommitmentimg" src={plate4} className="six_img" />
 
                     <p className="six_p">
                       Use vegan packaging materials ensuring food safety
@@ -618,23 +617,23 @@ const LandingPage = () => {
             </p>
             <div className="flex justify-between md:my-5 lg:my-10">
               <div className="w-[160px] lg:w-[286px]">
-                <Image alt="image" src={person1} className="seven_img" />
+                <Image alt="person1" src={person1} className="seven_img" />
                 <h2 className="seven_name">Uncle Roger Hendrics</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image alt="image" src={person2} className="seven_img" />
+                <Image alt="person2" src={person2} className="seven_img" />
                 <h2 className="seven_name">Jason Bosh</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image alt="image" src={person3} className="seven_img" />
+                <Image alt="person3" src={person3} className="seven_img" />
                 <h2 className="seven_name">Mathew Kaymer</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image alt="image" src={person4} className="seven_img" />
+                <Image alt="person4" src={person4} className="seven_img" />
                 <h2 className="seven_name">Scarlet Carter</h2>
               </div>
               <div className="w-[160px] lg:w-[286px]">
-                <Image alt="image" src={person5} className="seven_img" />
+                <Image alt="person5" src={person5} className="seven_img" />
                 <h2 className="seven_name">Karan Malhotra</h2>
               </div>
             </div>
@@ -684,7 +683,7 @@ const LandingPage = () => {
               <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                 <div>
                   <div>
-                    <Image alt="image" src={review1} className="nine_img" />
+                    <Image alt="chef-mayank" src={review1} className="nine_img" />
                   </div>
                   <div className="rating flex justify-center nine_start">
                     <input
@@ -725,7 +724,7 @@ const LandingPage = () => {
               <div>
                 <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                   <div>
-                    <Image alt="image" src={review2} className="nine_img" />
+                    <Image alt="chef-rohit" src={review2} className="nine_img" />
                   </div>
                   <div className="rating flex justify-center nine_start">
                     <input
@@ -766,7 +765,7 @@ const LandingPage = () => {
               <div>
                 <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                   <div>
-                    <Image alt="image" src={review3} className="nine_img" />
+                    <Image alt="chef-shubham" src={review3} className="nine_img" />
                   </div>
                   <div className="rating flex justify-center  nine_start">
                     <input

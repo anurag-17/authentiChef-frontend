@@ -407,7 +407,7 @@ const Products = ({ item }) => {
                           <Image
                             src={item.image}
                             alt={item.name}
-                            className="2xl:w-[70px] 2xl:h-[70px] xl:w-[50px] xl:h-[50px] lg:w-[40px] lg:h-[40px]"
+                            className="2xl:w-[70px] 2xl:h-[70px] xl:w-[50px] xl:h-[50px] lg:w-[40px] lg:h-[40px] rounded-[5.8px]"
                           />
                           <div>
                             <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[18px] 2xl:leading-[28px]  xl:text-[12px] xl:leading-[20px] lg:text-[10px] lg:leading-[18px]">
