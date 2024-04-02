@@ -61,7 +61,9 @@ const LandingPage = () => {
               />
             </div>
             <div className="w-1/3 ">
-              <Image alt="logo" src={logo} className="nav_logo" />
+             <a href="#">
+             <Image alt="logo" src={logo} className="nav_logo" />
+             </a>
             </div>
             <div className="flex md:gap-7  gap-2">
               <button className="nav_login">Log In</button>
@@ -78,7 +80,7 @@ const LandingPage = () => {
                 Where’s your next food destination?
               </h1>
               <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
-                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
+                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 hover:bg-transparent hover:border hover:text-[#DB5353] hover:border-[#DB5353] ">
                   Explore Dishes
                 </button>
               </div>
@@ -927,29 +929,49 @@ const LandingPage = () => {
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
                 <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Quick Links</h1>
-                  <p className="footer_text">Our Story</p>
-                  <p className="footer_text">Food Safety</p>
-                  <p className="footer_text">Help Center</p>
-                  <p className="footer_text">Global Cuisines</p>
+                  <a href="#">
+                    <p className="footer_text">Our Story</p>
+                  </a>
+                  <a href="#">
+                    <p className="footer_text">Food Safety</p>
+                  </a>
+                  <a href="#">
+                    <p className="footer_text">Help Center</p>
+                  </a>
+                  <a href="#">
+                    <p className="footer_text">Global Cuisines</p>
+                  </a>
                 </div>
               </div>
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
                 <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Resources</h1>
-                  <p className="footer_text">
-                    Become a chef
+                  <a href="#">
+                    <p className="footer_text">Become a chef</p>
+                  </a>
+                  <a href="#">
                     <p className="footer_text">Browse more chef</p>
+                  </a>
+                  <a href="#">
                     <p className="footer_text">Homemade food delivery</p>
-                  </p>
+                  </a>
                 </div>
               </div>
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
                 <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Other Links</h1>
-                  <p className="footer_text">Log In</p>
-                  <p className="footer_text">Sign Up</p>
-                  <p className="footer_text">Privacy Policy</p>
-                  <p className="footer_text">Terms of Service</p>
+                  <a href="#">
+                    <p className="footer_text">Log In</p>
+                  </a>
+                  <a href="#">
+                    <p className="footer_text">Sign Up</p>
+                  </a>
+                  <a href="#">
+                    <p className="footer_text">Privacy Policy</p>
+                  </a>
+                  <a href="#">
+                    <p className="footer_text">Terms of Service</p>
+                  </a>
                 </div>
               </div>
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-4 lg:my-0">
@@ -1021,9 +1043,11 @@ const LandingPage = () => {
             <div>
               <div className="flex flex-col sm:flex-row justify-center sm:justify-between 2xl:my-5 xl:my-3 lg:my-2 sm:my-2">
                 <h1 className="footer_text_b ">
-                  © 2024 Authentichef | All Rights Reserved
+                  © 2024 Authentichef | All Rights Reserved.
                 </h1>
-                <h1 className="footer_text_b ">Developed by ControlF5</h1>
+                <a href="https://www.controlf5.in/">
+                  <h1 className="footer_text_b ">Developed by ControlF5.</h1>
+                </a>
               </div>
             </div>
           </div>
