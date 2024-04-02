@@ -137,9 +137,9 @@ const LandingPage = () => {
                       <option disabled selected>
                         Dietary
                       </option>
-                      <option>a</option>
-                      <option>b</option>
-                      <option>c</option>
+                      <option>d</option>
+                      <option>e</option>
+                      <option>f</option>
                     </select>
                   </div>
                   <div className="">
@@ -147,9 +147,9 @@ const LandingPage = () => {
                       <option disabled selected>
                         More fiters
                       </option>
-                      <option>a</option>
-                      <option>b</option>
-                      <option>c</option>
+                      <option>x</option>
+                      <option>y</option>
+                      <option>z</option>
                     </select>
                   </div>
                   <div className="relative">
@@ -731,46 +731,47 @@ const LandingPage = () => {
                     />
                   </div>
                   <div className="rating flex justify-center nine_start">
-                    <input
-                      type="radio"
-                      id="star1"
-                      name="rating-2"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star1"></label>
-
-                    <input
-                      type="radio"
-                      id="star2"
-                      name="rating-2"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star2"></label>
-
-                    <input
-                      type="radio"
-                      id="star3"
-                      name="rating-2"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star3"></label>
-
-                    <input
-                      type="radio"
-                      id="star4"
-                      name="rating-2"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star4"></label>
-
-                    <input
-                      type="radio"
-                      id="star5"
-                      name="rating-2"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                      checked
-                    />
-                    <label for="star5"></label>
+                    <label for="star1">
+                      <input
+                        type="radio"
+                        id="star1"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star2">
+                      <input
+                        type="radio"
+                        id="star2"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star3">
+                      <input
+                        type="radio"
+                        id="star3"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star4">
+                      <input
+                        type="radio"
+                        id="star4"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star5">
+                      <input
+                        type="radio"
+                        id="star5"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                        checked
+                      />
+                    </label>
                   </div>
 
                   <p className="nine_p2">
@@ -791,46 +792,47 @@ const LandingPage = () => {
                     />
                   </div>
                   <div className="rating flex justify-center nine_start">
-                    <input
-                      type="radio"
-                      id="star1"
-                      name="rating-3"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star1"></label>
-
-                    <input
-                      type="radio"
-                      id="star2"
-                      name="rating-3"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star2"></label>
-
-                    <input
-                      type="radio"
-                      id="star3"
-                      name="rating-3"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star3"></label>
-
-                    <input
-                      type="radio"
-                      id="star4"
-                      name="rating-3"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star4"></label>
-
-                    <input
-                      type="radio"
-                      id="star5"
-                      name="rating-3"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                      checked
-                    />
-                    <label for="star5"></label>
+                    <label for="star1">
+                      <input
+                        type="radio"
+                        id="star1"
+                        name="rating-3"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star2">
+                      <input
+                        type="radio"
+                        id="star2"
+                        name="rating-3"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star3">
+                      <input
+                        type="radio"
+                        id="star3"
+                        name="rating-3"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star4">
+                      <input
+                        type="radio"
+                        id="star4"
+                        name="rating-3"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star5">
+                      <input
+                        type="radio"
+                        id="star5"
+                        name="rating-3"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                        checked
+                      />
+                    </label>
                   </div>
 
                   <p className="nine_p2">
@@ -851,46 +853,47 @@ const LandingPage = () => {
                     />
                   </div>
                   <div className="rating flex justify-center nine_start">
-                    <input
-                      type="radio"
-                      id="star1"
-                      name="rating-4"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star1"></label>
-
-                    <input
-                      type="radio"
-                      id="star2"
-                      name="rating-4"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star2"></label>
-
-                    <input
-                      type="radio"
-                      id="star3"
-                      name="rating-4"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star3"></label>
-
-                    <input
-                      type="radio"
-                      id="star4"
-                      name="rating-4"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                    />
-                    <label for="star4"></label>
-
-                    <input
-                      type="radio"
-                      id="star5"
-                      name="rating-4"
-                      className="mask mask-star-2 bg-[#DB5353]"
-                      checked
-                    />
-                    <label for="star5"></label>
+                    <label for="star1">
+                      <input
+                        type="radio"
+                        id="star1"
+                        name="rating-4"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star2">
+                      <input
+                        type="radio"
+                        id="star2"
+                        name="rating-4"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star3">
+                      <input
+                        type="radio"
+                        id="star3"
+                        name="rating-4"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star4">
+                      <input
+                        type="radio"
+                        id="star4"
+                        name="rating-4"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                      />
+                    </label>
+                    <label for="star5">
+                      <input
+                        type="radio"
+                        id="star5"
+                        name="rating-4"
+                        className="mask mask-star-2 bg-[#DB5353]"
+                        checked
+                      />
+                    </label>
                   </div>
 
                   <p className="nine_p2">
