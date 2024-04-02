@@ -330,7 +330,7 @@ const Products = ({ item }) => {
                     key={item.id}
                     className="bg-white  my-5 2xl:w-[365.5px] 2xl:h-[503px] xl:w-[31%] xl:h-[360px] md:w-[31%] lg:h-[300px] h-[300px] relative  rounded-[9.8px] "
                   >
-                    {" "}
+         
                     <Image
                       src={item.image}
                       alt={item.title}
