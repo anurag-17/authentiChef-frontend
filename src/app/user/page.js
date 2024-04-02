@@ -271,7 +271,11 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row justify-center flex-wrap lg:justify-between md:my-5 lg:my-0">
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 ">
                 <div>
-                  <Image alt="spaghetti" src={Rectangle1} className="four_img "  />
+                  <Image
+                    alt="spaghetti"
+                    src={Rectangle1}
+                    className="four_img "
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5">
                   <div>
@@ -296,7 +300,11 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="cheesesandwich" src={Rectangle2} className="four_img" />
+                  <Image
+                    alt="cheesesandwich"
+                    src={Rectangle2}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -323,7 +331,11 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="chickenkabab" src={Rectangle3} className="four_img" />
+                  <Image
+                    alt="chickenkabab"
+                    src={Rectangle3}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -348,7 +360,11 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="paneerbuttermasala" src={Rectangle4} className="four_img" />
+                  <Image
+                    alt="paneerbuttermasala"
+                    src={Rectangle4}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -373,7 +389,11 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="indianthali" src={Rectangle5} className="four_img" />
+                  <Image
+                    alt="indianthali"
+                    src={Rectangle5}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -398,7 +418,11 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="omelettesandwich" src={Rectangle6} className="four_img" />
+                  <Image
+                    alt="omelettesandwich"
+                    src={Rectangle6}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto">
                   <div>
@@ -425,7 +449,11 @@ const LandingPage = () => {
 
               <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
                 <div>
-                  <Image alt="chickenkabab2nd" src={Rectangle7} className="four_img" />
+                  <Image
+                    alt="chickenkabab2nd"
+                    src={Rectangle7}
+                    className="four_img"
+                  />
                 </div>
                 <div className="2xl:my-5 xl:my-5  my-5 mx-auto"></div>
                 <div>
@@ -575,7 +603,11 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image alt="ourcommitmentimg" src={plate2} className="six_img" />
+                    <Image
+                      alt="ourcommitmentimg"
+                      src={plate2}
+                      className="six_img"
+                    />
 
                     <p className="six_p">
                       No dish will be made in a factory or in a large-scale
@@ -585,7 +617,11 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image alt="ourcommitmentimg" src={plate3} className="six_img" />
+                    <Image
+                      alt="ourcommitmentimg"
+                      src={plate3}
+                      className="six_img"
+                    />
 
                     <p className="six_p">
                       Small batch cooking to ensure the highest quality dish,
@@ -595,7 +631,11 @@ const LandingPage = () => {
                 </div>
                 <div className="lg:w-1/2 flex 2xl:my-10 ">
                   <div className="my-3 lg:my-0 lg:flex items-center">
-                    <Image alt="ourcommitmentimg" src={plate4} className="six_img" />
+                    <Image
+                      alt="ourcommitmentimg"
+                      src={plate4}
+                      className="six_img"
+                    />
 
                     <p className="six_p">
                       Use vegan packaging materials ensuring food safety
@@ -684,36 +724,55 @@ const LandingPage = () => {
               <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                 <div>
                   <div>
-                    <Image alt="chef-mayank" src={review1} className="nine_img" />
+                    <Image
+                      alt="chef-mayank"
+                      src={review1}
+                      className="nine_img"
+                    />
                   </div>
                   <div className="rating flex justify-center nine_start">
                     <input
                       type="radio"
+                      id="star1"
                       name="rating-2"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star1"></label>
+
                     <input
                       type="radio"
+                      id="star2"
                       name="rating-2"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star2"></label>
+
                     <input
                       type="radio"
+                      id="star3"
                       name="rating-2"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star3"></label>
+
                     <input
                       type="radio"
+                      id="star4"
                       name="rating-2"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star4"></label>
+
                     <input
                       type="radio"
+                      id="star5"
                       name="rating-2"
                       className="mask mask-star-2 bg-[#DB5353]"
                       checked
                     />
+                    <label for="star5"></label>
                   </div>
+
                   <p className="nine_p2">
                     Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem
                     odio Quis 33 galisum molestias ut voluptas fuga et quia
@@ -725,36 +784,55 @@ const LandingPage = () => {
               <div>
                 <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                   <div>
-                    <Image alt="chef-rohit" src={review2} className="nine_img" />
+                    <Image
+                      alt="chef-rohit"
+                      src={review2}
+                      className="nine_img"
+                    />
                   </div>
                   <div className="rating flex justify-center nine_start">
                     <input
                       type="radio"
+                      id="star1"
                       name="rating-3"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star1"></label>
+
                     <input
                       type="radio"
+                      id="star2"
                       name="rating-3"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star2"></label>
+
                     <input
                       type="radio"
+                      id="star3"
                       name="rating-3"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star3"></label>
+
                     <input
                       type="radio"
+                      id="star4"
                       name="rating-3"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star4"></label>
+
                     <input
                       type="radio"
+                      id="star5"
                       name="rating-3"
                       className="mask mask-star-2 bg-[#DB5353]"
                       checked
                     />
+                    <label for="star5"></label>
                   </div>
+
                   <p className="nine_p2">
                     Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem
                     odio Quis 33 galisum molestias ut voluptas fuga et quia
@@ -766,36 +844,55 @@ const LandingPage = () => {
               <div>
                 <div className="w-2/4 sm:w-1/3 mx-auto my-5 lg:my-0 lg:mx-0 lg:w-auto">
                   <div>
-                    <Image alt="chef-shubham" src={review3} className="nine_img" />
+                    <Image
+                      alt="chef-shubham"
+                      src={review3}
+                      className="nine_img"
+                    />
                   </div>
-                  <div className="rating flex justify-center  nine_start">
+                  <div className="rating flex justify-center nine_start">
                     <input
                       type="radio"
+                      id="star1"
                       name="rating-4"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star1"></label>
+
                     <input
                       type="radio"
+                      id="star2"
                       name="rating-4"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star2"></label>
+
                     <input
                       type="radio"
+                      id="star3"
                       name="rating-4"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star3"></label>
+
                     <input
                       type="radio"
+                      id="star4"
                       name="rating-4"
                       className="mask mask-star-2 bg-[#DB5353]"
                     />
+                    <label for="star4"></label>
+
                     <input
                       type="radio"
+                      id="star5"
                       name="rating-4"
                       className="mask mask-star-2 bg-[#DB5353]"
                       checked
                     />
+                    <label for="star5"></label>
                   </div>
+
                   <p className="nine_p2">
                     Lorem ipsum dolor sit amet. Ut maxime necessitatibus rem
                     odio Quis 33 galisum molestias ut voluptas fuga et quia
