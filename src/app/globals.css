@@ -259,7 +259,7 @@ td {
 }
 
 .seven_btn {
-  @apply alata font-[400] hover:bg-transparent hover:border hover:text-[#DB5353] hover:border-[#DB5353] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:w-[160px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] lg:w-[140px] lg:h-[30px] lg:text-[14px] lg:leading-[25px];
+  @apply alata font-[400] hover:bg-[#7e2727] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:w-[160px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] lg:w-[140px] lg:h-[30px] lg:text-[14px] lg:leading-[25px];
 }
 
 /* =================Eight================= */
@@ -272,7 +272,7 @@ td {
 }
 
 .eight_btn {
-  @apply alata font-[400] bg-[#DB5353] hover:bg-white hover:border hover:text-[#DB5353] hover:border-[#DB5353] text-white mx-auto lg:mx-0 rounded-[5px] 2xl:w-[310px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] 2xl:my-20 xl:w-[200px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] xl:my-14 lg:w-[180px] lg:h-[30px] lg:text-[14px] lg:leading-[25px] lg:my-10 w-[180px] h-[30px] text-[14px] leading-[25px] my-5;
+  @apply alata font-[400] bg-[#DB5353] hover:bg-[#7e2727] text-white mx-auto lg:mx-0 rounded-[5px] 2xl:w-[310px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] 2xl:my-20 xl:w-[200px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] xl:my-14 lg:w-[180px] lg:h-[30px] lg:text-[14px] lg:leading-[25px] lg:my-10 w-[180px] h-[30px] text-[14px] leading-[25px] my-5;
 }
 
 /* =================Nine================= */

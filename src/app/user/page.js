@@ -80,7 +80,7 @@ const LandingPage = () => {
                 Where’s your next food destination?
               </h1>
               <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
-                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 hover:bg-transparent hover:border hover:text-[#DB5353] hover:border-[#DB5353] ">
+                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 hover:bg-[#7e2727]  ">
                   Explore Dishes
                 </button>
               </div>
