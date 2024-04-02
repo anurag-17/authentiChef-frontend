@@ -750,7 +750,6 @@ const LandingPage = () => {
                         name="rating-2"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      1
                     </label>
                     <label for="star2">
                       <input
@@ -759,7 +758,6 @@ const LandingPage = () => {
                         name="rating-2"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      2
                     </label>
                     <label for="star3">
                       <input
@@ -768,7 +766,6 @@ const LandingPage = () => {
                         name="rating-2"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      3
                     </label>
                     <label for="star4">
                       <input
@@ -777,7 +774,6 @@ const LandingPage = () => {
                         name="rating-2"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      4
                     </label>
                     <label for="star5">
                       <input
@@ -787,7 +783,6 @@ const LandingPage = () => {
                         className="mask mask-star-2 bg-[#DB5353]"
                         checked
                       />
-                      5
                     </label>
                   </div>
 
@@ -816,7 +811,6 @@ const LandingPage = () => {
                         name="rating-3"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      1
                     </label>
                     <label for="star2">
                       <input
@@ -825,7 +819,6 @@ const LandingPage = () => {
                         name="rating-3"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      2
                     </label>
                     <label for="star3">
                       <input
@@ -834,7 +827,6 @@ const LandingPage = () => {
                         name="rating-3"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      3
                     </label>
                     <label for="star4">
                       <input
@@ -843,7 +835,6 @@ const LandingPage = () => {
                         name="rating-3"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      4
                     </label>
                     <label for="star5">
                       <input
@@ -853,7 +844,6 @@ const LandingPage = () => {
                         className="mask mask-star-2 bg-[#DB5353]"
                         checked
                       />
-                      5
                     </label>
                   </div>
 
@@ -882,7 +872,6 @@ const LandingPage = () => {
                         name="rating-4"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      1
                     </label>
                     <label for="star2">
                       <input
@@ -891,7 +880,6 @@ const LandingPage = () => {
                         name="rating-4"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      2
                     </label>
                     <label for="star3">
                       <input
@@ -900,7 +888,6 @@ const LandingPage = () => {
                         name="rating-4"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      3
                     </label>
                     <label for="star4">
                       <input
@@ -909,7 +896,6 @@ const LandingPage = () => {
                         name="rating-4"
                         className="mask mask-star-2 bg-[#DB5353]"
                       />
-                      4
                     </label>
                     <label for="star5">
                       <input
@@ -919,7 +905,6 @@ const LandingPage = () => {
                         className="mask mask-star-2 bg-[#DB5353]"
                         checked
                       />
-                      5
                     </label>
                   </div>
 
