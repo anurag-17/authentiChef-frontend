@@ -290,9 +290,9 @@ td {
 
 .nine_img {
   @apply 2xl:w-[92px] 2xl:h-[92px] mx-auto xl:w-[55px] xl:h-[55px] lg:w-[50px] lg:h-[50px] w-[50px] h-[50px]
-}nav_logo
+}
 
-.nine_p2 {
+.nine_p2{
   @apply alata font-[400] text-center 2xl:w-[352px] 2xl:text-[18px] 2xl:leading-[28px] 2xl:my-5 xl:w-[280px] xl:text-[14px] xl:leading-[20px] xl:my-5 lg:w-[230px] lg:text-[12px] lg:leading-[18px] lg:my-4 text-[12px] leading-[18px] my-2
 }
 
