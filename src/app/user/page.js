@@ -1045,7 +1045,7 @@ const LandingPage = () => {
                 <h1 className="footer_text_b ">
                   © 2024 Authentichef | All Rights Reserved.
                 </h1>
-                <a href="https://www.controlf5.in/">
+                <a href="https://www.controlf5.in/" target="_blank">
                   <h1 className="footer_text_b ">Developed by ControlF5.</h1>
                 </a>
               </div>
