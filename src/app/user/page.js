@@ -65,7 +65,7 @@ const LandingPage = () => {
               </a>
             </div>
             <div className="flex md:gap-7  gap-2">
-              <button className="nav_login">Log Inn</button>
+              <button className="nav_login">Log In</button>
               <button className="nav_signup">Sign Up</button>
             </div>
           </div>
