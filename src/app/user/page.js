@@ -45,7 +45,6 @@ import day from "../../../public/images/day.svg";
 import sidemanu from "../../../public/images/side-menu.svg";
 import "@splidejs/react-splide/css/core";
 import Link from "next/link";
-import Head from "next/head";
 
 const LandingPage = () => {
   return (
@@ -114,6 +113,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
         {/* ===================Third================== */}
 
         <div className="flex justify-center 2xl:my-20 xl:my-14 lg:my-8 hidden lg:block">
@@ -277,6 +277,7 @@ const LandingPage = () => {
         </div>
 
         {/* ===================Four================== */}
+
         <div className="flex justify-center 2xl:my-20 xl:my-10 lg:my-10 my-10">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] ">
             <div className="flex">
@@ -660,6 +661,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
         {/* ===================Seven================== */}
 
         <div className="yellow-bg 2xl:h-[884px] xl:h-[600px] lg:h-[500px]  md:w-full lg:flex justify-center items-center hidden lg:block">
@@ -727,6 +729,7 @@ const LandingPage = () => {
         </div>
 
         {/* ===================Nine================== */}
+
         <div className="flex justify-center lg:my-14 xl:my-28 my-10">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]">
             <h1 className="nine_head">Testimonials</h1>
@@ -923,6 +926,7 @@ const LandingPage = () => {
         </div>
 
         {/* ===================Footer================== */}
+        
         <footer className="bg-[#F6F6F6] flex justify-center">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:mt-[100px] xl:mt-[50px] lg:mt-[35px] sm:mt-[30px] mt-[20px]">
             <div className="flex  md:justify-between flex-wrap">
