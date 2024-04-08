@@ -72,6 +72,7 @@ const LandingPage = () => {
         </nav>
 
         {/* ===================Second================== */}
+        
         <div className="hidden md:block 2xl:h-screen">
           <div className="poster-bg 2xl:h-[834px] h-screen flex justify-center ">
             <div className="">
@@ -592,6 +593,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
         {/* ===================Six================== */}
 
         <div className="flex justify-center 2xl:my-28 xl:my-10 lg:my-10 my-10">
@@ -926,7 +928,7 @@ const LandingPage = () => {
         </div>
 
         {/* ===================Footer================== */}
-        
+
         <footer className="bg-[#F6F6F6] flex justify-center">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:mt-[100px] xl:mt-[50px] lg:mt-[35px] sm:mt-[30px] mt-[20px]">
             <div className="flex  md:justify-between flex-wrap">
