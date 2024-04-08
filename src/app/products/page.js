@@ -153,11 +153,12 @@ const Products = ({ item }) => {
             <div className="w-1/3">
               <Image
                 src={sidemanu}
+                alt="menu-icon"
                 className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
               />
             </div>
             <div className="w-1/3 ">
-              <Image src={logo} className="nav_logo" />
+              <Image src={logo} alt="logo" className="nav_logo" />
             </div>
             <div className="flex md:gap-7  gap-2">
               <button className="nav_login">Welcome</button>
@@ -183,12 +184,14 @@ const Products = ({ item }) => {
               <div className="2xl:w-[1170px]  xl:w-[800px] lg:w-[600px] md:w-[700px] w-full px-10 md:px-0 mx-auto ">
                 <Image
                   src={foodPoster}
+                  alt="foodPoster"
                   className="2xl:w-[1167px] 2xl:h-[482px]"
                 />
                 <div className="flex 2xl:my-12 2xl:gap-8 lg:gap-3 ">
                   <div className="xl:mt-5 lg:mt-6 mt-6">
                     <Image
                       src={chef}
+                      alt="chef"
                       className="2xl:w-[154px] 2xl:h-[154px] mx-auto xl:w-[80px] xl:h-[80px] lg:w-[70px] lg:h-[70px] w-[70px] h-[70px]"
                     />
                   </div>
