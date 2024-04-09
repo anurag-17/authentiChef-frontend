@@ -561,11 +561,10 @@ const Products = ({ item }) => {
             </div>
             <hr className="2xl:mt-[56px] xl:mt-[25px] lg:mt-[15px] mt-2" />
             <div>
-              <div className="flex justify-between 2xl:my-5 xl:my-3 lg:my-2">
+              <div className="flex justify-center 2xl:my-5 xl:my-3 lg:my-2">
                 <h1 className="footer_text_b">
                   © 2024 Authentichef | All Rights Reserved
                 </h1>
-                <h1 className="footer_text_b">Developed by ControlF5</h1>
               </div>
             </div>
           </div>

@@ -1026,13 +1026,11 @@ const LandingPage = () => {
             </div>
             <hr className="2xl:mt-[56px] xl:mt-[25px] lg:mt-[15px] first-letter sm:mt-[15px] mt-[10px]" />
             <div>
-              <div className="flex flex-col sm:flex-row justify-center sm:justify-between 2xl:my-5 xl:my-3 lg:my-2 sm:my-2">
+              <div className="flex justify-center 2xl:my-5 xl:my-3 lg:my-2 sm:my-2">
                 <h1 className="footer_text_b ">
                   © 2024 Authentichef | All Rights Reserved.
                 </h1>
-                <a href="https://www.controlf5.in/" target="_blank">
-                  <h1 className="footer_text_b ">Developed by ControlF5.</h1>
-                </a>
+            
               </div>
             </div>
           </div>
