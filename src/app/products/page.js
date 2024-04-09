@@ -311,6 +311,7 @@ const Products = ({ item }) => {
                             alt={item.title}
                             className="mr-4  2xl:w-[30px] 2xl:h-[30px] xl:w-[22px] xl:h-[22px] lg:w-[18px] lg:h-[18px] w-[18px] h-[18px]"
                           />
+                          
                         </button>
                       </div>
                     </div>
