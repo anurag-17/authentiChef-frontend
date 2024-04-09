@@ -42,54 +42,43 @@ body {
   font-family: "alata";
   src: url("../../src//font/Alata/Alata-Regular.ttf");
 }
-
 .alata {
   font-family: "alata", sans-serif;
   font-style: normal;
 }
-
 .poster-bg {
   background-image: url("../../public/images/poster.webp");
   background-size: cover;
   background-position: center;
 }
-
 .poster-bg-m {
   background-image: url("../../public/images/poster-bg-m.webp");
   background-size: cover;
   background-position: center;
 }
-
 .yellow-bg {
   background-image: url("../../public/images/yellow-bg.svg");
   background-size: cover;
   background-position: center;
 }
-
 .login-input-label {
   @apply text-[#262628] font-[500] text-[14px];
 }
-
 .login-input {
   @apply w-full px-4 py-2 2xl:h-[50px] h-[48px] border border-[#E4E4E4] bg-white rounded-[3px] text-[#262628] text-[15px] font-[400px] leading-normal focus-visible:outline-none placeholder:text-[14px] placeholder:text-[#262628];
 }
-
 .login_button {
   @apply w-full bg-primary font-medium text-white p-2 rounded-lg hover:bg-white hover:text-primary hover:border hover:border-[gray-300] h-[50px] transition-all ease-in-out delay-75 duration-700 hover:border-primary;
 }
-
 .input_search {
   @apply focus-visible:outline-none border-none w-full rounded-[5px] font-normal text-[15px] text-[#6a6969] placeholder:text-[11px];
 }
-
 .search_btn {
   @apply px-6 text-[12px] h-[32px] hover:text-[#f3f3f3] bg-black text-white font-medium;
 }
-
 .clear_search_btn {
   @apply px-1 rounded text-[12px] text-[gray] border border-[#6a696917] hover:text-black mr-1;
 }
-
 .outer_table {
   @apply rounded-[10px] bg-white py-[30px] mt-[20px] p-6 overflow-x-scroll w-full;
 }
