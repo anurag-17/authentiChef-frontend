@@ -25,10 +25,8 @@ import review1 from "../assets/testimonials-chef-mayank.png";
 import review2 from "../assets/testimonials-chef-rohit.png";
 import review3 from "../assets/testimonials-chef-shubham.png";
 import fb from "../../../public/images/fb.svg";
-import linkedin from "../../../public/images/in.svg";
 import insta from "../../../public/images/insta.svg";
-import twiter from "../../../public/images/twiter.svg";
-import google from "../../../public/images/google.svg";
+import tiktok from "../../../public/images/tiktok.svg";
 import Rectangle1 from "../assets/populardishes-spaghetti.png";
 import Rectangle2 from "../assets/populardishes-cheesesandwich.png";
 import Rectangle3 from "../assets/populardishes-chickenkabab.png";
@@ -45,6 +43,7 @@ import day from "../../../public/images/day.svg";
 import sidemanu from "../../../public/images/side-menu.svg";
 import "@splidejs/react-splide/css/core";
 import Link from "next/link";
+
 
 const LandingPage = () => {
   return (
@@ -72,7 +71,7 @@ const LandingPage = () => {
         </nav>
 
         {/* ===================Second================== */}
-        
+
         <div className="hidden md:block 2xl:h-screen">
           <div className="poster-bg 2xl:h-[834px] h-screen flex justify-center ">
             <div className="">
@@ -985,7 +984,10 @@ const LandingPage = () => {
                   <h1 className="footer_heading">Connect with us</h1>
                   <div className="flex gap-2 justify-center lg:justify-start">
                     <div>
-                      <Link href="https://www.facebook.com/" target="_blank">
+                      <Link
+                        href="https://www.facebook.com/profile.php?id=61553576243338"
+                        target="_blank"
+                      >
                         <Image
                           alt="image"
                           src={fb}
@@ -993,21 +995,10 @@ const LandingPage = () => {
                         />
                       </Link>
                     </div>
+
                     <div>
                       <Link
-                        href="https://www.linkedin.com/home"
-                        target="_blank"
-                      >
-                        <Image
-                          alt="image"
-                          src={linkedin}
-                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
-                        />
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        href="https://www.instagram.com/accounts/login/"
+                        href="https://www.instagram.com/authentichef"
                         target="_blank"
                       >
                         <Image
@@ -1019,24 +1010,12 @@ const LandingPage = () => {
                     </div>
                     <div>
                       <Link
-                        href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.co.in%2F%3Fpli%3D1&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1375757007%3A1709800522255495&theme=glif"
+                        href="https://www.tiktok.com/@authentichef"
                         target="_blank"
                       >
                         <Image
                           alt="image"
-                          src={google}
-                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
-                        />
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        href="https://twitter.com/i/flow/login"
-                        target="_blank"
-                      >
-                        <Image
-                          alt="image"
-                          src={twiter}
+                          src={tiktok}
                           className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
