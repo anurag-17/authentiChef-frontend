@@ -5,16 +5,14 @@ import Image from "next/image";
 import sidemanu from "../../../public/images/side-menu.svg";
 import logo from "../../../public/images/logo.svg";
 import fb from "../../../public/images/fb.svg";
-import linkedin from "../../../public/images/in.svg";
 import insta from "../../../public/images/insta.svg";
-import twiter from "../../../public/images/twiter.svg";
-import google from "../../../public/images/google.svg";
+import tiktok from "../../../public/images/tiktok.svg";
 import foodPoster from "../assets/cartPoster.webp";
 import chef from "../../../public/images/chef.svg";
 import img1 from "../../../public/images/fi_4767107.svg";
 import img2 from "../../../public/images/fi_4718655.svg";
 import img3 from "../../../public/images/fi_11493268.svg";
-import img4 from "../../../public/images/Group.svg";
+// import img4 from "../../../public/images/Group.svg";
 import Link from "next/link";
 import Rectangle1 from "../assets/populardishes-spaghetti.png";
 import Rectangle2 from "../assets/populardishes-cheesesandwich.png";
@@ -249,10 +247,10 @@ const Products = ({ item }) => {
               <div className="flex gap-5 2xl:my-5">
                 <div className=" bg-[#F3F3F3] rounded-[6px] 2xl:w-[166px] 2xl:h-[97px] xl:w-[100px] xl:h-[55px]  lg:w-[90px] lg:h-[50px] w-[90px] h-[50px] flex justify-center items-center">
                   <div>
-                    <Image
+                    {/* <Image
                       src={img4}
                       className="2xl:w-[18px] 2xl:h-[17.18px] xl:w-[14px] xl:h-[13.18px] mx-auto"
-                    />
+                    /> */}
                     <h1 className="2xl:mt-3 alata font-[400] text-[#000] 2xl:text-[16px] 2xl:leading-[24px] xl:text-[12px] xl:leading-[20px] lg:text-[10px] lg:leading-[16px] text-[10px]">
                       Popular
                     </h1>
@@ -505,53 +503,41 @@ const Products = ({ item }) => {
               <div className="">
                 <div>
                   <h1 className="footer_heading">Connect with us</h1>
-                  <div className="flex gap-2">
-                    <div>
-                      <Link href="https://www.facebook.com/" target="_blank">
-                        <Image src={fb} className="2xl:w-[30px] 2xl:h-[30px]" />
-                      </Link>
-                    </div>
+                  <div className="flex gap-2 justify-center lg:justify-start">
                     <div>
                       <Link
-                        href="https://www.linkedin.com/home"
+                        href="https://www.facebook.com/profile.php?id=61553576243338"
                         target="_blank"
                       >
                         <Image
-                          src={linkedin}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          alt="image"
+                          src={fb}
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
+
                     <div>
                       <Link
-                        href="https://www.instagram.com/accounts/login/"
+                        href="https://www.instagram.com/authentichef"
                         target="_blank"
                       >
                         <Image
+                          alt="image"
                           src={insta}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
                     <div>
                       <Link
-                        href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.co.in%2F%3Fpli%3D1&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1375757007%3A1709800522255495&theme=glif"
+                        href="https://www.tiktok.com/@authentichef"
                         target="_blank"
                       >
                         <Image
-                          src={google}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
-                        />
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        href="https://twitter.com/i/flow/login"
-                        target="_blank"
-                      >
-                        <Image
-                          src={twiter}
-                          className="2xl:w-[30px] 2xl:h-[30px]"
+                          alt="image"
+                          src={tiktok}
+                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
                         />
                       </Link>
                     </div>
