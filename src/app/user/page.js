@@ -43,38 +43,21 @@ import day from "../../../public/images/day.svg";
 import sidemanu from "../../../public/images/side-menu.svg";
 import "@splidejs/react-splide/css/core";
 import Link from "next/link";
+import Navbar from "../navbar";
+import offer from "../assets/offer.svg";
 
 const LandingPage = () => {
   return (
     <>
       <section className="">
-        <nav className="absolute flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
-            <div className="w-1/3">
-              <Image
-                alt="image"
-                src={sidemanu}
-                className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
-              />
-            </div>
-            <div className="w-1/3 ">
-              <a href="#">
-                <Image alt="logo" src={logo} className="nav_logo" />
-              </a>
-            </div>
-            <div className="flex md:gap-7  gap-2">
-              <button className="nav_login">Log In</button>
-              <button className="nav_signup">Sign Up</button>
-            </div>
-          </div>
-        </nav>
+       <Navbar/>
 
         {/* ===================Second================== */}
 
         <div className="hidden md:block 2xl:h-screen ">
           <div className="poster-bg flex justify-center ">
             <div className="">
-              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[575px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
+            <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[46px] xl:leading-[55px] 2xl:mt-[57%] xl:mt-[50%] lg:text-[35px] lg:leading-[30px lg:mt-[50%] mt-[130%] mx-auto">
                 Where’s your next food destination?
               </h1>
               <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
@@ -111,6 +94,15 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="offer-bg flex justify-center items-center 2xl:gap-[30px] xl:gap-[10px] gap-[8px] 2xl:h-[150px] xl:h-[100px] h-[60px]">
+          <Image
+            src={offer}
+            className="2xl:w-[48px] 2xl:h-[48px] 2xl:w-[30px] 2xl:h-[30px] w-[25px] h-[25px]"
+          />
+          <h1 className="alata font-[400] 2xl:text-[40px] 2xl:leading-[50px] xl:text-[25px] leading-[35px] text-[20px]">
+            30% off on your first order ‘Welcome30’
+          </h1>
         </div>
 
         {/* ===================Third================== */}
