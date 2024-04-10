@@ -532,7 +532,10 @@ const LandingPage = () => {
                   </p>
                 </div>
                 <div>
-                  <Image src={howworkbanner} className="2xl:h-[400px] h-auto 2xl:my-[65px] xl:my-[45px] my-[30px]"/>
+                  <Image
+                    src={howworkbanner}
+                    className="2xl:h-[400px] h-auto 2xl:my-[65px] xl:my-[45px] my-[30px]"
+                  />
                 </div>
               </div>
             </div>
@@ -550,7 +553,7 @@ const LandingPage = () => {
                     Select dishes based on your dietary preferences
                   </h1>
                   <p className="five_p2 text-center  mx-auto  ">
-                  Mix and match from a range of global dishes
+                    Mix and match from a range of global dishes
                   </p>
                 </div>
               </div>
@@ -567,7 +570,8 @@ const LandingPage = () => {
                     Choose your preferred delivery date
                   </h1>
                   <p className="five_p2 text-center  mx-auto">
-                  We deliver all your dishes in sustainable recyclable packaging, without compromising on dish quality
+                    We deliver all your dishes in sustainable recyclable
+                    packaging, without compromising on dish quality
                   </p>
                 </div>
               </div>
@@ -583,7 +587,8 @@ const LandingPage = () => {
                   </div>
                   <h1 className="five_head2">Heat and enjoy the experience</h1>
                   <p className="five_p2 text-center  mx-auto 2xl:w-[392px] xl:w-[302px] lg:w-[260px]">
-                  Dishes delivered frozen ready to heat and eat, or store in your freezer, whenever you need
+                    Dishes delivered frozen ready to heat and eat, or store in
+                    your freezer, whenever you need
                   </p>
                 </div>
               </div>
@@ -692,9 +697,9 @@ const LandingPage = () => {
                   <span className="text-[#DB5353]">...more</span>
                 </p>
                 <h2 className="seven_h2 text-[#DB5353] 2xl:mt-[20px] xl:mt-[10px] lg:mt-[8px]">
-                  Thai
+                  Indian
                 </h2>
-                <h2 className="seven_h2">Vegetarian, Dairy Free</h2>
+                <h2 className="seven_h2">Plant-Based, Vegan</h2>
               </div>
               <div className="w-[160px] 2xl:w-[286px]  xl:w-[200px]">
                 <Image alt="person3" src={person3} className="seven_img" />
@@ -704,9 +709,9 @@ const LandingPage = () => {
                   <span className="text-[#DB5353]">...more</span>
                 </p>
                 <h2 className="seven_h2 text-[#DB5353] 2xl:mt-[20px] xl:mt-[10px] lg:mt-[8px]">
-                  Thai
+                  Hong-Kong
                 </h2>
-                <h2 className="seven_h2">Vegetarian, Dairy Free</h2>
+                <h2 className="seven_h2">Meat, Gluten-Free</h2>
               </div>
               <div className="w-[160px] 2xl:w-[286px]  xl:w-[200px]">
                 <Image alt="person4" src={person4} className="seven_img" />
@@ -716,7 +721,7 @@ const LandingPage = () => {
                   <span className="text-[#DB5353]">...more</span>
                 </p>
                 <h2 className="seven_h2 text-[#DB5353] 2xl:mt-[20px] xl:mt-[10px] lg:mt-[8px]">
-                  Thai
+                  Indian
                 </h2>
                 <h2 className="seven_h2">Vegetarian, Dairy Free</h2>
               </div>
@@ -730,7 +735,7 @@ const LandingPage = () => {
                 <h2 className="seven_h2 text-[#DB5353] 2xl:mt-[20px] xl:mt-[10px] lg:mt-[8px]">
                   Thai
                 </h2>
-                <h2 className="seven_h2">Vegetarian, Dairy Free</h2>
+                <h2 className="seven_h2">Plant-Based, Vegan</h2>
               </div>
             </div>
             <div className="flex ">
