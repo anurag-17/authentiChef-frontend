@@ -50,7 +50,9 @@ body {
   background-image: url("../../public/images/poster.webp");
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
+
 .poster-bg-m {
   background-image: url("../../public/images/poster-bg-m.webp");
   background-size: cover;

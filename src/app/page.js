@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import LandingPage from "./user/page";
 
-const page = () => {
+const Page = () => {
+
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <LandingPage />
+    </div>
+  );
+};
 
-export default page
+export default Page;

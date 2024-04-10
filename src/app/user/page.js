@@ -44,12 +44,11 @@ import sidemanu from "../../../public/images/side-menu.svg";
 import "@splidejs/react-splide/css/core";
 import Link from "next/link";
 
-
 const LandingPage = () => {
   return (
     <>
       <section className="">
-        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 ">
+        <nav className="absolute flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
               <Image
@@ -72,10 +71,10 @@ const LandingPage = () => {
 
         {/* ===================Second================== */}
 
-        <div className="hidden md:block 2xl:h-screen">
-          <div className="poster-bg 2xl:h-[834px] h-screen flex justify-center ">
+        <div className="hidden md:block 2xl:h-screen ">
+          <div className="poster-bg flex justify-center ">
             <div className="">
-              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[475px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
+              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[35px] xl:leading-[55px] 2xl:mt-[575px] xl:mt-[365px] lg:text-[25px] lg:leading-[30px lg:mt-[70%] mt-[130%] mx-auto">
                 Where’s your next food destination?
               </h1>
               <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
@@ -83,14 +82,14 @@ const LandingPage = () => {
                   Explore Dishes
                 </button>
               </div>
-              <div className="flex 2xl:mt-14 xl:mt-8 lg:mt-5 mt-4">
+              {/* <div className="flex 2xl:mt-14 xl:mt-8 lg:mt-5 mt-4">
                 <h1
                   className="alata font-[400] mx-auto text-white 2xl:text-[40px] 2xl:leading-[20px] xl:text-[25px] xl:leading-[20px]
               lg:text-[20px] lg:leading-[20px]  "
                 >
                   Save 30% on your first order
                 </h1>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1030,7 +1029,6 @@ const LandingPage = () => {
                 <h1 className="footer_text_b ">
                   © 2024 Authentichef | All Rights Reserved.
                 </h1>
-            
               </div>
             </div>
           </div>
