@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "./assets/logo.png";
 import sidemanu from "../../public/images/side-menu.svg";
 import google from "./assets/google.svg";
@@ -96,24 +97,33 @@ const Navbar = () => {
                 </h1>
               </div>
               <div className="2xl:mt-[20px]">
-                <div className=" social_div">
-                  <button className="flex social_btn ">
-                    <Image className=" social_img " src={google} />
-                    <h1 className="">Continue with Google</h1>
-                  </button>
-                </div>
-                <div className="my-[12px] social_div">
-                  <button className="social_btn">
-                    <Image className="social_img " src={fb} />
-                    <h1>Continue with Facebook</h1>
-                  </button>
-                </div>{" "}
-                <div className=" social_div">
-                  <button className="social_btn">
-                    <Image className="social_img " src={apple} />
-                    <h1> Continue with Apple</h1>
-                  </button>
-                </div>
+                <Link
+                  href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dmy-activity%26utm_medium%3Dhome%26utm_campaign%26hl%3Den_GB%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1476156200%3A1712751508637500&theme=mn&ddm=0"
+                  target="_blank"
+                >
+                  <div className=" social_div">
+                    <div className="flex social_btn ">
+                      <Image className=" social_img " src={google} />
+                      <h1 className="">Continue with Google</h1>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="https://www.facebook.com/login/" target="_blank">
+                  <div className="my-[12px] social_div">
+                    <div className="social_btn">
+                      <Image className="social_img " src={fb} />
+                      <h1>Continue with Facebook</h1>
+                    </div>
+                  </div>{" "}
+                </Link>
+                <Link href="https://appleid.apple.com/sign-in" target="_blank">
+                  <div className="social_div">
+                    <div className="social_btn">
+                      <Image className="social_img " src={apple} />
+                      <h1> Continue with Apple</h1>
+                    </div>
+                  </div>
+                </Link>
               </div>
               <div className="my-[30px]">
                 <h1 className="text-[#555555] alata font-[400] text-[14px] leading-[26px] text-center">

@@ -532,7 +532,7 @@ const LandingPage = () => {
                   </p>
                 </div>
                 <div>
-                  <Image src={howworkbanner} className="2xl:h-[400px] xl:h-[320px] 2xl:my-[65px] xl:my-[45px] my-[30px]"/>
+                  <Image src={howworkbanner} className="2xl:h-[400px] h-auto 2xl:my-[65px] xl:my-[45px] my-[30px]"/>
                 </div>
               </div>
             </div>

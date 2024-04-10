@@ -356,7 +356,7 @@ td {
   @apply flex items-center justify-center 2xl:h-[60px] xl:h-[35px] lg:h-[30px] border rounded-[5px];
 }
 .social_btn {
-  @apply justify-center items-center relative w-full alata font-[400] 2xl:text-[14px] 2xl:leading-[26px] xl:text-[12px] xl:leading-[20px] px-[25px];
+  @apply flex justify-center items-center relative w-full alata font-[400] 2xl:text-[14px] 2xl:leading-[26px] xl:text-[12px] xl:leading-[20px] px-[25px];
 }
 .social_img {
   @apply absolute left-[25px] 2xl:w-[20px] 2xl:h-[20px] h-auto w-[18px];
