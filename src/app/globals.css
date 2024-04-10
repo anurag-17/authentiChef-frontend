@@ -67,6 +67,8 @@ body {
   background-image: url("../../public/images/yellow-bg.svg");
   background-size: cover;
   background-position: center;
+  height: 100vh;
+
 }
 
 .login-inputad {
@@ -217,15 +219,15 @@ td {
 }
 
 .five_p {
-  @apply alata font-[400] text-center 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[850px] 2xl:my-3 xl:text-[14px] xl:leading-[22px] xl:w-[600px] xl:my-2 sm:text-[12px] lg:leading-[22px] lg:w-[600px] lg:my-2 text-[12px] leading-[22px] my-2 mx-5 sm:mx-0;
+  @apply alata font-[400]  text-center 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[820px] 2xl:my-3 xl:text-[14px] xl:leading-[22px] xl:w-[600px] xl:my-2 sm:text-[12px] lg:leading-[22px] lg:w-[600px] lg:my-2 text-[12px] leading-[22px] my-2 mx-5 sm:mx-auto;
 }
 
 .five_head2 {
-  @apply alata font-[400] 2xl:text-[25px] 2xl:leading-[30px] text-center 2xl:my-5 mx-auto xl:text-[16px] xl:my-3 lg:text-[12px] xl:leading-[20px] lg:my-2;
+  @apply alata font-[400] 2xl:text-[32px] 2xl:leading-[40px] text-center 2xl:my-5 mx-auto xl:text-[20px] xl:my-3 lg:text-[16px] xl:leading-[20px] lg:my-2;
 }
 
 .five_p2 {
-  @apply alata font-[400] 2xl:text-[18px] 2xl:leading-[28px] 2xl:my-1 text-center mx-auto xl:text-[14px] xl:leading-[20px] lg:text-[12px] lg:leading-[20px];
+  @apply alata font-[400] 2xl:text-[24px] 2xl:leading-[34px] xl:text-[18px] xl:leading-[24px] lg:text-[14px] lg:leading-[20px] ;
 }
 
 /* =================Six================= */
@@ -245,21 +247,25 @@ td {
 .seven_head {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] text-center xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[30px];
 }
-
 .seven_p {
-  @apply alata font-[400] text-center mx-auto 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[854px] 2xl:my-3 xl:text-[14px] xl:leading-[20px] xl:w-[606px] lg:my-1 lg:text-[12px] lg:leading-[18px] lg:w-[505px];
+  @apply alata font-[400] text-center mx-auto 2xl:text-[25px] 2xl:leading-[35px] 2xl:w-[1136px] 2xl:my-3 xl:text-[16px] xl:leading-[22px] xl:w-[720px] lg:my-1 lg:text-[12px] lg:leading-[18px] lg:w-[525px];
 }
 
 .seven_img {
-  @apply 2xl:w-[286px] 2xl:h-[323px] xl:w-[200px] h-auto lg:w-[200px] md:w-[200px] rounded-[15px];
+  @apply 2xl:w-[286px] 2xl:h-[323px] xl:w-[210px] h-auto lg:w-[200px] md:w-[200px] rounded-[15px];
 }
 
 .seven_name {
-  @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] text-center 2xl:my-5 xl:text-[14px] xl:leading-[20px] lg:text-[12px] lg:leading-[18px] xl:my-0 lg:my-2;
+  @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-5 xl:mt-3 xl:text-[14px] xl:leading-[16px] lg:text-[12px] lg:leading-[18px] xl:my-0 lg:my-2 2xl:mb-2 xl:mb-1;
 }
-
+.seven_p2 {
+  @apply alata font-[400] 2xl:text-[18px] 2xl:leading-[28px] xl:text-[12px] xl:leading-[16px] lg:text-[10px] lg:leading-[14px];
+}
+.seven_h2{
+  @apply alata font-[400] 2xl:text-[18px] xl:text-[12px] lg:text-[10px] 
+}
 .seven_btn {
-  @apply alata font-[400] hover:bg-[#7e2727] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:w-[160px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] lg:w-[140px] lg:h-[30px] lg:text-[14px] lg:leading-[25px];
+  @apply alata font-[400] hover:bg-[#7e2727] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[316px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:w-[210px] xl:h-[40px] xl:text-[14px] xl:leading-[25px] lg:w-[160px] lg:h-[30px] lg:text-[10px] lg:leading-[25px] 2xl:mt-[50px] xl:mt-[30px] mt-[20px];
 }
 
 /* =================Eight================= */
@@ -268,11 +274,11 @@ td {
 }
 
 .eight_p {
-  @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[646px] xl:text-[14px] xl:leading-[25px] xl:w-[446px] lg:text-[12px] lg:leading-[20px] lg:w-[386px] text-[12px] leading-[20px];
+  @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[520px] xl:text-[14px] xl:leading-[25px] xl:w-[350px] lg:text-[12px] lg:leading-[20px] lg:w-[386px] text-[12px] leading-[20px];
 }
 
 .eight_btn {
-  @apply alata font-[400] bg-[#DB5353] hover:bg-[#7e2727] text-white mx-auto lg:mx-0 rounded-[5px] 2xl:w-[310px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] 2xl:my-20 xl:w-[200px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] xl:my-14 lg:w-[180px] lg:h-[30px] lg:text-[14px] lg:leading-[25px] lg:my-10 w-[180px] h-[30px] text-[14px] leading-[25px] my-5;
+  @apply alata font-[400] bg-[#DB5353] hover:bg-[#7e2727] text-white mx-auto lg:mx-0 rounded-[5px] 2xl:w-[250px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] 2xl:my-[50px] xl:w-[160px] xl:h-[35px] xl:text-[14px] xl:leading-[25px] xl:my-[30px] lg:w-[120px] lg:h-[30px] lg:text-[14px] lg:leading-[25px] lg:my-[20px] w-[180px] h-[30px] text-[14px] leading-[25px] my-5;
 }
 
 /* =================Nine================= */
