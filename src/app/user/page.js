@@ -57,7 +57,7 @@ const LandingPage = () => {
         <div className="hidden md:block 2xl:h-screen ">
           <div className="poster-bg flex justify-center ">
             <div className="">
-            <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[46px] xl:leading-[55px] 2xl:mt-[57%] xl:mt-[50%] lg:text-[35px] lg:leading-[30px lg:mt-[50%] mt-[130%] mx-auto">
+            <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[46px] xl:leading-[55px] 2xl:mt-[50%] xl:mt-[50%] lg:text-[35px] lg:leading-[30px lg:mt-[50%] mt-[130%] mx-auto">
                 Where’s your next food destination?
               </h1>
               <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
