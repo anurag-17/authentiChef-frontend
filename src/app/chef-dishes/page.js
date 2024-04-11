@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import sidemanu from "../../../public/images/side-menu.svg";
 import logo from "../../../public/images/logo.svg";
 import Footer from "../footer";
@@ -90,10 +91,20 @@ const ChefDishes = () => {
                   <div>
                     <Image src={chef} className="w-full" />
                   </div>
-                  <div className="flex justify-center gap-5 my-[20px]">
-                    <Image src={fb} className="w-[22px]" />
+                  <div className="flex justify-center 2xl:gap-5 xl:gap-2 2xl:my-[20px] xl:my-[10px]">
+                    <Link
+                      href="https://www.facebook.com/profile.php?id=61553576243338"
+                      target="_blank"
+                    >
+                      <Image src={fb} className="w-[22px]" />
+                    </Link>
 
-                    <Image src={insta} className="w-[22px]" />
+                    <Link
+                      href="https://www.instagram.com/authentichef"
+                      target="_blank"
+                    >
+                      <Image src={insta} className="w-[22px]" />
+                    </Link>
                   </div>
                 </div>
                 <div>
@@ -103,16 +114,18 @@ const ChefDishes = () => {
                   <p className="fourth_p text-[#555555]">
                     Punjabi · North Indian · South Indian · Indian · Vegetarian
                   </p>
-                  <div className="flex gap-3 my-[20px]">
-                    <div className="w-[197px] h-[37px] bg-[#F3F3F3] flex justify-around items-center">
+                  <div className="flex gap-3 2xl:my-[20px] xl:my-[15px]">
+                    <div className="2xl:w-[197px] 2xl:h-[37px] xl:w-[140px] xl:h-[30px] bg-[#F3F3F3] flex justify-around items-center">
                       <Image src={cook} className="w-[17px]" />
                       <p className="fourth_day">1.1k+</p>
-                      <p className="text-[#838383]">Meals prepared</p>
+                      <p className=" fourth_day text-[#838383]">
+                        Meals prepared
+                      </p>
                     </div>
-                    <div className="w-[197px] h-[37px] bg-[#F3F3F3] flex justify-around items-center">
+                    <div className="2xl:w-[197px] 2xl:h-[37px] xl:w-[140px] xl:h-[30px] bg-[#F3F3F3] flex justify-around items-center">
                       <Image src={cook2} className="w-[17px]" />
                       <p className="fourth_day">Certified</p>
-                      <p className="text-[#838383]">Food safety</p>
+                      <p className="fourth_day text-[#838383]">Food safety</p>
                     </div>
                   </div>
                   <p className="fourth_day 2xl:w-[869px] xl:w-[600px] w-[869px]">
@@ -122,12 +135,12 @@ const ChefDishes = () => {
                     printer took a galley of type and scrambled it to make a
                     type specimen book.
                   </p>
-                  <div className="flex gap-[50px] my-[30px]">
+                  <div className="flex gap-[50px] 2xl:my-[30px] xl:my-[20px]">
                     <div className="2xl:w-[404px] xl:w-[280px] w-[204px] ">
                       <h2 className="fourth_p text-[#555555]">
                         Lorem Ipsum is simply dummy
                       </h2>
-                      <p className="fourth_day my-[12px]">
+                      <p className="fourth_day 2xl:my-[12px] xl:my-[8px]">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industrys
                         standard dummy text ever since the 1500s, when an
@@ -139,7 +152,7 @@ const ChefDishes = () => {
                       <h2 className="fourth_p text-[#555555]">
                         Lorem Ipsum is simply dummy
                       </h2>
-                      <p className="fourth_day my-[12px]">
+                      <p className="fourth_day 2xl:my-[12px] xl:my-[8px]">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industrys
                         standard dummy text ever since the 1500s, when an
@@ -148,11 +161,11 @@ const ChefDishes = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="my-[30px]">
+                  <div className="2xl:my-[30px] xl:my-[0px]">
                     <h2 className="fourth_p text-[#555555]">
                       Lorem Ipsum is simply dummy
                     </h2>
-                    <p className="fourth_day my-[12px] 2xl:w-[869px] xl:w-[600px] w-[869px]">
+                    <p className="fourth_day 2xl:my-[12px] xl:my-[8px] 2xl:w-[869px] xl:w-[600px] w-[869px]">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text ever since the 1500s, when an unknown
@@ -166,7 +179,7 @@ const ChefDishes = () => {
           </div>
         </div>
 
-        <div className="2xl:mt-[250px] xl:mt-[250px] my-[50px] ">
+        <div className="2xl:mt-[250px] xl:mt-[200px] my-[50px] ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto">
             <div className="">
               <div>
