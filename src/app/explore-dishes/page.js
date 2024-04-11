@@ -221,7 +221,7 @@ const ExploreDishes = () => {
               </div>
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
-                  {/* <div className="">
+                  <div className="">
                     <select
                       id="cuisines"
                       className="2xl:w-[153px] third_select"
@@ -233,8 +233,8 @@ const ExploreDishes = () => {
                       <option>b</option>
                       <option>c</option>
                     </select>
-                  </div> */}
-                  <details className="dropdown w-full">
+                  </div>
+                  {/* <details className="dropdown w-full">
                     <summary className="m-1 btn"> All Cuisines</summary>
                     <ul className="z-50 p-2 shadow menu dropdown-content bg-base-100 rounded-box w-full ">
                       <li>
@@ -244,7 +244,7 @@ const ExploreDishes = () => {
                         <a>Item 2</a>
                       </li>
                     </ul>
-                  </details>
+                  </details> */}
 
                   <div className="">
                     <select id="dietary" className="2xl:w-[126px] third_select">

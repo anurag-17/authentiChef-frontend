@@ -71,6 +71,12 @@ body {
 
 }
 
+.chefDishes-bg{
+  background-image: url("../../public/images/chef-dishes-banner.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .login-inputad {
   @apply px-4 py-2 2xl:h-[60px] xl:h-[40px] lg:h-[40px] border border-[#E4E4E4] bg-white rounded-[5px] text-[#262628] 2xl:text-[14px] xl:text-[10px] lg:text-[10px] text-[10px] font-[400px] leading-normal focus-visible:outline-none placeholder:text-[14px] placeholder:text-[#262628];
 }
@@ -209,8 +215,9 @@ td {
 }
 
 .fourth_day {
-  @apply alata font-[400] 2xl:text-[14px] 2xl:leading-[24px];
-}
+  @apply alata font-[400] 2xl:text-[14px] 2xl:leading-[24px] xl:text-[10px] xl:leading-[18px] text-[9px] leading-[14px];
+};
+
 
 /* ==================Five================== */
 .five_head {
