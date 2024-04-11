@@ -85,25 +85,25 @@ const ChefDishes = () => {
         </nav>
         <div className=" ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[100px] xl:py-[50px] py-[40px] mx-auto">
-            <div className="chefDishes-bg rounded-[15px] relative 2xl:h-[529px] xl:h-[360px] h-auto 2xl:pt-[295px] xl:pt-[200px]">
-              <div className=" flex gap-5 2xl:w-[1414px] xl:w-[970px]  rounded-[15px] bg-white mx-auto 2xl:p-[50px] xl:p-[20px] border">
-                <div className="2xl:w-[154px] xl:w-[80px]">
+            <div className="chefDishes-bg rounded-[15px] relative 2xl:h-[529px] xl:h-[360px] h-[280px] 2xl:pt-[295px] xl:pt-[200px] pt-[155px]">
+              <div className=" flex gap-5 2xl:w-[1414px] xl:w-[970px] w-[750px]  rounded-[15px] bg-white mx-auto 2xl:p-[50px] xl:p-[20px] p-[15px]">
+                <div className="2xl:w-[154px] xl:w-[80px] w-[60px]">
                   <div>
                     <Image src={chef} className="w-full" />
                   </div>
-                  <div className="flex justify-center 2xl:gap-5 xl:gap-2 2xl:my-[20px] xl:my-[10px]">
+                  <div className="flex justify-center 2xl:gap-5 xl:gap-2 gap-1 2xl:my-[20px] xl:my-[10px] my-[5px]">
                     <Link
                       href="https://www.facebook.com/profile.php?id=61553576243338"
                       target="_blank"
                     >
-                      <Image src={fb} className="w-[22px]" />
+                      <Image src={fb} className="xl:w-[22px] w-[15px]" />
                     </Link>
 
                     <Link
                       href="https://www.instagram.com/authentichef"
                       target="_blank"
                     >
-                      <Image src={insta} className="w-[22px]" />
+                      <Image src={insta} className="xl:w-[22px] w-[15px]" />
                     </Link>
                   </div>
                 </div>
@@ -114,33 +114,33 @@ const ChefDishes = () => {
                   <p className="fourth_p text-[#555555]">
                     Punjabi · North Indian · South Indian · Indian · Vegetarian
                   </p>
-                  <div className="flex gap-3 2xl:my-[20px] xl:my-[15px]">
-                    <div className="2xl:w-[197px] 2xl:h-[37px] xl:w-[140px] xl:h-[30px] bg-[#F3F3F3] flex justify-around items-center">
+                  <div className="flex gap-3 2xl:my-[20px] xl:my-[15px] my-[10px]">
+                    <div className="2xl:w-[197px] 2xl:h-[37px] xl:w-[140px] xl:h-[30px] w-[130px]  h-[25px] bg-[#F3F3F3] flex justify-around items-center">
                       <Image src={cook} className="w-[17px]" />
                       <p className="fourth_day">1.1k+</p>
                       <p className=" fourth_day text-[#838383]">
                         Meals prepared
                       </p>
                     </div>
-                    <div className="2xl:w-[197px] 2xl:h-[37px] xl:w-[140px] xl:h-[30px] bg-[#F3F3F3] flex justify-around items-center">
+                    <div className="2xl:w-[197px] 2xl:h-[37px] xl:w-[140px] xl:h-[30px] w-[130px]  h-[25px bg-[#F3F3F3] flex justify-around items-center">
                       <Image src={cook2} className="w-[17px]" />
                       <p className="fourth_day">Certified</p>
                       <p className="fourth_day text-[#838383]">Food safety</p>
                     </div>
                   </div>
-                  <p className="fourth_day 2xl:w-[869px] xl:w-[600px] w-[869px]">
+                  <p className="fourth_day 2xl:w-[869px] xl:w-[600px] w-[540px]">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industrys
                     standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                     type specimen book.
                   </p>
-                  <div className="flex gap-[50px] 2xl:my-[30px] xl:my-[20px]">
+                  <div className="flex gap-[50px] 2xl:my-[30px] xl:my-[20px] my-[10px]">
                     <div className="2xl:w-[404px] xl:w-[280px] w-[204px] ">
                       <h2 className="fourth_p text-[#555555]">
                         Lorem Ipsum is simply dummy
                       </h2>
-                      <p className="fourth_day 2xl:my-[12px] xl:my-[8px]">
+                      <p className="fourth_day 2xl:my-[12px] xl:my-[8px] my-[6px]">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industrys
                         standard dummy text ever since the 1500s, when an
@@ -152,7 +152,7 @@ const ChefDishes = () => {
                       <h2 className="fourth_p text-[#555555]">
                         Lorem Ipsum is simply dummy
                       </h2>
-                      <p className="fourth_day 2xl:my-[12px] xl:my-[8px]">
+                      <p className="fourth_day 2xl:my-[12px] xl:my-[8px] my-[6px]">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industrys
                         standard dummy text ever since the 1500s, when an
@@ -161,11 +161,11 @@ const ChefDishes = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="2xl:my-[30px] xl:my-[0px]">
+                  <div className="2xl:my-[30px] ">
                     <h2 className="fourth_p text-[#555555]">
                       Lorem Ipsum is simply dummy
                     </h2>
-                    <p className="fourth_day 2xl:my-[12px] xl:my-[8px] 2xl:w-[869px] xl:w-[600px] w-[869px]">
+                    <p className="fourth_day 2xl:my-[12px] xl:my-[8px] my-[6px] 2xl:w-[869px] xl:w-[600px] w-[540px]">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text ever since the 1500s, when an unknown
@@ -179,7 +179,7 @@ const ChefDishes = () => {
           </div>
         </div>
 
-        <div className="2xl:mt-[250px] xl:mt-[200px] my-[50px] ">
+        <div className="2xl:mt-[250px] xl:mt-[200px] mt-[180px] ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto">
             <div className="">
               <div>
