@@ -159,7 +159,7 @@ const Products = ({ item }) => {
               <Image src={logo} alt="logo" className="nav_logo" />
             </div>
             <div className="flex md:gap-7  gap-2">
-              <button className="nav_login">Welcome</button>
+              <button className="nav_login">Welcome Ajay!</button>
             </div>
           </div>
         </nav>

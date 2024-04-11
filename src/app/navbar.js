@@ -7,6 +7,11 @@ import sidemanu from "../../public/images/side-menu.svg";
 import google from "./assets/google.svg";
 import fb from "./assets/fb.svg";
 import apple from "./assets/apple.svg";
+import sidelogo from "./assets/sidebar-logo.svg";
+import aboutauthentichef from "./assets/about-authentichef.svg";
+import beacomechef from "./assets/become-a-chef.svg";
+import chefdishes from "./assets/chef-dishes.svg";
+import exploredish from "./assets/explore-dishes.svg";
 
 const Navbar = () => {
   return (
@@ -15,12 +20,97 @@ const Navbar = () => {
         <nav className="absolute flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
-              <Image
-                alt="image"
-                src={sidemanu}
-                className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
-              />
+              {/* =======Side Drawer======= */}
+
+              <div className="drawer">
+                <input
+                  id="my-drawer"
+                  type="checkbox"
+                  className="drawer-toggle bg-transparent"
+                />
+                <div className="drawer-content bg-transparent">
+                  {/* Page content here */}
+                  <label htmlFor="my-drawer">
+                    {" "}
+                    <Image
+                      alt="image"
+                      src={sidemanu}
+                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+                    />
+                  </label>
+                </div>
+                <div className="drawer-side">
+                  <label
+                    htmlFor="my-drawer"
+                    aria-label="close sidebar"
+                    className="drawer-overlay"
+                  ></label>
+                  <ul className="menu p-4 w-[410px] min-h-full bg-base-200 alata font-[400] text-[16px] leading-[26px]">
+                    {/* Sidebar content here */}
+                    <div>
+                      <div className="flex justify-between">
+                        <label
+                          htmlFor="my-drawer"
+                          aria-label="close sidebar"
+                          className="drawer-overlay"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            aria-label="close sidebar"
+                            className="2xl:w-9 2xl:h-9 w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M6 18 18 6M6 6l12 12"
+                            />
+                          </svg>{" "}
+                        </label>
+                        <Image src={sidelogo} className="" />
+                      </div>
+                    </div>
+                    <li className="mt-20">
+                      <a>
+                        <Image
+                          src={aboutauthentichef}
+                          className="w-[20px] h-[20px]"
+                        />
+                        About Authentichef
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <Image
+                          src={beacomechef}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Become a Chef
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <Image src={chefdishes} className="w-[20px] h-[20px]" />
+                        Chef Dishes
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <Image
+                          src={exploredish}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Explore Dishes
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
             <div className="w-1/3 ">
               <a href="#">
                 <Image alt="logo" src={logo} className="nav_logo" />
@@ -47,6 +137,8 @@ const Navbar = () => {
           </div>
         </nav>
       </section>
+
+      {/* =======Login/Signup popup======= */}
 
       <div className="">
         <dialog

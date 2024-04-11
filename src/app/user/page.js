@@ -24,9 +24,6 @@ import plate4 from "../assets/ourcommitment-4rt.png";
 import review1 from "../assets/testimonials-chef-mayank.png";
 import review2 from "../assets/testimonials-chef-rohit.png";
 import review3 from "../assets/testimonials-chef-shubham.png";
-import fb from "../../../public/images/fb.svg";
-import insta from "../../../public/images/insta.svg";
-import tiktok from "../../../public/images/tiktok.svg";
 import Rectangle1 from "../assets/populardishes-spaghetti.png";
 import Rectangle2 from "../assets/populardishes-cheesesandwich.png";
 import Rectangle3 from "../assets/populardishes-chickenkabab.png";
@@ -46,6 +43,7 @@ import Link from "next/link";
 import Navbar from "../navbar";
 import offer from "../assets/offer.svg";
 import howworkbanner from "../assets/how-it-works-banner.png";
+import Footer from "../footer";
 
 const LandingPage = () => {
   return (
@@ -88,11 +86,11 @@ const LandingPage = () => {
                   Explore Dishes
                 </button>
               </div>
-              <div className="flex mt-4">
+              {/* <div className="flex mt-4">
                 <h1 className="alata font-[400] mx-auto text-white">
                   Save 30% on your first order
                 </h1>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -270,7 +268,7 @@ const LandingPage = () => {
 
         {/* ===================Four================== */}
 
-        <div className="flex justify-center 2xl:my-20 xl:my-10 lg:my-10 my-10">
+        <div className="flex justify-center 2xl:py-20 xl:py-10 lg:py-10 py-10 bg-[#F9F2F2]">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] ">
             <div className="flex">
               <h1 className="four_head">Popular Dishes</h1>
@@ -512,7 +510,7 @@ const LandingPage = () => {
 
         {/* ===================Five================== */}
 
-        <div className=" flex justify-center ">
+        <div className=" flex justify-center bg-white 2xl:py-[100px] xl:py-10 lg:py-10 py-10">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-2/3  mx-auto">
             <div className=" flex justify-center ">
               <div className="mx-5 sm:mx-0">
@@ -598,7 +596,7 @@ const LandingPage = () => {
 
         {/* ===================Six================== */}
 
-        <div className="flex justify-center 2xl:my-28 xl:my-10 lg:my-10 my-10">
+        <div className="flex justify-center 2xl:py-28 xl:py-10 lg:py-10 py-10 bg-[#F9F2F2]">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  flex flex-wrap ">
             <div className="mx-20 sm:mx-auto">
               <div className="flex justify-center lg:justify-start">
@@ -972,113 +970,7 @@ const LandingPage = () => {
         </div>
 
         {/* ===================Footer================== */}
-
-        <footer className="bg-[#F6F6F6] flex justify-center">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:mt-[100px] xl:mt-[50px] lg:mt-[35px] sm:mt-[30px] mt-[20px]">
-            <div className="flex  md:justify-between flex-wrap">
-              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
-                <div className="lg:text-start text-center">
-                  <h1 className="footer_heading">Quick Links</h1>
-                  <a href="#">
-                    <p className="footer_text">Our Story</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Food Safety</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Help Center</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Global Cuisines</p>
-                  </a>
-                </div>
-              </div>
-              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
-                <div className="lg:text-start text-center">
-                  <h1 className="footer_heading">Resources</h1>
-                  <a href="#">
-                    <p className="footer_text">Become a chef</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Browse more chef</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Homemade food delivery</p>
-                  </a>
-                </div>
-              </div>
-              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
-                <div className="lg:text-start text-center">
-                  <h1 className="footer_heading">Other Links</h1>
-                  <a href="#">
-                    <p className="footer_text">Log In</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Sign Up</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Privacy Policy</p>
-                  </a>
-                  <a href="#">
-                    <p className="footer_text">Terms of Service</p>
-                  </a>
-                </div>
-              </div>
-              <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-4 lg:my-0">
-                <div className="lg:text-start text-center">
-                  <h1 className="footer_heading">Connect with us</h1>
-                  <div className="flex gap-2 justify-center lg:justify-start">
-                    <div>
-                      <Link
-                        href="https://www.facebook.com/profile.php?id=61553576243338"
-                        target="_blank"
-                      >
-                        <Image
-                          alt="image"
-                          src={fb}
-                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
-                        />
-                      </Link>
-                    </div>
-
-                    <div>
-                      <Link
-                        href="https://www.instagram.com/authentichef"
-                        target="_blank"
-                      >
-                        <Image
-                          alt="image"
-                          src={insta}
-                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
-                        />
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        href="https://www.tiktok.com/@authentichef"
-                        target="_blank"
-                      >
-                        <Image
-                          alt="image"
-                          src={tiktok}
-                          className="2xl:w-[30px] 2xl:h-[30px] h-auto w-auto"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr className="2xl:mt-[56px] xl:mt-[25px] lg:mt-[15px] first-letter sm:mt-[15px] mt-[10px]" />
-            <div>
-              <div className="flex justify-center 2xl:my-5 xl:my-3 lg:my-2 sm:my-2">
-                <h1 className="footer_text_b ">
-                  © 2024 Authentichef | All Rights Reserved.
-                </h1>
-              </div>
-            </div>
-          </div>
-        </footer>
+<Footer/>
       </section>
     </>
   );

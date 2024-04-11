@@ -167,7 +167,6 @@ td {
 .third_head {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] xl:text-[30px] xl:leading-[45px] lg:text-[20px] lg:leading-[30px];
 }
-
 .third_img {
   @apply w-[32.33px] h-[22.89px] lg:w-[20px] lg:h-[20px];
 }
@@ -177,7 +176,7 @@ td {
 }
 
 .third_input {
-  @apply alata font-[400] border-[1px] rounded-[3px] 2xl:text-[16px] 2xl:leading-[20px] 2xl:w-[215px] 2xl:h-[46px] 2xl:px-3 xl:text-[12px] xl:leading-[16px] xl:w-[160px] xl:h-[30px] lg:w-[150px] lg:h-[25px] px-1;
+  @apply alata font-[400] border-[1px] rounded-[3px] 2xl:text-[16px] 2xl:leading-[20px] 2xl:w-[215px] 2xl:h-[46px] 2xl:px-3 xl:text-[12px] xl:leading-[16px] xl:w-[160px] xl:h-[30px] lg:w-[150px] lg:h-[25px] px-1 text-[#F38181];
 }
 
 /* ===================Four================== */
@@ -206,7 +205,7 @@ td {
 }
 
 .four_btn {
-  @apply bg-[#FFD4D4] flex items-center rounded-full 2xl:px-[15px] 2xl:gap-2 2xl:mt-6 2xl:h-[31px] 2xl:text-[14px] 2xl:leading-[24px] xl:px-[15px] xl:gap-2 xl:mt-5 xl:h-[25px] xl:text-[12px] xl:leading-[18px] lg:px-[10px] lg:gap-2 lg:mt-5 lg:h-[22px] lg:text-[10px] lg:leading-[16px] px-[10px] gap-2 mt-5 h-[22px] text-[10px] leading-[16px];
+  @apply bg-[#E3E3E3] flex items-center rounded-[3px] 2xl:px-[15px] 2xl:gap-2 2xl:h-[31px] 2xl:text-[14px] 2xl:leading-[24px] xl:px-[15px] xl:gap-2 xl:h-[25px] xl:text-[12px] xl:leading-[18px] lg:px-[10px] lg:gap-2 lg:h-[22px] lg:text-[10px] lg:leading-[16px] px-[10px] gap-2 h-[22px] text-[10px] leading-[16px];
 }
 
 .fourth_day {
