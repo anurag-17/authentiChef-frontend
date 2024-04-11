@@ -205,7 +205,7 @@ td {
 }
 
 .four_btn {
-  @apply bg-[#E3E3E3] flex items-center rounded-[3px] 2xl:px-[15px] 2xl:gap-2 2xl:h-[31px] 2xl:text-[14px] 2xl:leading-[24px] xl:px-[15px] xl:gap-2 xl:h-[25px] xl:text-[12px] xl:leading-[18px] lg:px-[10px] lg:gap-2 lg:h-[22px] lg:text-[10px] lg:leading-[16px] px-[10px] gap-2 h-[22px] text-[10px] leading-[16px];
+  @apply bg-[#E3E3E3] flex items-center rounded-[3px] 2xl:px-[20px] 2xl:gap-2 2xl:h-[34px] 2xl:text-[14px] 2xl:leading-[24px] xl:px-[10px] xl:gap-2 xl:h-[27px] xl:text-[10px] xl:leading-[18px] lg:px-[10px] lg:gap-2 lg:h-[22px] lg:text-[9px] lg:leading-[16px] px-[10px] gap-2 h-[22px] text-[10px] leading-[16px];
 }
 
 .fourth_day {
@@ -247,7 +247,7 @@ td {
   @apply alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] text-center xl:text-[35px] xl:leading-[45px] lg:text-[25px] lg:leading-[30px];
 }
 .seven_p {
-  @apply alata font-[400] text-center mx-auto 2xl:text-[25px] 2xl:leading-[35px] 2xl:w-[1136px] 2xl:my-3 xl:text-[16px] xl:leading-[22px] xl:w-[720px] lg:my-1 lg:text-[12px] lg:leading-[18px] lg:w-[525px];
+  @apply alata font-[400] text-center mx-auto 2xl:text-[25px] 2xl:leading-[35px] 2xl:w-[1136px] 2xl:my-3 xl:text-[16px] xl:leading-[22px] xl:w-[720px] lg:my-1 lg:text-[12px] lg:leading-[18px] lg:w-[525px] text-[12px] leading-[18px];
 }
 
 .seven_img {
@@ -359,4 +359,9 @@ td {
 }
 .social_img {
   @apply absolute left-[25px] 2xl:w-[20px] 2xl:h-[20px] h-auto w-[18px];
+}
+
+.dropdown-content {
+  width: 100vw !important;
+align-items: start !important;
 }

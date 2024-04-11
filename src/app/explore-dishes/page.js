@@ -213,7 +213,7 @@ const ExploreDishes = () => {
           </div>
         </nav>
 
-        <div className="flex justify-center 2xl:my-20 xl:my-14 lg:my-8 hidden lg:block">
+        <div className="flex justify-center 2xl:my-20 xl:my-14 lg:my-8 hidden lg:block 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] mx-auto">
           <div className="">
             <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto">
               <div className="">
@@ -221,7 +221,7 @@ const ExploreDishes = () => {
               </div>
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
-                  <div className="">
+                  {/* <div className="">
                     <select
                       id="cuisines"
                       className="2xl:w-[153px] third_select"
@@ -233,7 +233,18 @@ const ExploreDishes = () => {
                       <option>b</option>
                       <option>c</option>
                     </select>
-                  </div>
+                  </div> */}
+                  <details className="dropdown w-full">
+                    <summary className="m-1 btn"> All Cuisines</summary>
+                    <ul className="z-50 p-2 shadow menu dropdown-content bg-base-100 rounded-box w-full ">
+                      <li>
+                        <a>Item 1</a>
+                      </li>
+                      <li>
+                        <a>Item 2</a>
+                      </li>
+                    </ul>
+                  </details>
 
                   <div className="">
                     <select id="dietary" className="2xl:w-[126px] third_select">
@@ -285,17 +296,17 @@ const ExploreDishes = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center 2xl:my-10 xl:my-8 lg:my-5">
+            <div className="flex justify-center 2xl:my-10 xl:my-6 lg:my-5">
               <div className="carousel  2xl:gap-[40px] xl:gap-7 lg:gap-5">
                 <div className="">
                   <Image
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] "
                     src={cuisineindia}
                     alt="cuisine-india"
                   />
                   <h1
-                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-4
-                  lg:text-[12px] lg:leading-[18px] lg:my-3  mx-auto text-center"
+                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-3
+                  lg:text-[12px] lg:leading-[18px] lg:my-2  mx-auto text-center"
                   >
                     Indian
                   </h1>
@@ -303,12 +314,12 @@ const ExploreDishes = () => {
                 <div className="">
                   <Image
                     alt="cuisine-american"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
                     src={cuisineamerican}
                   />
                   <h1
-                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-4
-                  lg:text-[12px] lg:leading-[18px] lg:my-3  mx-auto text-center"
+                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-3
+                  lg:text-[12px] lg:leading-[18px] lg:my-2  mx-auto text-center"
                   >
                     American
                   </h1>
@@ -316,12 +327,12 @@ const ExploreDishes = () => {
                 <div className="">
                   <Image
                     alt="cuisine-mexican"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
                     src={cuisinemexican}
                   />
                   <h1
-                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-4
-                  lg:text-[12px] lg:leading-[18px] lg:my-3  mx-auto text-center"
+                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-3
+                  lg:text-[12px] lg:leading-[18px] lg:my-2  mx-auto text-center"
                   >
                     Mexican
                   </h1>
@@ -329,12 +340,12 @@ const ExploreDishes = () => {
                 <div className="">
                   <Image
                     alt="cuisine-mediterranean"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
                     src={cuisinemediterranean}
                   />
                   <h1
-                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-4
-                  lg:text-[12px] lg:leading-[18px] lg:my-3  mx-auto text-center"
+                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-3
+                  lg:text-[12px] lg:leading-[18px] lg:my-2  mx-auto text-center"
                   >
                     Mediterranean
                   </h1>
@@ -342,12 +353,12 @@ const ExploreDishes = () => {
                 <div className="">
                   <Image
                     alt="cuisine-italian"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
                     src={cuisineitalian}
                   />
                   <h1
-                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-4
-                  lg:text-[12px] lg:leading-[18px] lg:my-3  mx-auto text-center"
+                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-3
+                  lg:text-[12px] lg:leading-[18px] lg:my-2  mx-auto text-center"
                   >
                     Italian
                   </h1>
@@ -355,12 +366,12 @@ const ExploreDishes = () => {
                 <div className="">
                   <Image
                     alt="cuisine-middleEastern"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
                     src={cuisinemiddleEastern}
                   />
                   <h1
-                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-4
-                  lg:text-[12px] lg:leading-[18px] lg:my-3  mx-auto text-center"
+                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-3
+                  lg:text-[12px] lg:leading-[18px] lg:my-2  mx-auto text-center"
                   >
                     Middle Eastern
                   </h1>
@@ -368,12 +379,12 @@ const ExploreDishes = () => {
                 <div className="">
                   <Image
                     alt="cuisine-middleEastern"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] xl:h-[160px] lg:w-[125px] lg:h-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
                     src={cuisinesoutheast}
                   />
                   <h1
-                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-4
-                  lg:text-[12px] lg:leading-[18px] lg:my-3  mx-auto text-center"
+                    className="alata font-[400] 2xl:text-[20px] 2xl:leading-[20px] 2xl:mt-[20px] xl:text-[14px] xl:leading-[20px] xl:my-3
+                  lg:text-[12px] lg:leading-[18px] lg:my-2  mx-auto text-center"
                   >
                     Southeast Asian
                   </h1>
@@ -383,12 +394,12 @@ const ExploreDishes = () => {
           </div>
         </div>
 
-        <div className="2xl:my-[120px] bg-[#F9F2F2]">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] mx-auto">
+        <div className="2xl:my-[120px] xl:my-[60px] my-[50px] bg-[#F9F2F2]">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto">
             <div className="flex justify-center">
               <div>
                 <h1 className="third_head text-center">Explore Dishes</h1>
-                <p className="seven_p 2xl:w-[980px]">
+                <p className="seven_p 2xl:w-[980px] xl:w-[600px] lg:w-[460px] w-[460px]">
                   Browse world of authentic homemade dishes by our independent
                   chef community. More chefs and dishes added every week.
                 </p>
@@ -398,17 +409,17 @@ const ExploreDishes = () => {
               {data2.map((item) => (
                 <div
                   key={item.id}
-                  className="  my-5 2xl:w-[345px] 2xl:h-[560px] xl:w-[31%] xl:h-[360px] md:w-[31%] lg:h-[300px] h-[300px] relative  rounded-[9.8px] "
+                  className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] "
                 >
                   <Image
                     src={item.image}
                     alt={item.title}
                     width={345}
                     height={278}
-                    className="2xl:w-[365.5px] 2xl:h-[278px] h-auto rounded-[10px]"
+                    className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px]"
                   />
-                  <div className="p-4">
-                    <h1 className="alata font-[400] text-[#DB5353] xl:my-1 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
+                  <div className="">
+                    <h1 className="alata font-[400] text-[#DB5353] 2xl:my-4 xl:my-3 my-2 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
                       {item.title}
                     </h1>
                     <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
@@ -423,12 +434,12 @@ const ExploreDishes = () => {
                       </div>
                     </div>
 
-                    <div className="flex gap-5 my-[20px]">
+                    <div className="flex gap-5 2xl:my-[20px] xl:my-[15px] my-[12px]">
                       <button className="four_btn">
                         <Image
                           alt="image"
                           src={vegetarian}
-                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
                         />
                         <p className="fourth_day">Vegetarian</p>
                       </button>
@@ -436,33 +447,33 @@ const ExploreDishes = () => {
                         <Image
                           alt="image"
                           src={vegan}
-                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
                         />
                         <p className="fourth_day">Vegan</p>
                       </button>
                     </div>
-                    <div className="flex items-center gap-5  my-[20px]">
+                    <div className="flex items-center gap-5  2xl:my-[20px] xl:my-[15px] my-[12px]">
                       <h1 className="fourth_p">Spice level</h1>
                       <button className="four_btn">
                         <Image
                           alt="image"
                           src={item.spiceImg}
-                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px]"
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
                         />
                         <p className="fourth_day">Meddium</p>
                       </button>
                     </div>
 
-                    <div className="absolute w-full bottom-0 flex justify-between items-center mb-4">
-                      <p className="alata font-[400] text-[#000] 2xl:text-[20px] 2xl:leading-[24px] xl:text-[14px] xl:leading-[18px] lg:text-[12px] lg:leading-[16px]">
+                    <div className=" w-full bottom-0 flex justify-between items-center  2xl:my-[22px] xl:my-[18px] my-[15px]">
+                      <p className="alata font-[400] text-[#000] 2xl:text-[20px] 2xl:leading-[24px] xl:text-[14px] xl:leading-[18px] lg:text-[12px] lg:leading-[16px] text-[12px] leading-[16px] ">
                         Serves 1 (500g){" "}
                         <span className="text-[#DB5353]">£8.50</span>
                       </p>
                       <button
-                        onClick={() => {
-                          addToCart(item);
-                          alert("Product Added");
-                        }}
+                      // onClick={() => {
+                      //   addToCart(item);
+                      //   alert("Product Added");
+                      // }}
                       >
                         <Image
                           src={item.image2}
