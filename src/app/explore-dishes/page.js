@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import sidemanu from "../../../public/images/side-menu.svg";
 import logo from "../../../public/images/logo.svg";
@@ -34,12 +34,19 @@ import p3 from "../assets/ellipse321.png";
 import p4 from "../assets/ellipse422.png";
 import vegetarian from "./assets/vegetarian.svg";
 import vegan from "./assets/vegan.svg";
+import popimg from "./assets/pop-img.png";
 import spicemedium from "./assets/spice-medium.svg";
 import spicehot from "./assets/spice-hot.svg";
 import review1 from "../assets/testimonials-chef-mayank.png";
 import review2 from "../assets/testimonials-chef-rohit.png";
 import review3 from "../assets/testimonials-chef-shubham.png";
 import Footer from "../footer";
+import plus from "../../../public/images/plus.svg";
+import minus from "../../../public/images/minus.svg";
+import nonveg from "./assets/non-vag.svg";
+import glutenfree from "./assets/gluten-free.svg";
+import organic from "./assets/organic.svg";
+import dairyfree from "./assets/dairy-free.svg";
 
 const data2 = [
   {
@@ -80,7 +87,7 @@ const data2 = [
   },
 
   {
-    id: "1",
+    id: "5",
     image: punjabithali2,
     chefImg: p1,
     title: "Punjabi Thali",
@@ -89,7 +96,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "2",
+    id: "6",
     image: palakpaneer2,
     chefImg: p2,
     title: "Palak Paneer",
@@ -98,7 +105,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "3",
+    id: "7",
     image: sarsoda2,
     chefImg: p3,
     title: "Sarso da saak makke di roti",
@@ -107,7 +114,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "4",
+    id: "8",
     image: butterpaneer2,
     chefImg: p4,
     title: "Paneer butter masala",
@@ -117,7 +124,7 @@ const data2 = [
   },
 
   {
-    id: "1",
+    id: "9",
     image: punjabithali3,
     chefImg: p1,
     title: "Punjabi Thali",
@@ -126,7 +133,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "2",
+    id: "10",
     image: palakpaneer3,
     chefImg: p2,
     title: "Palak Paneer",
@@ -135,7 +142,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "3",
+    id: "11",
     image: sarsoda3,
     chefImg: p3,
     title: "Sarso da saak makke di roti",
@@ -144,7 +151,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "4",
+    id: "12",
     image: butterpaneer3,
     chefImg: p4,
     title: "Paneer butter masala",
@@ -154,7 +161,7 @@ const data2 = [
   },
 
   {
-    id: "1",
+    id: "13",
     image: punjabithali4,
     chefImg: p1,
     title: "Punjabi Thali",
@@ -163,7 +170,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "2",
+    id: "14",
     image: palakpaneer4,
     chefImg: p2,
     title: "Palak Paneer",
@@ -172,7 +179,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "3",
+    id: "15",
     image: sarsoda4,
     chefImg: p3,
     title: "Sarso da saak makke di roti",
@@ -181,7 +188,7 @@ const data2 = [
     image2: addCart,
   },
   {
-    id: "4",
+    id: "16",
     image: butterpaneer4,
     chefImg: p4,
     title: "Paneer butter masala",
@@ -192,6 +199,18 @@ const data2 = [
 ];
 
 const ExploreDishes = () => {
+  const [count, setCount] = useState(0);
+  let subtotalPrice = 0;
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
   return (
     <>
       <section>
@@ -411,13 +430,20 @@ const ExploreDishes = () => {
                   key={item.id}
                   className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] "
                 >
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={345}
-                    height={278}
-                    className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px]"
-                  />
+                  <button
+                    className=""
+                    onClick={() =>
+                      document.getElementById("my_modal_1").showModal()
+                    }
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={345}
+                      height={278}
+                      className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px]"
+                    />
+                  </button>
                   <div className="">
                     <h1 className="alata font-[400] text-[#DB5353] 2xl:my-4 xl:my-3 my-2 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
                       {item.title}
@@ -686,6 +712,191 @@ const ExploreDishes = () => {
 
         <Footer />
       </section>
+
+      <dialog
+        id="my_modal_1"
+        className="2xl:w-[1000px] 2xl:h-[939px] xl:w-[720px] w-[600px] h-auto mx-auto rounded-[10px]  my-auto 2xl:px-[40px] 2xl:py-[45px] xl:px-[25px] xl:py-[30px] px-[15px] py-[20px]"
+      >
+        <button
+          onClick={() => document.getElementById("my_modal_1").close()}
+          className="absolute right-4 "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="2xl:w-[25px] 2xl:h-[25px] xl:w-[18px] w-[14px]"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div className="w-full">
+          <div method="dialog">
+            <div className="flex 2xl:gap-[60px] xl:gap-[40px] gap-[20px] justify-between">
+              <div className="2xl:w-[459px] xl:w-[360px] w-[260px] ">
+                <Image src={popimg} className="rounded-[15px]" />
+              </div>
+              <div className="2xl:w-[400px] xl:w-[359px] w-[300px]">
+                <div>
+                  <h1 className="pop-head">Chicken kabab</h1>
+                  <p className="pop-chef">by Chef Radha</p>
+                </div>
+                <div className="flex justify-between pop-detail">
+                  <h3>Price: £8.50</h3>
+                  <h3>Weight: 400g</h3>
+                  <h3>Portion Size: Serves 1</h3>
+                </div>
+                <div className="flex flex-wrap 2xl:gap-[10px] xl:gap-[8px] gap-[6px]  2xl:my-[15px] xl:my-[12px] my-[8px]">
+                  <div className="pop">
+                    <Image
+                      src={nonveg}
+                      className="2xl:[18px] xl:w-[14px] w-[12px]"
+                    />
+                    <h3>Non-Veg</h3>
+                  </div>
+                  <div className="pop">
+                    <Image
+                      src={glutenfree}
+                      className="2xl:[18px] xl:w-[14px] w-[12px]"
+                    />
+                    <h3>Gulten Free</h3>
+                  </div>{" "}
+                  <div className="pop">
+                    <Image
+                      src={organic}
+                      className="2xl:[18px] xl:w-[14px] w-[12px]"
+                    />
+                    <h3>Organic</h3>
+                  </div>{" "}
+                  <div className="pop">
+                    <Image
+                      src={dairyfree}
+                      className="2xl:[18px] xl:w-[14px] w-[12px]"
+                    />
+                    <h3>Dairy Free</h3>
+                  </div>{" "}
+                  <div className="pop">
+                    <Image
+                      src={spicemedium}
+                      className="2xl:[18px] xl:w-[14px] w-[12px]"
+                    />
+                    <h3>Medium</h3>
+                  </div>
+                </div>
+                <div className="flex justify-center 2xl:w-[103px] 2xl:h-[39px] xl:w-[60px] xl:h-[22px] lg:w-[50px] lg:h-[20px] border rounded-[5px] 2xl:mt-[25px] xl:mt-[20px] mt-[15px]">
+                  {" "}
+                  <button
+                    className="   text-[#DB5353] rounded-l w-1/3"
+                    onClick={() => {
+                      handleDecrement();
+                      // alert("Removed from cart");
+                    }}
+                  >
+                    <Image
+                      src={minus}
+                      className="2xl:w-[15px] 2xl:h-[15px] xl:w-[10px] xl:h-[10px] lg:w-[8px] lg:h-[8px] mx-auto "
+                    />
+                  </button>
+                  <p className=" flex mx-auto items-center text-[10px] xl:text-[12px] 2xl:text-[18px]  2xl:leading-[28px] ">
+                    {count}
+                  </p>
+                  <button
+                    className="    text-[#DB5353] rounded-r w-1/3"
+                    onClick={() => handleIncrement()}
+                  >
+                    <Image
+                      src={plus}
+                      className="2xl:w-[15px] 2xl:h-[15px] xl:w-[10px] xl:h-[10px] lg:w-[8px] lg:h-[8px] mx-auto "
+                    />
+                  </button>
+                </div>
+                <div>
+                  <button className="pop-btn">Add to basket</button>
+                </div>
+              </div>
+            </div>
+            <div className="2xl:my-[15px] xl:my-[10px] my-[8px]">
+              <div className="">
+                <p className="fourth_p text-[#555555]">Description</p>{" "}
+                <p className="fourth_p 2xl:w-[890px] xl:w-[660px] w-[550px]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+            <div className="2xl:my-[20px] xl:my-[12px] my-[10px]">
+              <div className="flex justify-between">
+                <div>
+                  <p className="fourth_p text-[#555555]">Ingredients</p>{" "}
+                  <p className="fourth_p ">Chicken, Egg, Tomato, etc</p>
+                </div>
+                <div className="2xl:w-[578px] xl:w-[430px] w-[360px]">
+                  <p className="fourth_p text-[#555555]">
+                    Heating instructions
+                  </p>{" "}
+                  <p className="fourth_p ">
+                    As our food is hand-made by our chefs, these reheating
+                    instructions are a guide. Check your food is piping hot
+                    throughout before serving.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="2xl:my-[20px] xl:my-[12px] my-[10px]">
+              <div className="flex justify-between">
+                <div>
+                  <p className="fourth_p text-[#555555]">List of Allergens</p>{" "}
+                  <p className="fourth_p ">Dish contains i.e Celery,  Egg</p>
+                </div>
+                <div className="2xl:w-[578px] xl:w-[430px] w-[360px]">
+                  <p className="fourth_p text-[#555555]">
+                    Best Cooked directly from FROZEN
+                  </p>{" "}
+                  <p className="fourth_p ">
+                    OVEN: Preheat oven to 180°C (Gas Mark 5). Remove lid and any
+                    outer packaging. Place on a baking tray at the top of oven
+                    for 20 minutes or until piping hot.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="2xl:my-[20px] xl:my-[12px] my-[10px]">
+              <div className="flex justify-between">
+                <div>
+                  <p className="fourth_p text-[#555555]">Storage</p>{" "}
+                  <p className="fourth_p 2xl:w-[270px] xl:w-[200px] w-[160px]">
+                    Store immediately in freezer on delivery.
+                  </p>
+                  <p className="fourth_p ">Keep frozen at -18℃.</p>
+                  <p className="fourth_p 2xl:w-[270px] xl:w-[200px] w-[180px]">
+                    Should this product defrost, keep refrigerated, heat and eat
+                    within 48 hours.
+                  </p>
+                </div>
+                <div className="2xl:w-[578px] xl:w-[430px] w-[360px]">
+                  <p className="fourth_p ">
+                    MICROWAVE: Remove lid and place loosely on the container.
+                    Place on a microwaveable plate and heat on full power for
+                    7-8 minutes. Halfway through heating, add 2 tablespoons of
+                    water to rice and stir contents together. Re-cover and
+                    continue heating. Heat until piping hot and stand for 1
+                    minute.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
     </>
   );
 };
