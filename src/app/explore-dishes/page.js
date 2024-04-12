@@ -1,5 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
+import emptyCart from "../../../public/images/emptyCart.svg";
+
 import Image from "next/image";
 import sidemanu from "../../../public/images/side-menu.svg";
 import logo from "../../../public/images/logo.svg";
@@ -47,6 +50,8 @@ import nonveg from "./assets/non-vag.svg";
 import glutenfree from "./assets/gluten-free.svg";
 import organic from "./assets/organic.svg";
 import dairyfree from "./assets/dairy-free.svg";
+import { useCart } from "../create-context/cart-context";
+import { CartProvider } from "../create-context/cart-context";
 
 const data2 = [
   {
@@ -198,7 +203,9 @@ const data2 = [
   },
 ];
 
-const ExploreDishes = () => {
+const ExploreDishes = ({ item }) => {
+  const { addToCart } = useCart();
+  const { cart, removeFromCart, clearCart } = useCart();
   const [count, setCount] = useState(0);
   let subtotalPrice = 0;
 
@@ -211,6 +218,7 @@ const ExploreDishes = () => {
       setCount(count - 1);
     }
   };
+
   return (
     <>
       <section>
@@ -496,16 +504,23 @@ const ExploreDishes = () => {
                         <span className="text-[#DB5353]">£8.50</span>
                       </p>
                       <button
-                      // onClick={() => {
-                      //   addToCart(item);
-                      //   alert("Product Added");
-                      // }}
+                        onClick={() => {
+                          addToCart(item);
+                        }}
                       >
-                        <Image
-                          src={item.image2}
-                          alt={item.title}
-                          className=" mr-8 2xl:w-[40px] 2xl:h-[40px] xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] w-[25px] h-[25px]"
-                        />
+                        <div className="drawer-content">
+                          {/* Page content here */}
+                          <label
+                            htmlFor="my-drawer-4"
+                            className="drawer-button"
+                          >
+                            <Image
+                              src={item.image2}
+                              alt={item.title}
+                              className=" 2xl:w-[40px] 2xl:h-[40px] xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] w-[25px] h-[25px]"
+                            />
+                          </label>
+                        </div>
                       </button>
                     </div>
                   </div>
@@ -712,7 +727,7 @@ const ExploreDishes = () => {
 
         <Footer />
       </section>
-
+      {/* ===============PopUp=============== */}
       <dialog
         id="my_modal_1"
         className="2xl:w-[1000px] 2xl:h-[939px] xl:w-[720px] w-[600px] h-auto mx-auto rounded-[10px]  my-auto 2xl:px-[40px] 2xl:py-[45px] xl:px-[25px] xl:py-[30px] px-[15px] py-[20px]"
@@ -897,8 +912,124 @@ const ExploreDishes = () => {
           </div>
         </div>
       </dialog>
+
+      {/* ===============Right drawer=============== */}
+
+      <div className="drawer drawer-end">
+        <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+
+        <div className="drawer-side">
+          <label
+            htmlFor="my-drawer-4"
+            aria-label="close sidebar"
+            className="drawer-overlay"
+          ></label>
+          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content 2xl:w-[505px] xl:w-[350px] lg:w-[290px] bg-white">
+            <div className="bg-white hidden lg:block   rounded-s-[15px]">
+              <div className="">
+                <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[22px] text-[22px] 2xl:leading-[32px]  xl:text-[18px] xl:leading-[24px] lg:text-[14px] lg:leading-[20px]">
+                My Basket
+                </h1>
+                {cart.length === 0 ? (
+                  <div>
+                    <div className="2xl:mt-40">
+                      <Image
+                        src={emptyCart}
+                        className="2xl:w-[268.25px] 2xl:h-[265px] mx-auto"
+                      />
+                    </div>
+                    <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[25px] 2xl:leading-[35px]  xl:text-[20px] xl:leading-[28px] lg:text-[16px] lg:leading-[24px] text-center 2xl:mt-24">
+                      Explore a World of Deliciousness
+                    </h1>
+                    <p className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[16px] 2xl:leading-[26px]  xl:text-[14px] xl:leading-[20px] lg:text-[12px] lg:leading-[18px] text-center">
+                      add dishes to your cart now.
+                    </p>
+                    <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
+                      <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[221px] 2xl:h-[56px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
+                        Explore Dishes
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="">
+                    {cart.map((item) => (
+                      <div key={item.id}>
+                        <div className="flex justify-between items-center 2xl:my-6 my-2">
+                          <div className="flex items-center gap-2 2xl:gap-4 xl:h-[70px]">
+                            <Image
+                              src={item.image}
+                              alt={item.name}
+                              className="2xl:w-[70px] 2xl:h-[70px] xl:w-[50px] xl:h-[50px] lg:w-[40px] lg:h-[40px] rounded-[5.8px]"
+                            />
+                            <div>
+                              <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[18px] 2xl:leading-[28px]  xl:text-[12px] xl:leading-[20px] lg:text-[10px] lg:leading-[18px]">
+                                {item?.title}
+                              </h1>
+                              <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[18px] 2xl:leading-[28px]  xl:text-[12px] xl:leading-[20px] lg:text-[10px] lg:leading-[18px]">
+                                £{item?.price}
+                              </h1>
+                            </div>
+                          </div>
+                          <div className="flex justify-center 2xl:w-[103px] 2xl:h-[39px] xl:w-[60px] xl:h-[22px] lg:w-[50px] lg:h-[20px] border rounded-[5px] ">
+                            {" "}
+                            <button
+                              className="   text-[#DB5353] rounded-l w-1/3"
+                              onClick={() => {
+                                handleDecrement(item?.id);
+                                removeFromCart(item.id);
+                                alert("Removed from cart");
+                              }}
+                            >
+                              <Image
+                                src={minus}
+                                className="2xl:w-[15px] 2xl:h-[15px] xl:w-[10px] xl:h-[10px] lg:w-[8px] lg:h-[8px] mx-auto "
+                              />
+                            </button>
+                            <p className=" flex mx-auto items-center text-[10px] xl:text-[12px] 2xl:text-[18px]  2xl:leading-[28px] ">
+                              {count}
+                            </p>
+                            <button
+                              className="    text-[#DB5353] rounded-r w-1/3"
+                              onClick={() => handleIncrement(item?.id)}
+                            >
+                              <Image
+                                src={plus}
+                                className="2xl:w-[15px] 2xl:h-[15px] xl:w-[10px] xl:h-[10px] lg:w-[8px] lg:h-[8px] mx-auto "
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                    <div className="flex justify-between items-center mt-20">
+                      <div>
+                        <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[18px] 2xl:leading-[28px] xl:text-[12px] xl:leading-[20px] lg:text-[10px] lg:leading-[18px]">
+                          {subtotalPrice}
+                        </h1>
+                      </div>
+                      <div>
+                        <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[164px] 2xl:h-[56px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] lg:text-[10px] xl:px-6 xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 ">
+                          Checkout
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
     </>
   );
 };
-
-export default ExploreDishes;
+const App = () => {
+  return (
+    <CartProvider>
+      {" "}
+      {/* Wrapping the component tree with CartProvider */}
+      <ExploreDishes />
+    </CartProvider>
+  );
+};
+export default dynamic(() => Promise.resolve(App), { ssr: false });

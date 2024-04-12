@@ -375,6 +375,8 @@ const Products = ({ item }) => {
               </div>
             </div>
           </div>
+
+          
           <div className="bg-white hidden lg:block 2xl:w-[505px] xl:w-[350px] lg:w-[290px]  rounded-s-[15px]">
             <div className="p-5">
               <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[22px] text-[22px] 2xl:leading-[32px]  xl:text-[18px] xl:leading-[24px] lg:text-[14px] lg:leading-[20px]">
