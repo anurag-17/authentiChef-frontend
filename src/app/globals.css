@@ -387,3 +387,6 @@ align-items: start !important;
 .pop-btn{
   @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[14px] xl:leading-[20px] text-[12px] leading-[18px] rounded-[5px] bg-[#DB5353]  text-white  2xl:w-[374px] 2xl:h-[56px] xl:w-[260px] xl:h-[35px] w-[220px] h-[30px] 2xl:mt-[25px] xl:mt-[20px] mt-[15px]
 }
+.checkoutlable{
+  @apply alata font-[400] 2xl:text-[14px] 2xl:leading-[26px] xl:text-[10px] xl:leading-[20px] text-[9px] leading-[18px]
+}
