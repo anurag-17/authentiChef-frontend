@@ -5,7 +5,7 @@ import Link from "next/link";
 import logo from "../assets/logo.png";
 import sidemanu from "../../../public/images/side-menu.svg";
 import Footer from "../footer";
-import img from "./assets/butterpaneer3.png";
+import img from "./assets/checkout-img.png";
 import plus from "../../../public/images/plus.svg";
 import minus from "../../../public/images/minus.svg";
 
@@ -264,7 +264,7 @@ const Checkout = () => {
                           <Image
                             src={img}
                             // alt={item.name}
-                            className="2xl:w-[83px] 2xl:h-[83px]   xl:w-[65px] lg:w-[50px] rounded-[10px]"
+                            className="2xl:w-[83px] 2xl:h-[83px] xl:w-[65px] lg:w-[50px] rounded-[10px]"
                           />
                           <div>
                             <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[24px] 2xl:leading-[34px]  xl:text-[12px] xl:leading-[20px] lg:text-[10px] lg:leading-[18px]">
@@ -334,7 +334,7 @@ const Checkout = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>  
           </div>
         </div>
 
