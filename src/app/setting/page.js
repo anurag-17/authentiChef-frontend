@@ -25,6 +25,14 @@ const Setting = () => {
       label: " Profile",
       component: <Profile />,
       icon: profile,
+      subData: [
+        {
+          id: "01",
+          label: "Edit Profile",
+          //   component: <New />,
+          //   path: "/admin-product",
+        },
+      ],
     },
     {
       id: 3,
