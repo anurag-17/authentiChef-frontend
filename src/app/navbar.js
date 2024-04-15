@@ -131,7 +131,7 @@ const Navbar = () => {
                 onClick={() =>
                   document.getElementById("my_modal_1").showModal()
                 }
-                className="nav_login"
+                className="nav_login1"
               >
                 Log In
               </button>
@@ -154,7 +154,125 @@ const Navbar = () => {
         </nav>
       </section>
 
-      {/* =======Login/Signup popup======= */}
+      {/* =======Signup popup======= */}
+
+      <div className="">
+        <dialog
+          id="my_modal_1"
+          className="modal rounded-[10px] 2xl:w-[1000px] 2xl:h-[632px] xl:w-[620px] xl:h-[450px] 2xl:mt-40 xl:mt-24 p-0"
+        >
+          <form method="dialog" className=" w-full h-full mt-0">
+            {/* if there is a button in form, it will close the modal */}
+            <div className="flex justify-center items-center border w-full 2xl:h-[80px] xl:h-[55px]">
+              <button className="absolute right-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="2xl:w-9 2xl:h-9 w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <h1 className="fourth_p">Sign up</h1>
+            </div>
+            <div className=" my-3 px-[40px]">
+              <div className="flex flex-wrap justify-between 2xl:w-[775px] xl:w-[480px] mx-auto ">
+                <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px]">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="First Name"
+                    className="alata font-[400] login-inputad  w-full"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="enter valid email ex. abc@gmail.com"
+                    // onChange={InputHandler}
+                  />
+                </div>
+                <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px]">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Last Name"
+                    className="alata font-[400] login-inputad  w-full"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="enter valid email ex. abc@gmail.com"
+                    // onChange={InputHandler}
+                  />
+                </div>
+                <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px]">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    className="alata font-[400] login-inputad  w-full"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="enter valid email ex. abc@gmail.com"
+                    // onChange={InputHandler}
+                  />
+                </div>
+                <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px]">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Password"
+                    className="alata font-[400] login-inputad  w-full"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="enter valid email ex. abc@gmail.com"
+                    // onChange={InputHandler}
+                  />
+                </div>
+              </div>
+              <div className="flex">
+                <button className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[230px] xl:text-[16px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] 2xl:h-[60px] xl:h-[40px] lg:h-[30px] text-center bg-[#DB5353]">
+                Create Account
+                </button>
+              </div>
+              <div>
+                <h1 className="alata font-[400] 2xl:my-[20px] xl:my-[10px] text-[14px] leading-[26px] text-center">
+                  or
+                </h1>
+              </div>
+              <div className="flex 2xl:mt-[20px]">
+                <div className="mx-auto  2xl:w-[368px] xl:w-[230px]">
+                  <Link
+                    href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dmy-activity%26utm_medium%3Dhome%26utm_campaign%26hl%3Den_GB%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1476156200%3A1712751508637500&theme=mn&ddm=0"
+                    target="_blank"
+                  >
+                    <div className=" social_div">
+                      <div className="flex social_btn ">
+                        <Image className=" social_img " src={google} />
+                        <h1 className="">Continue with Google</h1>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link href="https://www.facebook.com/login/" target="_blank">
+                    <div className="my-[12px] social_div">
+                      <div className="social_btn">
+                        <Image className="social_img " src={fb} />
+                        <h1>Continue with Facebook</h1>
+                      </div>
+                    </div>{" "}
+                  </Link>
+                </div>
+              </div>
+              <div className="my-[30px]">
+                <h1 className="text-[#555555] alata font-[400] text-[14px] leading-[26px] text-center">
+                  Browse as Guest
+                </h1>
+              </div>
+            </div>
+          </form>
+        </dialog>
+      </div>
+
+      {/* =======Login======= */}
 
       <div className="">
         <dialog
@@ -188,7 +306,7 @@ const Navbar = () => {
                   type="email"
                   name="email"
                   placeholder="Enter your mail id"
-                  className="login-inputad  w-full"
+                  className="alata font-[400] login-inputad  w-full"
                   pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                   title="enter valid email ex. abc@gmail.com"
                   // onChange={InputHandler}
