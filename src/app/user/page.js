@@ -667,7 +667,7 @@ const LandingPage = () => {
         {/* ===================Seven================== */}
 
         <div className="yellow-bg 2xl:h-[1050px] md:w-full lg:flex justify-center 2xl:pt-[100px] 2xl:pb-[100px] xl:pt-[60px] pt-[25px] xl:pb-[60px] hidden lg:block">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] mseven ">
             <h1 className="seven_head">Our Chef Community</h1>
             <p className="seven_p">
               Our independent chefs, create dishes born from their passion for
@@ -745,7 +745,7 @@ const LandingPage = () => {
         {/* ===================Eight================== */}
 
         <div className="flex justify-center xl:py-28 lg:py-14 md:py-8 py-5 border-b-[1px] border-[#B1B1B1]">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex flex-col-reverse lg:flex-row">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex flex-col-reverse lg:flex-row meghit">
             <div className="mx-10 sm:w-1/2 sm:mx-auto lg:mx-0">
               <h1 className=" eight_head ">Food Safety</h1>
               <p className="eight_p">
@@ -766,7 +766,7 @@ const LandingPage = () => {
               <Image
                 alt="image"
                 src={eightPoster}
-                className="2xl:w-[724px] 2xl:h-[507px] w-auto h-auto mx-auto rounded-[15px]"
+                className="2xl:w-[724px] 2xl:h-[507px] w-auto h-auto mx-auto rounded-[15px] meightPoster"
               />{" "}
             </div>
           </div>
@@ -970,7 +970,7 @@ const LandingPage = () => {
         </div>
 
         {/* ===================Footer================== */}
-<Footer/>
+        <Footer />
       </section>
     </>
   );

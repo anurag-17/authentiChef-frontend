@@ -18,8 +18,8 @@ const Navbar = () => {
   return (
     <>
       <section>
-        <nav className="absolute flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
+        <nav className="absolute flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full mnavbar-h">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center mnavbar">
             <div className="w-1/3">
               {/* =======Side Drawer======= */}
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <Image
                       alt="image"
                       src={sidemanu}
-                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px] menu-btn "
                     />
                   </label>
                 </div>
@@ -231,7 +231,7 @@ const Navbar = () => {
               </div>
               <div className="flex">
                 <button className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[230px] xl:text-[16px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] 2xl:h-[60px] xl:h-[40px] lg:h-[30px] text-center bg-[#DB5353]">
-                Create Account
+                  Create Account
                 </button>
               </div>
               <div>
