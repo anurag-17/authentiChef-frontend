@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import emptyCart from "../../../public/images/emptyCart.svg";
-
+import Link from "next/link";
 import Image from "next/image";
 import sidemanu from "../../../public/images/side-menu.svg";
 import logo from "../../../public/images/logo.svg";
@@ -52,6 +52,12 @@ import organic from "./assets/organic.svg";
 import dairyfree from "./assets/dairy-free.svg";
 import { useCart } from "../create-context/cart-context";
 import { CartProvider } from "../create-context/cart-context";
+import sidelogo from "../assets/sidebar-logo.svg";
+import aboutauthentichef from "../assets/about-authentichef.svg";
+import beacomechef from "../assets/become-a-chef.svg";
+import chefdishes from "../assets/chef-dishes.svg";
+import exploredish from "../assets/explore-dishes.svg";
+import beg from "../assets/beg.svg";
 
 const data2 = [
   {
@@ -225,17 +231,140 @@ const ExploreDishes = ({ item }) => {
         <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
-              <Image
-                src={sidemanu}
-                alt="menu-icon"
-                className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
-              />
+              {/* =======Side Drawer======= */}
+
+              <div className="drawer z-50">
+                <input
+                  id="my-drawer"
+                  type="checkbox"
+                  className="drawer-toggle bg-transparent"
+                />
+                <div className="drawer-content bg-transparent">
+                  {/* Page content here */}
+                  <label htmlFor="my-drawer">
+                    {" "}
+                    <Image
+                      alt="image"
+                      src={sidemanu}
+                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+                    />
+                  </label>
+                </div>
+                <div className="drawer-side">
+                  <label
+                    htmlFor="my-drawer"
+                    aria-label="close sidebar"
+                    className="drawer-overlay"
+                  ></label>
+                  <ul className="menu p-4 w-[410px] min-h-full bg-base-200 alata font-[400] text-[16px] leading-[26px]">
+                    {/* Sidebar content here */}
+                    <div>
+                      <div className="flex justify-between">
+                        <label
+                          htmlFor="my-drawer"
+                          aria-label="close sidebar"
+                          className="drawer-overlay"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            aria-label="close sidebar"
+                            className="2xl:w-9 2xl:h-9 w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M6 18 18 6M6 6l12 12"
+                            />
+                          </svg>{" "}
+                        </label>
+                        <Image src={sidelogo} className="" />
+                      </div>
+                    </div>
+                    <li className="mt-20">
+                      <a>
+                        <Image
+                          src={aboutauthentichef}
+                          className="w-[20px] h-[20px]"
+                        />
+                        About Authentichef
+                      </a>
+                    </li>
+                    <li>
+                      <Link href="/become-chef">
+                        <Image
+                          src={beacomechef}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Become a Chef
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/chef-dishes">
+                        <Image src={chefdishes} className="w-[20px] h-[20px]" />
+                        Chef Dishes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/explore-dishes">
+                        <Image
+                          src={exploredish}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Explore Dishes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/setting">
+                        <Image
+                          src={exploredish}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Setting
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className="w-1/3 ">
-              <Image src={logo} alt="logo" className="nav_logo" />
+            <div className="w-1/3 flex justify-center">
+              <a href="">
+                <Image src={logo} alt="logo" className="nav_logo" />
+              </a>
             </div>
-            <div className="flex md:gap-7  gap-2">
+            <div className="flex justify-end md:gap-7  gap-2 w-1/3">
+              <div className="relative flex items-center">
+                <input
+                  type="text"
+                  placeholder="Search dishes, chefs, cuisine "
+                  className="2xl:w-[258px] xl:w-[170px] 2xl:h-[44px] xl:h-[30px] w-[130px] h-[20px] bg-[#FF9C9C] text-[#AE6363] 2xl:px-[40px] xl:px-[30px]  px-[20px] outline-none placeholder:text-[#AE6363] 2xl:text-[16px]  xl:text-[12px] text-[9px]"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="absolute text-[#AE6363] 2xl:top-[10px] 2xl:left-[10px] xl:top-[8px] xl:left-[10px] top-[10px] left-[5px]  2xl:w-5 2xl:h-5 xl:w-4 xl:h-4 w-3 h-3 "
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </div>
+
               <button className="nav_login">Welcome Ajay!</button>
+              <button>
+                <Image
+                  src={beg}
+                  className="2xl:w-[28px] xl:w-[20px] w-[16px]"
+                />
+              </button>
             </div>
           </div>
         </nav>
@@ -265,10 +394,10 @@ const ExploreDishes = ({ item }) => {
                     <summary className="m-1 btn"> All Cuisines</summary>
                     <ul className="z-50 p-2 shadow menu dropdown-content bg-base-100 rounded-box w-full ">
                       <li>
-                        <a>Item 1</a>
+                        <Link>Item 1</a>
                       </li>
                       <li>
-                        <a>Item 2</a>
+                        <Link>Item 2</a>
                       </li>
                     </ul>
                   </details> */}
@@ -928,7 +1057,7 @@ const ExploreDishes = ({ item }) => {
             <div className="bg-white hidden lg:block   rounded-s-[15px]">
               <div className="">
                 <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[22px] text-[22px] 2xl:leading-[32px]  xl:text-[18px] xl:leading-[24px] lg:text-[14px] lg:leading-[20px]">
-                My Basket
+                  My Basket
                 </h1>
                 {cart.length === 0 ? (
                   <div>

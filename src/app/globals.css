@@ -173,7 +173,7 @@ td {
 }
 
 .nav_login {
-  @apply alata font-[400] text-white 2xl:text-[24px] xl:text-[18px] lg:text-[12px] 2xl:leading-[33px] sm:text-[12px] sm:leading-[33px];
+  @apply alata font-[400] text-white 2xl:text-[20px] xl:text-[14px] lg:text-[10px] 2xl:leading-[33px] sm:text-[12px] sm:leading-[33px];
 }
 
 .nav_signup {

@@ -12,6 +12,7 @@ import aboutauthentichef from "./assets/about-authentichef.svg";
 import beacomechef from "./assets/become-a-chef.svg";
 import chefdishes from "./assets/chef-dishes.svg";
 import exploredish from "./assets/explore-dishes.svg";
+import beg from "./assets/beg.svg";
 
 const Navbar = () => {
   return (
@@ -83,7 +84,7 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href="/become-chef">
                         <Image
                           src={beacomechef}
                           className="w-[20px] h-[20px]"
@@ -92,18 +93,27 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href="/chef-dishes">
                         <Image src={chefdishes} className="w-[20px] h-[20px]" />
                         Chef Dishes
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href="/explore-dishes">
                         <Image
                           src={exploredish}
                           className="w-[20px] h-[20px]"
                         />
                         Explore Dishes
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/setting">
+                        <Image
+                          src={exploredish}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Setting
                       </a>
                     </li>
                   </ul>
@@ -132,6 +142,12 @@ const Navbar = () => {
                 className="nav_signup"
               >
                 Sign Up
+              </button>
+              <button>
+                <Image
+                  src={beg}
+                  className="2xl:w-[28px] xl:w-[20px] w-[16px]"
+                />
               </button>
             </div>
           </div>

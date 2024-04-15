@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -149,17 +149,140 @@ const Products = ({ item }) => {
         <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
-              <Image
-                src={sidemanu}
-                alt="menu-icon"
-                className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
-              />
+              {/* =======Side Drawer======= */}
+
+              <div className="drawer">
+                <input
+                  id="my-drawer"
+                  type="checkbox"
+                  className="drawer-toggle bg-transparent"
+                />
+                <div className="drawer-content bg-transparent">
+                  {/* Page content here */}
+                  <label htmlFor="my-drawer">
+                    {" "}
+                    <Image
+                      alt="image"
+                      src={sidemanu}
+                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+                    />
+                  </label>
+                </div>
+                <div className="drawer-side">
+                  <label
+                    htmlFor="my-drawer"
+                    aria-label="close sidebar"
+                    className="drawer-overlay"
+                  ></label>
+                  <ul className="menu p-4 w-[410px] min-h-full bg-base-200 alata font-[400] text-[16px] leading-[26px]">
+                    {/* Sidebar content here */}
+                    <div>
+                      <div className="flex justify-between">
+                        <label
+                          htmlFor="my-drawer"
+                          aria-label="close sidebar"
+                          className="drawer-overlay"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            aria-label="close sidebar"
+                            className="2xl:w-9 2xl:h-9 w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M6 18 18 6M6 6l12 12"
+                            />
+                          </svg>{" "}
+                        </label>
+                        <Image src={sidelogo} className="" />
+                      </div>
+                    </div>
+                    <li className="mt-20">
+                      <a>
+                        <Image
+                          src={aboutauthentichef}
+                          className="w-[20px] h-[20px]"
+                        />
+                        About Authentichef
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/become-chef">
+                        <Image
+                          src={beacomechef}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Become a Chef
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/chef-dishes">
+                        <Image src={chefdishes} className="w-[20px] h-[20px]" />
+                        Chef Dishes
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/explore-dishes">
+                        <Image
+                          src={exploredish}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Explore Dishes
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/setting">
+                        <Image
+                          src={exploredish}
+                          className="w-[20px] h-[20px]"
+                        />
+                        Setting
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className="w-1/3 ">
-              <Image src={logo} alt="logo" className="nav_logo" />
+            <div className="w-1/3 flex justify-center">
+              <Link href="#">
+                <Image src={logo} alt="logo" className="nav_logo" />
+              </Link>
             </div>
-            <div className="flex md:gap-7  gap-2">
+            <div className="flex justify-end md:gap-7  gap-2 w-1/3">
+              <div className="relative flex items-center">
+                <input
+                  type="text"
+                  placeholder="Search dishes, chefs, cuisine "
+                  className="2xl:w-[258px] xl:w-[170px] 2xl:h-[44px] xl:h-[30px] w-[130px] h-[20px] bg-[#FF9C9C] text-[#AE6363] 2xl:px-[40px] xl:px-[30px]  px-[20px] outline-none placeholder:text-[#AE6363] 2xl:text-[16px]  xl:text-[12px] text-[9px]"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="absolute text-[#AE6363] 2xl:top-[10px] 2xl:left-[10px] xl:top-[8px] xl:left-[10px] top-[10px] left-[5px]  2xl:w-5 2xl:h-5 xl:w-4 xl:h-4 w-3 h-3 "
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </div>
+
               <button className="nav_login">Welcome Ajay!</button>
+              <button>
+                <Image
+                  src={beg}
+                  className="2xl:w-[28px] xl:w-[20px] w-[16px]"
+                />
+              </button>
             </div>
           </div>
         </nav>
@@ -282,7 +405,11 @@ const Products = ({ item }) => {
                     key={item.id}
                     className="bg-white 2xl:w-[216px] 2xl:h-[341px] xl:h-[250px] w-[18%] lg:h-[200px] h-[240px] relative  rounded-[5.8px] "
                   >
-                    <Image src={item.image} alt={item.title} className="rounded-[5px]" />
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      className="rounded-[5px]"
+                    />
                     <div className="p-2">
                       <h1 className="alata font-[400] text-[#000000] xl:my-1 2xl:text-[16px] 2xl:leading-[20px]  xl:text-[12px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
                         {item.title}
@@ -311,7 +438,6 @@ const Products = ({ item }) => {
                             alt={item.title}
                             className="mr-4  2xl:w-[30px] 2xl:h-[30px] xl:w-[22px] xl:h-[22px] lg:w-[18px] lg:h-[18px] w-[18px] h-[18px]"
                           />
-                          
                         </button>
                       </div>
                     </div>
@@ -332,7 +458,6 @@ const Products = ({ item }) => {
                     key={item.id}
                     className="bg-white  my-5 2xl:w-[365.5px] 2xl:h-[503px] xl:w-[31%] xl:h-[360px] md:w-[31%] lg:h-[300px] h-[300px] relative  rounded-[9.8px] "
                   >
-         
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -376,7 +501,6 @@ const Products = ({ item }) => {
             </div>
           </div>
 
-          
           <div className="bg-white hidden lg:block 2xl:w-[505px] xl:w-[350px] lg:w-[290px]  rounded-s-[15px]">
             <div className="p-5">
               <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[22px] text-[22px] 2xl:leading-[32px]  xl:text-[18px] xl:leading-[24px] lg:text-[14px] lg:leading-[20px]">
