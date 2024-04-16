@@ -267,22 +267,23 @@ const BecomeChef = () => {
               </div>
             </div>
           </div>
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between items-center mx-auto 2xl:mt-[90px] xl:mb-[60px] xl:mt-[40px] mt-[30px] mnavbar">
-            <div className="2xl:w-[842px] xl:w-[] w-[]">
-              <h1 className="third_head">
+
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between items-center mx-auto 2xl:mt-[90px] xl:mb-[80px] xl:mt-[80px] mt-[50px] mb-[50px] mnavbar">
+            <div className="2xl:w-[842px] xl:w-[600px] w-[550px]">
+              <h1 className="alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] xl:text-[37px] xl:leading-[45px] lg:text-[29px] lg:leading-[35px] mcosider">
                 Are you considering starting your own food business from home?
               </h1>
-              <p className=" alata font-[400] 2xl:text-[36px] 2xl:leading-[55px] xl:text-[28px] xl:leading-[35px] text-[12px] leading-[14px] mt-[55px]">
+              <p className=" alata font-[400] 2xl:text-[36px] 2xl:leading-[55px] xl:text-[23px] xl:leading-[35px] text-[19px] leading-[14px] 2xl:mt-[55px] xl:mt-[20px] mt-[15px] mservice">
                 Our Services to get you started and growing!
               </p>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[510px] w-[400px] px-[20px] 2xl:py-[30px] xl:py-[20px] py-[17px] mt-[15px] xl:mt-[25px] mboxs">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
                     <h1 className="become-no">01</h1>
                   </div>
                   <div>
                     <h1 className="become-head">Registration Assistance</h1>
-                    <p className="become-para 2xl:mt-[15px]">
+                    <p className="become-para 2xl:mt-[15px] xl:mt-[10px] mt-[5px]">
                       Well expertly guide you through the registration process
                       with your local council, ensuring a smooth start for your
                       food business.
@@ -290,7 +291,7 @@ const BecomeChef = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[510px] w-[400px] px-[20px] 2xl:py-[30px] xl:py-[20px] py-[17px] mt-[15px] xl:mt-[25px] mboxs">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
                     <h1 className="become-no">02</h1>
@@ -299,7 +300,7 @@ const BecomeChef = () => {
                     <h1 className="become-head">
                       Food Safety and Hygiene Certification
                     </h1>
-                    <p className="become-para 2xl:mt-[15px]">
+                    <p className="become-para 2xl:mt-[15px] xl:mt-[10px] mt-[5px]">
                       We’ll assist you to obtaining the necessary certifications
                       to comply with UK Food Safety and Hygiene Laws. Our
                       guidance will help you achieve the highest food rating
@@ -308,42 +309,42 @@ const BecomeChef = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[510px] w-[400px] px-[20px] 2xl:py-[30px] xl:py-[20px] py-[17px] mt-[15px] xl:mt-[25px] mboxs">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
                     <h1 className="become-no">03</h1>
                   </div>
                   <div>
                     <h1 className="become-head">Chef Onboarding Support</h1>
-                    <p className="become-para 2xl:mt-[15px]">
+                    <p className="become-para 2xl:mt-[15px] xl:mt-[10px] mt-[5px]">
                       We’re here to support passionate chefs like you in sharing
                       your cultural heritage through your dishes.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[510px] w-[400px] px-[20px] 2xl:py-[30px] xl:py-[20px] py-[17px] mt-[15px] xl:mt-[25px] mboxs">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
                     <h1 className="become-no">04</h1>
                   </div>
                   <div>
                     <h1 className="become-head">UK Nationwide Delivery</h1>
-                    <p className="become-para 2xl:mt-[15px]">
+                    <p className="become-para 2xl:mt-[15px] xl:mt-[10px] mt-[5px]">
                       Leave the logistics to us! We’ll handle the delivery of
                       your dishes to customers all across the UK
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[510px] w-[400px] px-[20px] 2xl:py-[30px] xl:py-[20px] py-[17px] mt-[15px] xl:mt-[25px] mboxs">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
                     <h1 className="become-no">05</h1>
                   </div>
                   <div>
                     <h1 className="become-head">Ongoing Support</h1>
-                    <p className="become-para 2xl:mt-[15px]">
+                    <p className="become-para 2xl:mt-[15px] xl:mt-[10px] mt-[5px]">
                       Our commitment doesn’t end with delivery. We provide
                       continuous sales and marketing promotion to fuel the
                       long-term growth of your business
@@ -352,28 +353,31 @@ const BecomeChef = () => {
                 </div>
               </div>
             </div>
-            <div className=" 2xl:w-[711.95px] 2xl:h-[1296px]  xl:w-[] w-[]">
+            <div className=" 2xl:w-[711.95px] 2xl:h-[1296px]  xl:w-[470px] w-[400px] flex items-center mbanner2">
               <Image src={banner2} className="rounded-[15px]" />
             </div>
           </div>
 
-          <div className="bg-[#FFE2E2] 2xl:py-[105px] xl:py-[70px] w-full">
+          <div className="bg-[#FFE2E2] 2xl:py-[105px] xl:py-[70px] py-[50px] w-full mthirdbox">
             <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] text-center mx-auto mnavbar">
-              <h1 className="third_head">Ready to Get Started?</h1>
-              <p className="five_p2 2xl:mt-[25px] xl:mt-[10px]">
+              <h1 className="alata font-[400] 2xl:text-[55px] 2xl:leading-[75px] xl:text-[30px] xl:leading-[45px] lg:text-[28px] lg:leading-[38px]">
+                Ready to Get Started?
+              </h1>
+              <p className="alata font-[400] 2xl:text-[24px] 2xl:leading-[34px] xl:text-[18px] xl:leading-[24px] lg:text-[14px] lg:leading-[20px] 2xl:mt-[25px] xl:mt-[10px]">
                 Contact us today to turn your passion for cooking into a
                 thriving business!
               </p>
             </div>
           </div>
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between items-center mx-auto 2xl:mt-[175px] 2xl:mb-[180px]  xl:mt-[100px] xl:mb-[80px] mt-[30px] mnavbar">
+
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between items-center mx-auto 2xl:mt-[175px] 2xl:mb-[180px]  xl:mt-[100px] xl:mb-[80px] mt-[50px] mb-[50px] m3box">
             <div className="2xl:w-[686]">
               <Image
                 src={banner3}
-                className="rounded-[15px] 2xl:w-[686px] 2xl:h-[628px] xl:w-[465px]  w-[380px] h-auto"
+                className="rounded-[15px] 2xl:w-[686px] 2xl:h-[628px] xl:w-[465px]  w-[380px] h-auto mbanner3"
               />
             </div>
-            <div className="2xl:w-[720px]  xl:w-[485px] w-[350px]">
+            <div className="2xl:w-[720px]  xl:w-[485px] w-[350px] mbox3">
               <h1 className="third_head">Join the Chef Waiting List</h1>
               <div className="flex 2xl:gap-[20px] xl:gap-[15px] gap-[10px]">
                 <div className="2xl:w-[375px] xl:w-[280px] w-[200px]">

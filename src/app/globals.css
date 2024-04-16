@@ -428,15 +428,16 @@ td {
   @apply w-full bg-[#F3F3F3] text-black 2xl:h-[60px] xl:h-[40px] h-[30px] 2xl:text-[16px] xl:text-[12px] text-[9px] 2xl:p-[20px] xl:p-[10px] p-[8px] 2xl:mt-[10px] xl:mt-[5px] mt-[3px]
 }
 
-.become-no{
+.become-no {
   @apply alata font-[400] 2xl:text-[25px] 2xl:leading-[35px] xl:text-[16px] xl:leading-[24px] text-[12px] leading-[18px]
 }
 
-.become-head{
-  @apply alata font-[400] 2xl:text-[30px] 2xl:leading-[40px] xl:text-[18px] xl:leading-[28px] text-[14px] leading-[20px]
+.become-head {
+  @apply alata font-[400] 2xl:text-[30px] 2xl:leading-[40px] xl:text-[16px] xl:leading-[28px] text-[14px] leading-[20px]
 }
-.become-para{
-  @apply alata font-[400] 2xl:text-[22px] 2xl:leading-[32px] xl:text-[16px] xl:leading-[20px] text-[12px] leading-[14px]
+
+.become-para {
+  @apply alata font-[400] 2xl:text-[22px] 2xl:leading-[32px] xl:text-[14px] xl:leading-[20px] text-[11px] leading-[14px]
 }
 
 
@@ -510,10 +511,11 @@ td {
     margin-top: 38% !important;
   }
 
-.chefdishWB{
-  width: 1330px !important;
+  .chefdishWB {
+    width: 1330px !important;
 
-}
+  }
+
   .mbecome-img {
     width: 55% !important;
     height: auto !important;
@@ -545,6 +547,45 @@ td {
 
   .msettingCom {
     width: 1050px !important;
+
+  }
+
+  .mcosider {
+    font-size: 48px !important;
+    line-height: 55px !important;
+  }
+  .mservice{
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .mboxs{
+    width:  640px !important;
+  }
+  .mbanner2{
+    width:  640px !important;
+  }
+  .become-para{
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+  .become-head{
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+  .mthirdbox{
+    padding: 60px 0px 60px 0px !important;
+  }
+  .mbanner3{
+    width:  600px !important;
+    height: auto !important;
+
+  }
+  .mbox3{
+    width:  650px !important;
+  }
+  .m3box{
+    margin: 120px auto 120px !important;
+    width: 93% !important;
 
   }
 }
