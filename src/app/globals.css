@@ -500,31 +500,40 @@ td {
     margin-top: 38% !important;
   }
 
+.chefdishWB{
+  width: 1330px !important;
 
+}
   .mbecome-img {
     width: 55% !important;
     height: auto !important;
   }
-  .mbecomeimg{
+
+  .mbecomeimg {
     width: 60px !important;
     height: auto !important;
   }
-  .mbecomeimgg{
+
+  .mbecomeimgg {
     width: 50px !important;
     height: auto !important;
   }
+
   .mcusinimg {
     width: 200px !important;
     height: auto !important;
   }
+
   .mexploreD {
     width: 23% !important;
     height: auto !important;
   }
+
   .mexplorimg {
     height: auto !important;
   }
-  .msettingCom{
+
+  .msettingCom {
     width: 1050px !important;
 
   }

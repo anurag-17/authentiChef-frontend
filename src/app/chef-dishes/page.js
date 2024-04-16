@@ -216,7 +216,7 @@ const ChefDishes = () => {
         <div className=" ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[100px] xl:py-[50px] py-[40px] mx-auto mnavbar">
             <div className="chefDishes-bg rounded-[15px] relative 2xl:h-[529px] xl:h-[360px] h-[280px] 2xl:pt-[295px] xl:pt-[200px] pt-[155px]">
-              <div className=" flex gap-5 2xl:w-[1414px] xl:w-[970px] w-[750px]  rounded-[15px] bg-white mx-auto 2xl:p-[50px] xl:p-[20px] p-[15px]">
+              <div className=" flex gap-5 2xl:w-[1414px] xl:w-[970px] w-[750px]  rounded-[15px] bg-white mx-auto 2xl:p-[50px] xl:p-[20px] p-[15px] chefdishWB">
                 <div className="2xl:w-[154px] xl:w-[80px] w-[60px]">
                   <div>
                     <Image src={chef} className="w-full" />
