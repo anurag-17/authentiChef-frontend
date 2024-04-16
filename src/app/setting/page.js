@@ -41,12 +41,12 @@ const Setting = () => {
         },
       ],
     },
-    {
-      id: 3,
-      label: "  Payment Method",
-      component: <PaymentMethod />,
-      icon: payment,
-    },
+    // {
+    //   id: 3,
+    //   label: "  Payment Method",
+    //   component: <PaymentMethod />,
+    //   icon: payment,
+    // },
   ];
 
   const [showDrawer, setShowDrawer] = useState("");
@@ -58,8 +58,8 @@ const Setting = () => {
   return (
     <>
       <section>
-        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 ">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
+        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 mnavbar-h">
+          <div className=" mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
               {/* =======Side Drawer======= */}
 
@@ -76,7 +76,7 @@ const Setting = () => {
                     <Image
                       alt="image"
                       src={sidemanu}
-                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px] menu-btn"
                     />
                   </label>
                 </div>
@@ -200,7 +200,7 @@ const Setting = () => {
         </nav>
 
         <div className="">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px]">
+          <div className=" mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px]">
             <div
               className={` flex flex-col justify-between   
             2xl:w-[278px] xl:w-[200px] w-[170px]  drawer
@@ -264,7 +264,7 @@ const Setting = () => {
                 </div>
               </div>
             </div>
-            <div className=" 2xl:w-[1215px] xl:w-[830px] w-[620px] ">
+            <div className=" 2xl:w-[1215px] xl:w-[830px] w-[620px] msettingCom ">
               {menulist.map((item, index) => (
                 <Fragment key={index}>
                   {ComponentId === item.id && item.component}

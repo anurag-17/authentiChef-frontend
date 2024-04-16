@@ -56,7 +56,7 @@ const LandingPage = () => {
         <div className="hidden md:block 2xl:h-screen ">
           <div className="poster-bg flex justify-center ">
             <div className="">
-              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[46px] xl:leading-[55px] 2xl:mt-[54%] xl:mt-[50%] lg:text-[35px] lg:leading-[30px lg:mt-[50%] mt-[130%] mx-auto">
+              <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[46px] xl:leading-[55px] 2xl:mt-[54%] xl:mt-[50%] lg:text-[35px] lg:leading-[30px lg:mt-[50%] mt-[130%] mx-auto mdestination">
                 Where’s your next food destination?
               </h1>
               <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
@@ -94,7 +94,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="offer-bg flex justify-center items-center 2xl:gap-[30px] xl:gap-[10px] gap-[8px] 2xl:h-[150px] xl:h-[100px] h-[60px]">
+        <div className="offer-bg flex justify-center items-center 2xl:gap-[30px] xl:gap-[10px] gap-[8px] 2xl:h-[150px] xl:h-[100px] h-[60px] moffers">
           <Image
             src={offer}
             className="2xl:w-[48px] 2xl:h-[48px] 2xl:w-[30px] 2xl:h-[30px] w-[25px] h-[25px]"
@@ -269,12 +269,12 @@ const LandingPage = () => {
         {/* ===================Four================== */}
 
         <div className="flex justify-center 2xl:py-20 xl:py-10 lg:py-10 py-10 bg-[#F9F2F2]">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] mnavbar">
             <div className="flex">
               <h1 className="four_head">Popular Dishes</h1>
             </div>
             <div className="flex flex-col md:flex-row justify-center flex-wrap lg:justify-between md:my-5 lg:my-0">
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 ">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox ">
                 <div>
                   <Image
                     alt="spaghetti"
@@ -303,7 +303,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox">
                 <div>
                   <Image
                     alt="cheesesandwich"
@@ -334,7 +334,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox">
                 <div>
                   <Image
                     alt="chickenkabab"
@@ -363,7 +363,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox">
                 <div>
                   <Image
                     alt="paneerbuttermasala"
@@ -392,7 +392,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox">
                 <div>
                   <Image
                     alt="indianthali"
@@ -421,7 +421,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox">
                 <div>
                   <Image
                     alt="omelettesandwich"
@@ -452,7 +452,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox">
                 <div>
                   <Image
                     alt="chickenkabab2nd"
@@ -480,7 +480,7 @@ const LandingPage = () => {
                 </button>
               </div>
 
-              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4">
+              <div className="2xl:w-[373px] xl:w-[260px] lg:w-[190px] md:w-1/2 mx-10 sm:mx-0 my-5  2xl:my-5 lg:my-4 mfbox">
                 <div>
                   <Image alt="fish" src={Rectangle8} className="four_img" />
                 </div>
@@ -511,7 +511,7 @@ const LandingPage = () => {
         {/* ===================Five================== */}
 
         <div className=" flex justify-center bg-white 2xl:py-[100px] xl:py-10 lg:py-10 py-10">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-2/3  mx-auto">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-2/3  mx-auto mnavbar">
             <div className=" flex justify-center ">
               <div className="mx-5 sm:mx-0">
                 <div className="mx-auto">
@@ -597,7 +597,7 @@ const LandingPage = () => {
         {/* ===================Six================== */}
 
         <div className="flex justify-center 2xl:py-28 xl:py-10 lg:py-10 py-10 bg-[#F9F2F2]">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  flex flex-wrap ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  flex flex-wrap mnavbar ">
             <div className="mx-20 sm:mx-auto">
               <div className="flex justify-center lg:justify-start">
                 <h1 className="six_head mx-auto">Our Commitment</h1>
@@ -609,7 +609,7 @@ const LandingPage = () => {
                     <Image
                       alt="ourcommitmentimg"
                       src={plate1}
-                      className="six_img "
+                      className="six_img"
                     />
 
                     <p className="six_p">
@@ -667,7 +667,7 @@ const LandingPage = () => {
         {/* ===================Seven================== */}
 
         <div className="yellow-bg 2xl:h-[1050px] md:w-full lg:flex justify-center 2xl:pt-[100px] 2xl:pb-[100px] xl:pt-[60px] pt-[25px] xl:pb-[60px] hidden lg:block">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] mseven ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] mnavbar ">
             <h1 className="seven_head">Our Chef Community</h1>
             <p className="seven_p">
               Our independent chefs, create dishes born from their passion for
@@ -745,7 +745,7 @@ const LandingPage = () => {
         {/* ===================Eight================== */}
 
         <div className="flex justify-center xl:py-28 lg:py-14 md:py-8 py-5 border-b-[1px] border-[#B1B1B1]">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex flex-col-reverse lg:flex-row meghit">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex flex-col-reverse lg:flex-row mnavbar">
             <div className="mx-10 sm:w-1/2 sm:mx-auto lg:mx-0">
               <h1 className=" eight_head ">Food Safety</h1>
               <p className="eight_p">
@@ -775,7 +775,7 @@ const LandingPage = () => {
         {/* ===================Nine================== */}
 
         <div className="flex justify-center lg:my-14 xl:my-28 my-10">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] mnavbar">
             <h1 className="nine_head">Testimonials</h1>
             <p className="nine_p">
               All our chefs have fans raving about their food

@@ -432,7 +432,7 @@ td {
 
 @media (min-width: 1536px) and (max-width: 1750px) {
   .mnavbar {
-    width: 1400px !important;
+    width: 93% !important;
   }
 
   .mnavbar-h {
@@ -460,17 +460,72 @@ td {
     width: 110px !important;
     height: 42px !important;
   }
-  .mfooter{
+
+  .mfooter {
     width: 1400px !important;
 
   }
-  .meghit{
-    width: 1400px !important;
+
+  .mfbox {
+    width: 23% !important;
 
   }
-  .meightPoster{
+
+  .meightPoster {
     width: 624px !important;
     height: 457px !important;
+
+  }
+
+  .four_img {
+    width: 340px !important;
+    height: auto !important;
+  }
+
+  /* .six_img{
+    width: 340px !important;
+    height: auto !important;
+  } */
+  .seven_img {
+    width: 240px !important;
+    height: auto !important;
+  }
+
+  .moffers {
+    height: 110px !important;
+
+  }
+
+  .mdestination {
+    margin-top: 38% !important;
+  }
+
+
+  .mbecome-img {
+    width: 55% !important;
+    height: auto !important;
+  }
+  .mbecomeimg{
+    width: 60px !important;
+    height: auto !important;
+  }
+  .mbecomeimgg{
+    width: 50px !important;
+    height: auto !important;
+  }
+  .mcusinimg {
+    width: 200px !important;
+    height: auto !important;
+  }
+  .mexploreD {
+    width: 23% !important;
+    height: auto !important;
+  }
+  .mexplorimg {
+    height: auto !important;
+  }
+  .msettingCom{
+    width: 1050px !important;
 
   }
 }

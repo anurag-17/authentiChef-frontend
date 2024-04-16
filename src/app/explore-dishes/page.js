@@ -228,8 +228,8 @@ const ExploreDishes = ({ item }) => {
   return (
     <>
       <section>
-        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 ">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
+        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12  mnavbar-h">
+          <div className="mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
             <div className="w-1/3">
               {/* =======Side Drawer======= */}
 
@@ -246,7 +246,7 @@ const ExploreDishes = ({ item }) => {
                     <Image
                       alt="image"
                       src={sidemanu}
-                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px] menu-btn"
                     />
                   </label>
                 </div>
@@ -369,9 +369,9 @@ const ExploreDishes = ({ item }) => {
           </div>
         </nav>
 
-        <div className="flex justify-center 2xl:my-20 xl:my-14 lg:my-8 hidden lg:block 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] mx-auto">
+        <div className="flex justify-center 2xl:my-20 xl:my-14 lg:my-8 hidden lg:block mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] mx-auto">
           <div className="">
-            <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto">
+            <div className="mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto">
               <div className="">
                 <h1 className="third_head">Select Cuisine</h1>
               </div>
@@ -456,7 +456,7 @@ const ExploreDishes = ({ item }) => {
               <div className="carousel  2xl:gap-[40px] xl:gap-7 lg:gap-5">
                 <div className="">
                   <Image
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] "
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] mcusinimg "
                     src={cuisineindia}
                     alt="cuisine-india"
                   />
@@ -470,7 +470,7 @@ const ExploreDishes = ({ item }) => {
                 <div className="">
                   <Image
                     alt="cuisine-american"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] mcusinimg"
                     src={cuisineamerican}
                   />
                   <h1
@@ -483,7 +483,7 @@ const ExploreDishes = ({ item }) => {
                 <div className="">
                   <Image
                     alt="cuisine-mexican"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] mcusinimg"
                     src={cuisinemexican}
                   />
                   <h1
@@ -496,7 +496,7 @@ const ExploreDishes = ({ item }) => {
                 <div className="">
                   <Image
                     alt="cuisine-mediterranean"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] mcusinimg"
                     src={cuisinemediterranean}
                   />
                   <h1
@@ -509,7 +509,7 @@ const ExploreDishes = ({ item }) => {
                 <div className="">
                   <Image
                     alt="cuisine-italian"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] mcusinimg"
                     src={cuisineitalian}
                   />
                   <h1
@@ -522,7 +522,7 @@ const ExploreDishes = ({ item }) => {
                 <div className="">
                   <Image
                     alt="cuisine-middleEastern"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] mcusinimg"
                     src={cuisinemiddleEastern}
                   />
                   <h1
@@ -535,7 +535,7 @@ const ExploreDishes = ({ item }) => {
                 <div className="">
                   <Image
                     alt="cuisine-middleEastern"
-                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px]"
+                    className="rounded-[5px] 2xl:w-[195px] 2xl:h-[195px] xl:w-[160px] lg:w-[125px] mcusinimg"
                     src={cuisinesoutheast}
                   />
                   <h1
@@ -551,7 +551,7 @@ const ExploreDishes = ({ item }) => {
         </div>
 
         <div className="2xl:my-[120px] xl:my-[60px] my-[50px] bg-[#F9F2F2]">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto">
+          <div className="mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto">
             <div className="flex justify-center">
               <div>
                 <h1 className="third_head text-center">Explore Dishes</h1>
@@ -565,7 +565,7 @@ const ExploreDishes = ({ item }) => {
               {data2.map((item) => (
                 <div
                   key={item.id}
-                  className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] "
+                  className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] mexploreD "
                 >
                   <button
                     className=""
@@ -578,7 +578,7 @@ const ExploreDishes = ({ item }) => {
                       alt={item.title}
                       width={345}
                       height={278}
-                      className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px]"
+                      className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px] mexplorimg"
                     />
                   </button>
                   <div className="">
@@ -660,7 +660,7 @@ const ExploreDishes = ({ item }) => {
         </div>
 
         <div className="flex justify-center lg:my-14 xl:my-28 my-10">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]">
+          <div className="mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]">
             <h1 className="nine_head">Testimonials</h1>
             <p className="nine_p">
               All our chefs have fans raving about their food

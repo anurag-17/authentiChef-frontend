@@ -73,8 +73,8 @@ const ChefDishes = () => {
   return (
     <>
       <section>
-        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 ">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center">
+        <nav className="flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 mnavbar-h ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center mnavbar">
             <div className="w-1/3">
               {/* =======Side Drawer======= */}
 
@@ -91,7 +91,7 @@ const ChefDishes = () => {
                     <Image
                       alt="image"
                       src={sidemanu}
-                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px]"
+                      className="2xl:w-[48px] 2xl:h-[40px] xl:w-[40px] xl:h-[25px] w-[30px] h-[20px] menu-btn"
                     />
                   </label>
                 </div>
@@ -214,7 +214,7 @@ const ChefDishes = () => {
           </div>
         </nav>
         <div className=" ">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[100px] xl:py-[50px] py-[40px] mx-auto">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[100px] xl:py-[50px] py-[40px] mx-auto mnavbar">
             <div className="chefDishes-bg rounded-[15px] relative 2xl:h-[529px] xl:h-[360px] h-[280px] 2xl:pt-[295px] xl:pt-[200px] pt-[155px]">
               <div className=" flex gap-5 2xl:w-[1414px] xl:w-[970px] w-[750px]  rounded-[15px] bg-white mx-auto 2xl:p-[50px] xl:p-[20px] p-[15px]">
                 <div className="2xl:w-[154px] xl:w-[80px] w-[60px]">
@@ -310,7 +310,7 @@ const ChefDishes = () => {
         </div>
 
         <div className="2xl:mt-[250px] xl:mt-[200px] mt-[180px] ">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto mnavbar">
             <div className="">
               <div>
                 <h1 className="third_head">Popular Dishes</h1>

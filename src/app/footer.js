@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
          <footer className="bg-[#F6F6F6] flex justify-center">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:mt-[100px] xl:mt-[50px] lg:mt-[35px] sm:mt-[30px] mt-[20px] mfooter">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:mt-[100px] xl:mt-[50px] lg:mt-[35px] sm:mt-[30px] mt-[20px] mnavbar">
             <div className="flex  md:justify-between flex-wrap">
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
                 <div className="lg:text-start text-center">
