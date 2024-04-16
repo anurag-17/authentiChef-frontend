@@ -428,6 +428,16 @@ td {
   @apply w-full bg-[#F3F3F3] text-black 2xl:h-[60px] xl:h-[40px] h-[30px] 2xl:text-[16px] xl:text-[12px] text-[9px] 2xl:p-[20px] xl:p-[10px] p-[8px] 2xl:mt-[10px] xl:mt-[5px] mt-[3px]
 }
 
+.become-no{
+  @apply alata font-[400] 2xl:text-[25px] 2xl:leading-[35px] xl:text-[16px] xl:leading-[24px] text-[12px] leading-[18px]
+}
+
+.become-head{
+  @apply alata font-[400] 2xl:text-[30px] 2xl:leading-[40px] xl:text-[18px] xl:leading-[28px] text-[14px] leading-[20px]
+}
+.become-para{
+  @apply alata font-[400] 2xl:text-[22px] 2xl:leading-[32px] xl:text-[16px] xl:leading-[20px] text-[12px] leading-[14px]
+}
 
 
 @media (min-width: 1536px) and (max-width: 1750px) {

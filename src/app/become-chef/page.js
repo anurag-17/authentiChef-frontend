@@ -267,19 +267,141 @@ const BecomeChef = () => {
               </div>
             </div>
           </div>
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px] mnavbar"></div>
-          <div>
-            <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px] mnavbar"></div>
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[90px] xl:mb-[60px] xl:mt-[40px] mt-[30px] mnavbar">
+            <div className="2xl:w-[842px] xl:w-[] w-[]">
+              <h1 className="third_head">
+                Are you considering starting your own food business from home?
+              </h1>
+              <p
+                className=" alata font-[400] 2xl:text-[36px] 2xl:leading-[55px] xl:text-[28px] xl:leading-[35px] text-[12px] leading-[14px] mt-[55px]"
+              >
+                Our Services to get you started and growing!
+              </p>
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+                <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
+                  <div>
+                    <h1 className="become-no">01</h1>
+                  </div>
+                  <div>
+                    <h1 className="become-head">Registration Assistance</h1>
+                    <p className="become-para 2xl:mt-[15px]">
+                      Well expertly guide you through the registration process
+                      with your local council, ensuring a smooth start for your
+                      food business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+                <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
+                  <div>
+                    <h1 className="become-no">01</h1>
+                  </div>
+                  <div>
+                    <h1 className="become-head">Registration Assistance</h1>
+                    <p className="become-para 2xl:mt-[15px]">
+                      Well expertly guide you through the registration process
+                      with your local council, ensuring a smooth start for your
+                      food business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+                <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
+                  <div>
+                    <h1 className="become-no">01</h1>
+                  </div>
+                  <div>
+                    <h1 className="become-head">Registration Assistance</h1>
+                    <p className="become-para 2xl:mt-[15px]">
+                      Well expertly guide you through the registration process
+                      with your local council, ensuring a smooth start for your
+                      food business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+                <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
+                  <div>
+                    <h1 className="become-no">01</h1>
+                  </div>
+                  <div>
+                    <h1 className="become-head">Registration Assistance</h1>
+                    <p className="become-para 2xl:mt-[15px]">
+                      Well expertly guide you through the registration process
+                      with your local council, ensuring a smooth start for your
+                      food business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+                <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
+                  <div>
+                    <h1 className="become-no">01</h1>
+                  </div>
+                  <div>
+                    <h1 className="become-head">Registration Assistance</h1>
+                    <p className="become-para 2xl:mt-[15px]">
+                      Well expertly guide you through the registration process
+                      with your local council, ensuring a smooth start for your
+                      food business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" 2xl:w-[711.95px] 2xl:h-[1296px]  xl:w-[] w-[]">
+              <Image src={banner2} className="rounded-[15px]" />
+            </div>
           </div>
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px] mnavbar">
 
-            <div>
-              <div>
-                <Image src={banner3} className="2xl:w-" />
+          <div className="bg-[#FFE2E2] 2xl:py-[105px] xl:py-[70px] w-full">
+            <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] text-center mx-auto mnavbar">
+              <h1 className="third_head">Ready to Get Started?</h1>
+              <p className="five_p2 2xl:mt-[25px] xl:mt-[10px]">
+                Contact us today to turn your passion for cooking into a
+                thriving business!
+              </p>
+            </div>
+          </div>
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between items-center mx-auto 2xl:mt-[175px] 2xl:mb-[180px]  xl:mt-[100px] xl:mb-[80px] mt-[30px] mnavbar">
+            <div className="2xl:w-[686]">
+              <Image
+                src={banner3}
+                className="rounded-[15px] 2xl:w-[686px] 2xl:h-[628px] xl:w-[465px]  w-[380px] h-auto"
+              />
+            </div>
+            <div className="2xl:w-[720px]  xl:w-[485px] w-[350px]">
+              <h1 className="third_head">Join the Chef Waiting List</h1>
+              <div className="flex 2xl:gap-[20px] xl:gap-[15px] gap-[10px]">
+                <div className="2xl:w-[375px] xl:w-[280px] w-[200px]">
+                  <input placeholder="First Name" className="profile_input" />
+                </div>
+                <div className="2xl:w-[375px] xl:w-[280px] w-[200px]">
+                  <input placeholder="Surname" className="profile_input" />
+                </div>
+              </div>
+              <div className="w-full 2xl:mt-[15px] xl:mt-[10px] mt-[8px]">
+                <input placeholder="Phone" className="profile_input" />
+              </div>
+              <div className="w-full 2xl:mt-[15px] xl:mt-[10px] mt-[8px]">
+                <input placeholder="Email" className="profile_input" />
+              </div>
+              <div className="w-full 2xl:mt-[15px] xl:mt-[10px] mt-[8px]">
+                <input placeholder="Post Code" className="profile_input" />
+              </div>
+              <div className="2xl:mt-[30px] xl:mt-[15px] mt-[10px]">
+                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[120px] 2xl:h-[56px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] text-[10px] xl:w-[80px] xl:py-[8px]  lg:py-[6px] lg:px-4 px-3 py-1 hover:bg-[#7e2727]  ">
+                  Submit
+                </button>
               </div>
             </div>
           </div>
         </div>
+
         <Footer />
       </section>
     </>
