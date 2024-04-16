@@ -271,7 +271,14 @@ const BecomeChef = () => {
           <div>
             <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px] mnavbar"></div>
           </div>
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px] mnavbar"></div>
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[70px] xl:mt-[40px] mt-[30px] mnavbar">
+
+            <div>
+              <div>
+                <Image src={banner3} className="2xl:w-" />
+              </div>
+            </div>
+          </div>
         </div>
         <Footer />
       </section>
