@@ -249,7 +249,7 @@ const Products = ({ item }) => {
               </div>
             </div>
             <div className="w-1/3 flex justify-center">
-              <Link href="#">
+              <Link href="/">
                 <Image src={logo} alt="logo" className="nav_logo" />
               </Link>
             </div>

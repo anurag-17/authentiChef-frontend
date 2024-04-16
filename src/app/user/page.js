@@ -759,7 +759,9 @@ const LandingPage = () => {
                 assurance and peace of mind.
               </p>
               <div className="flex justify-center lg:justify-start">
-                <button className=" eight_btn ">Food Safety</button>
+              <Link href="/food-sefty">
+              <button className=" eight_btn ">Food Safety</button>
+              </Link>
               </div>
             </div>
             <div className="mx-10 sm:w-1/2 flex sm:mx-auto my-5 lg:my-0 lg:flex-none">

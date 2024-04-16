@@ -128,8 +128,8 @@ const BecomeChef = () => {
                 </div>
               </div>
               <div className="w-1/3 flex justify-center">
-                <Link href="#">
-                  <Image src={logo} alt="logo" className="nav_logo" />
+                <Link href="/">
+                  <Image src={logo} alt="logo" className="nav_logo"/>
                 </Link>
               </div>
               <div className="flex justify-end md:gap-7  gap-2 w-1/3">
@@ -183,7 +183,7 @@ const BecomeChef = () => {
                 </p>
               </div>
               <div className="flex flex-col justify-end 2xl:mt-[55px] xl:mt-[35px] mt-[25px]">
-                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[240px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] text-[10px] xl:w-[150px] w-[130px] xl:py-[12px]  lg:py-[10px] lg:px-4 px-3 py-1 hover:bg-[#7e2727]  ">
+                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[240px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[12px] text-[10px] xl:w-[150px] w-[130px] xl:py-[12px]  lg:py-[10px] lg:px-4 px-3 py-1  ">
                   Join the Waiting List
                 </button>
               </div>

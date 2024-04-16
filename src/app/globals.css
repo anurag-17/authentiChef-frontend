@@ -440,7 +440,6 @@ td {
   @apply alata font-[400] 2xl:text-[22px] 2xl:leading-[32px] xl:text-[14px] xl:leading-[20px] text-[11px] leading-[14px]
 }
 
-
 @media (min-width: 1536px) and (max-width: 1750px) {
   .mnavbar {
     width: 93% !important;
@@ -550,42 +549,52 @@ td {
 
   }
 
+
+  /* ===============Become a chef======= */
+
   .mcosider {
     font-size: 48px !important;
     line-height: 55px !important;
   }
-  .mservice{
+
+  .mservice {
     font-size: 30px !important;
     line-height: 40px !important;
   }
-  .mboxs{
-    width:  640px !important;
+
+  .mboxs {
+    width: 640px !important;
   }
-  .mbanner2{
-    width:  640px !important;
+
+  .mbanner2 {
+    width: 640px !important;
   }
-  .become-para{
+
+  .become-para {
     font-size: 18px !important;
     line-height: 24px !important;
   }
-  .become-head{
+
+  .become-head {
     font-size: 25px !important;
     line-height: 30px !important;
   }
-  .mthirdbox{
+
+  .mthirdbox {
     padding: 60px 0px 60px 0px !important;
   }
-  .mbanner3{
-    width:  600px !important;
-    height: auto !important;
 
+  .mbanner3 {
+    width: 600px !important;
+    height: auto !important;
   }
-  .mbox3{
-    width:  650px !important;
+
+  .mbox3 {
+    width: 650px !important;
   }
-  .m3box{
+
+  .m3box {
     margin: 120px auto 120px !important;
     width: 93% !important;
-
   }
 }

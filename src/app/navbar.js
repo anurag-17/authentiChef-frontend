@@ -122,7 +122,7 @@ const Navbar = () => {
             </div>
 
             <div className="w-1/3 ">
-              <a href="#">
+              <a href="/">
                 <Image alt="logo" src={logo} className="nav_logo" />
               </a>
             </div>

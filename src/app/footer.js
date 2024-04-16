@@ -14,16 +14,16 @@ const Footer = () => {
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
                 <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Quick Links</h1>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Our Story</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Food Safety</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Help Center</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Global Cuisines</p>
                   </a>
                 </div>
@@ -31,13 +31,13 @@ const Footer = () => {
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
                 <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Resources</h1>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Become a chef</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Browse more chef</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Homemade food delivery</p>
                   </a>
                 </div>
@@ -45,16 +45,16 @@ const Footer = () => {
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
                 <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Other Links</h1>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Log In</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Sign Up</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Privacy Policy</p>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <p className="footer_text">Terms of Service</p>
                   </a>
                 </div>
