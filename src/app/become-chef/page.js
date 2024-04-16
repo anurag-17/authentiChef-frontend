@@ -267,17 +267,15 @@ const BecomeChef = () => {
               </div>
             </div>
           </div>
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:mt-[90px] xl:mb-[60px] xl:mt-[40px] mt-[30px] mnavbar">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between items-center mx-auto 2xl:mt-[90px] xl:mb-[60px] xl:mt-[40px] mt-[30px] mnavbar">
             <div className="2xl:w-[842px] xl:w-[] w-[]">
               <h1 className="third_head">
                 Are you considering starting your own food business from home?
               </h1>
-              <p
-                className=" alata font-[400] 2xl:text-[36px] 2xl:leading-[55px] xl:text-[28px] xl:leading-[35px] text-[12px] leading-[14px] mt-[55px]"
-              >
+              <p className=" alata font-[400] 2xl:text-[36px] 2xl:leading-[55px] xl:text-[28px] xl:leading-[35px] text-[12px] leading-[14px] mt-[55px]">
                 Our Services to get you started and growing!
               </p>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
                     <h1 className="become-no">01</h1>
@@ -292,62 +290,63 @@ const BecomeChef = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
-                    <h1 className="become-no">01</h1>
+                    <h1 className="become-no">02</h1>
                   </div>
                   <div>
-                    <h1 className="become-head">Registration Assistance</h1>
+                    <h1 className="become-head">
+                      Food Safety and Hygiene Certification
+                    </h1>
                     <p className="become-para 2xl:mt-[15px]">
-                      Well expertly guide you through the registration process
-                      with your local council, ensuring a smooth start for your
-                      food business.
+                      We’ll assist you to obtaining the necessary certifications
+                      to comply with UK Food Safety and Hygiene Laws. Our
+                      guidance will help you achieve the highest food rating
+                      score, ensuring full compliance.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
-                    <h1 className="become-no">01</h1>
+                    <h1 className="become-no">03</h1>
                   </div>
                   <div>
-                    <h1 className="become-head">Registration Assistance</h1>
+                    <h1 className="become-head">Chef Onboarding Support</h1>
                     <p className="become-para 2xl:mt-[15px]">
-                      Well expertly guide you through the registration process
-                      with your local council, ensuring a smooth start for your
-                      food business.
+                      We’re here to support passionate chefs like you in sharing
+                      your cultural heritage through your dishes.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
-                    <h1 className="become-no">01</h1>
+                    <h1 className="become-no">04</h1>
                   </div>
                   <div>
-                    <h1 className="become-head">Registration Assistance</h1>
+                    <h1 className="become-head">UK Nationwide Delivery</h1>
                     <p className="become-para 2xl:mt-[15px]">
-                      Well expertly guide you through the registration process
-                      with your local council, ensuring a smooth start for your
-                      food business.
+                      Leave the logistics to us! We’ll handle the delivery of
+                      your dishes to customers all across the UK
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFE8E8] 2xl:w-[761px] 2xl:h-[180px]  xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
+              <div className="bg-[#FFE8E8] 2xl:w-[761px] xl:w-[] w-[] px-[20px] py-[30px] mt-[25px]">
                 <div className="flex 2xl:gap-[25px] xl:gap-[15px] gap-[10px]">
                   <div>
-                    <h1 className="become-no">01</h1>
+                    <h1 className="become-no">05</h1>
                   </div>
                   <div>
-                    <h1 className="become-head">Registration Assistance</h1>
+                    <h1 className="become-head">Ongoing Support</h1>
                     <p className="become-para 2xl:mt-[15px]">
-                      Well expertly guide you through the registration process
-                      with your local council, ensuring a smooth start for your
-                      food business.
+                      Our commitment doesn’t end with delivery. We provide
+                      continuous sales and marketing promotion to fuel the
+                      long-term growth of your business
                     </p>
                   </div>
                 </div>
