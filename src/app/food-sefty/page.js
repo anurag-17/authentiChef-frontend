@@ -186,68 +186,68 @@ const FoodSefty = () => {
         </div>
         <div className="bg-[#F5C7C7] 2xl:py-[115px] xl:py-[80px] py-[50px]">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  items-center mx-auto mnavbar">
-          <div>
-          <h1 className="alata font-[400] mx-auto 2xl:text-[25px] 2xl:leading-[45px] xl:text-[16px] xl:leading-[30px] text-[12px] leading-[20px] 2xl:w-[831px] xl:w-[550px] w-[400px] text-center">
-              Each of our community chefs meet our thorough onboarding criteria
-              in order to sell their dishes on authentichef.
-            </h1>
-          </div>
-          <div className="2xl:mt-[60px] xl:mt-[40px] mt-[20px] flex justify-between">
-            <div className="2xl:w-[317px] xl:w-[220px] w-[180px] mfoodsefty">
-              <Image
-                src={hygiene}
-                className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
-              />
-              <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
-                Food Hygiene Rating:
+            <div>
+              <h1 className="alata font-[400] mx-auto 2xl:text-[25px] 2xl:leading-[45px] xl:text-[16px] xl:leading-[30px] text-[12px] leading-[20px] 2xl:w-[831px] xl:w-[550px] w-[400px] text-center">
+                Each of our community chefs meet our thorough onboarding
+                criteria in order to sell their dishes on authentichef.
               </h1>
-              <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] ">
-                Approved by their local council and strive for the highest food
-                rating score of 5 stars
-              </p>
             </div>
-            <div className="2xl:w-[317px] xl:w-[220px] w-[180px] mfoodsefty">
-              <Image
-                src={expertise}
-                className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
-              />
-              <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
-                Certified Expertise:
-              </h1>
-              <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] ">
-                Each chef holds a minimum level 2 food safety and hygiene
-                certification
-              </p>
+            <div className="2xl:mt-[60px] xl:mt-[40px] mt-[20px] flex justify-between">
+              <div className="2xl:w-[364px] xl:w-[250px] w-[180px] ">
+                <Image
+                  src={hygiene}
+                  className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
+                />
+                <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
+                  Food Hygiene Rating:
+                </h1>
+                <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] 2xl:w-[320px] xl:w-[210px] w-[180px]">
+                  Approved by their local council and strive for the highest
+                  food rating score of 5 stars
+                </p>
+              </div>
+              <div className="2xl:w-[364px] xl:w-[250px] w-[180px] ">
+                <Image
+                  src={expertise}
+                  className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
+                />
+                <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
+                  Certified Expertise:
+                </h1>
+                <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] 2xl:w-[330px] xl:w-[205px] w-[180px] mfoodsefty">
+                  Each chef holds a minimum level 2 food safety and hygiene
+                  certification
+                </p>
+              </div>
+              <div className="2xl:w-[364px] xl:w-[250px] w-[180px] ">
+                <Image
+                  src={Ingredients}
+                  className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
+                />
+                <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
+                  Quality Ingredients:
+                </h1>
+                <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] 2xl:w-[315px] xl:w-[210px] w-[180px]">
+                  We believe that the foundation of a great dish lies in the
+                  quality of its ingredients. Thats why our chefs select the
+                  finest specialty ingredients available, locking in flavour
+                </p>
+              </div>
+              <div className="2xl:w-[364px] xl:w-[250px] w-[180px] ">
+                <Image
+                  src={Techniques}
+                  className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
+                />
+                <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
+                  Traditional Cooking Techniques:
+                </h1>
+                <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] 2xl:w-[315px] xl:w-[210px] w-[180px]">
+                  While we embrace innovation and creativity in our dishes, our
+                  chefs hold true to their traditional cooking techniques to
+                  provide an authentic experience
+                </p>
+              </div>
             </div>
-            <div className="2xl:w-[317px] xl:w-[220px] w-[180px] mfoodsefty">
-              <Image
-                src={Ingredients}
-                className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
-              />
-              <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
-                Quality Ingredients:
-              </h1>
-              <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] ">
-                We believe that the foundation of a great dish lies in the
-                quality of its ingredients. Thats why our chefs select the
-                finest specialty ingredients available, locking in flavour
-              </p>
-            </div>
-            <div className="2xl:w-[317px] xl:w-[220px] w-[180px] mfoodsefty">
-              <Image
-                src={Techniques}
-                className="2xl:w-[62px] 2xl:h-[62px] xl:w-[45px] xl:h-[45px] w-[30px] h-[30px] mfoodseftyimg"
-              />
-              <h1 className="become-no 2xl:mt-[20px] xl:mt-[12px] mt-[8px]">
-                Traditional Cooking Techniques:
-              </h1>
-              <p className="seven_p2 2xl:mt-[15px] xl:mt-[10px] mt-[5px] ">
-                While we embrace innovation and creativity in our dishes, our
-                chefs hold true to their traditional cooking techniques to
-                provide an authentic experience
-              </p>
-            </div>
-          </div>
           </div>
         </div>
 
