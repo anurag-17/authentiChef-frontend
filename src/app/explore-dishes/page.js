@@ -281,7 +281,9 @@ const ExploreDishes = ({ item }) => {
                             />
                           </svg>{" "}
                         </label>
+                        <Link href="/">
                         <Image src={sidelogo} className="" />
+                        </Link>
                       </div>
                     </div>
                     <li className="mt-20">
@@ -331,9 +333,9 @@ const ExploreDishes = ({ item }) => {
               </div>
             </div>
             <div className="w-1/3 flex justify-center">
-              <a href="">
+            <Link href="/">
                 <Image src={logo} alt="logo" className="nav_logo" />
-              </a>
+             </Link>
             </div>
             <div className="flex justify-end md:gap-7  gap-2 w-1/3">
               <div className="relative flex items-center">
