@@ -129,7 +129,7 @@ const Navbar = () => {
             <div className="flex md:gap-7  gap-2">
               <button
                 onClick={() =>
-                  document.getElementById("my_modal_1").showModal()
+                  document.getElementById("my_modal_2").showModal()
                 }
                 className="nav_login1"
               >
@@ -276,12 +276,15 @@ const Navbar = () => {
 
       <div className="">
         <dialog
-          id="my_modal_1"
-          className="modal rounded-[10px] 2xl:w-[460px] 2xl:h-[615px] xl:w-[360px] xl:h-[450px] 2xl:mt-40 xl:mt-24 p-0"
+          id="my_modal_2"
+          className="modal rounded-[10px] 2xl:w-[1000px] 2xl:h-[632px] xl:w-[620px] xl:h-[450px] 2xl:mt-40 xl:mt-24 p-0"
+
         >
-          <form method="dialog" className=" w-full h-full mt-0">
+  
+          <form method="dialog" className=" mt-0">
             {/* if there is a button in form, it will close the modal */}
-            <div className="flex justify-center items-center border w-full 2xl:h-[80px] xl:h-[55px]">
+           <div className=" ">
+           <div className="flex justify-center items-center w-full ">
               <button className="absolute right-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +292,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="2xl:w-9 2xl:h-9 w-6 h-6"
+                  className="2xl:w-7 2xl:h-7 w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -298,13 +301,24 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-              <h1 className="fourth_p">Login or Sign up</h1>
+              <h1 className="fourth_p">Login</h1>
             </div>
-            <div className="my-3 px-[40px]">
+            <div className="2xl:w-[368px] xl:w-[] lg:w-[] sm:w-[] w-[]">
               <div className="2xl:mt-[35px] mt-[25px]">
                 <input
                   type="email"
                   name="email"
+                  placeholder="Enter your mail id"
+                  className="alata font-[400] login-inputad  w-full"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  title="enter valid email ex. abc@gmail.com"
+                  // onChange={InputHandler}
+                />
+              </div>
+              <div className="2xl:mt-[35px] mt-[25px]">
+                <input
+                  type="password"
+                  name="password"
                   placeholder="Enter your mail id"
                   className="alata font-[400] login-inputad  w-full"
                   pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
@@ -322,7 +336,7 @@ const Navbar = () => {
                   or
                 </h1>
               </div>
-              <div className="2xl:mt-[20px]">
+              {/* <div className="2xl:mt-[20px]">
                 <Link
                   href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dmy-activity%26utm_medium%3Dhome%26utm_campaign%26hl%3Den_GB%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1476156200%3A1712751508637500&theme=mn&ddm=0"
                   target="_blank"
@@ -350,13 +364,14 @@ const Navbar = () => {
                     </div>
                   </div>
                 </Link>
-              </div>
+              </div> */}
               <div className="my-[30px]">
                 <h1 className="text-[#555555] alata font-[400] text-[14px] leading-[26px] text-center">
                   Browse as Guest
                 </h1>
               </div>
             </div>
+           </div>
           </form>
         </dialog>
       </div>
