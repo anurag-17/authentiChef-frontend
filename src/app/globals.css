@@ -597,8 +597,20 @@ td {
     margin: 120px auto 120px !important;
     width: 93% !important;
   }
-  .mfoodsefty{
+
+  .mfoodsefty {
     width: 320px !important;
 
   }
 }
+
+
+/* .{
+  @apply
+  2xl:w-[] xl:w-[] lg:w-[] sm:w-[] w-[] 
+  2xl:h-[] xl:h-[] lg:h-[] sm:h-[] h-[]
+  2xl:text-[] xl:text-[] lg:text-[] sm:text-[] text-[]
+  2xl:leading-[] xl:leading-[] lg:leading-[] sm:leading-[] leading-[]
+  2xl:my-[] xl:my-[] lg:my-[] sm:my-[] my-[]
+  2xl:py-[] xl:py-[] lg:py-[] sm:py-[] py-[]
+} */

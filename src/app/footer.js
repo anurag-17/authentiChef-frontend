@@ -15,16 +15,16 @@ const Footer = () => {
                 <div className="lg:text-start text-center">
                   <h1 className="footer_heading">Quick Links</h1>
                   <a href="/">
-                    <p className="footer_text">Our Story</p>
+                    <p className="footer_text">About us</p>
                   </a>
                   <a href="/">
-                    <p className="footer_text">Food Safety</p>
-                  </a>
-                  <a href="/">
-                    <p className="footer_text">Help Center</p>
+                    <p className="footer_text">Explore Dishes</p>
                   </a>
                   <a href="/">
                     <p className="footer_text">Global Cuisines</p>
+                  </a>
+                  <a href="/">
+                    <p className="footer_text">FAQs  </p>
                   </a>
                 </div>
               </div>
@@ -35,11 +35,11 @@ const Footer = () => {
                     <p className="footer_text">Become a chef</p>
                   </a>
                   <a href="/">
-                    <p className="footer_text">Browse more chef</p>
+                    <p className="footer_text">Food Safety</p>
                   </a>
-                  <a href="/">
-                    <p className="footer_text">Homemade food delivery</p>
-                  </a>
+                  <Link href="/contact-us">
+                    <p className="footer_text">Contact us</p>
+                  </Link>
                 </div>
               </div>
               <div className="lg:w-auto md:w-[230px] sm:w-1/2 w-full my-3 md:my-0">
