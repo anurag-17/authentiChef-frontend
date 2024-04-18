@@ -319,7 +319,7 @@ td {
 }
 
 .nine_p {
-  @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[30px] text-center xl:text-[14px] xl:leading-[25px] lg:text-[12px] lg:leading-[16px] sm:text-[12px] sm:leading-[20px] text-[10px] leading-[16px];
+  @apply alata font-[400] 2xl:text-[20px] 2xl:leading-[30px] xl:text-[14px] xl:leading-[25px] lg:text-[12px] lg:leading-[16px] sm:text-[12px] sm:leading-[20px] text-[10px] leading-[16px];
 }
 
 .nine_img {
@@ -384,11 +384,11 @@ td {
 }
 
 .social_div {
-  @apply flex items-center justify-center 2xl:h-[60px] xl:h-[35px] lg:h-[30px] border rounded-[5px];
+  @apply flex items-center justify-center 2xl:h-[60px] xl:h-[35px] lg:h-[30px] border rounded-[5px] 2xl:w-[368px] xl:w-[230px] w-[190px];
 }
-
+ 
 .social_btn {
-  @apply flex justify-center items-center relative w-full alata font-[400] 2xl:text-[14px] 2xl:leading-[26px] xl:text-[12px] xl:leading-[20px] px-[25px];
+  @apply flex justify-center items-center relative w-full alata font-[400] 2xl:text-[14px] 2xl:leading-[26px] xl:text-[12px] xl:leading-[20px] xl:px-[25px];
 }
 
 .social_img {
@@ -604,6 +604,13 @@ td {
   }
 }
 
+.sidebar {
+  @apply alata font-[400] text-[#161616] 2xl:text-[16px] xl:text-[12px] lg:text-[10px] sm:text-[10px] text-[] 2xl:leading-[26px] xl:leading-[22px] lg:leading-[16px] sm:leading-[16px] leading-[]
+}
+.faqhead{
+  @apply  alata font-[400] 2xl:text-[75px] xl:text-[45px] lg:text-[30px] sm:text-[30px] text-[]
+  2xl:leading-[85px] xl:leading-[55px] lg:leading-[40px] sm:leading-[40px] leading-[]
+}
 
 /* .{
   @apply

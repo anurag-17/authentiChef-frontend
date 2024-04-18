@@ -59,10 +59,13 @@ const LandingPage = () => {
               <h1 className="alata font-[400] text-white 2xl:text-[65px] 2xl:leading-[70px] xl:text-[46px] xl:leading-[55px] 2xl:mt-[54%] xl:mt-[50%] lg:text-[35px] lg:leading-[30px lg:mt-[50%] mt-[130%] mx-auto mdestination">
                 Where’s your next food destination?
               </h1>
-              <div className="flex 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
-                <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[14px] xl:w-[150px] xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 hover:bg-[#7e2727]  ">
+              <div className="flex justify-center 2xl:mt-12 xl:mt-6 lg:mt-5 mt-4">
+              <Link href="/explore-dishes">
+
+                <button className=" alata font-[400] bg-[#DB5353] text-white rounded-[5px] 2xl:w-[218px] 2xl:h-[60px] 2xl:text-[20px] 2xl:leading-[27.6px] xl:text-[14px] xl:w-[150px] xl:py-[10px] lg:px-3 lg:py-1 px-3 py-1 hover:bg-[#7e2727]  ">
                   Explore Dishes
                 </button>
+                </Link>
               </div>
               {/* <div className="flex 2xl:mt-14 xl:mt-8 lg:mt-5 mt-4">
                 <h1
@@ -82,9 +85,11 @@ const LandingPage = () => {
                 Where’s your next food destination?
               </h1>
               <div className="flex mt-4">
+                <Link href="/explore-dishes">
                 <button className=" alata font-[400] bg-[#DB5353] text-white mx-auto rounded-[5px] px-3 py-1 ">
                   Explore Dishes
                 </button>
+                </Link>
               </div>
               {/* <div className="flex mt-4">
                 <h1 className="alata font-[400] mx-auto text-white">
@@ -759,7 +764,7 @@ const LandingPage = () => {
                 assurance and peace of mind.
               </p>
               <div className="flex justify-center lg:justify-start">
-              <Link href="/food-sefty">
+              <Link href="/food-safety">
               <button className=" eight_btn ">Food Safety</button>
               </Link>
               </div>
@@ -779,7 +784,7 @@ const LandingPage = () => {
         <div className="flex justify-center lg:my-14 xl:my-28 my-10">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] mnavbar">
             <h1 className="nine_head">Testimonials</h1>
-            <p className="nine_p">
+            <p className="nine_p text-center">
               All our chefs have fans raving about their food
             </p>
 
