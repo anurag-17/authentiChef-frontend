@@ -22,9 +22,9 @@ const Footer = () => {
                 <Link href="/explore-dishes">
                   <p className="footer_text">Explore Dishes</p>
                 </Link>
-                <a href="/">
+                <Link href="/global-cuisines">
                   <p className="footer_text">Global Cuisines</p>
-                </a>
+                </Link>
                 <Link href="/FAQs">
                   <p className="footer_text">FAQs  </p>
                 </Link>

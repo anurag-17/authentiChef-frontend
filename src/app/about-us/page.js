@@ -18,7 +18,7 @@ const AboutUs = () => {
                 At authentichef, we see homemade meals as more than just food;
                 theyre <span className="text-[#F38181]">journeys</span>
               </h1>
-              <div className=" 2xl:w-[635px] xl:w-[380px] lg:w-[] sm:w-[] w-[] text-center mx-auto 2xl:mt-[30px]  xl:mt-[15px] mt-[8px] xl:mt-[15px] mt-[10px] xl:pt-[20px] pt-[10px]">
+              <div className=" 2xl:w-[635px] xl:w-[380px] lg:w-[] sm:w-[] w-[] text-center mx-auto 2xl:mt-[30px] xl:mt-[15px] mt-[8px] xl:mt-[15px] mt-[10px] xl:pt-[20px] pt-[10px]">
                 <p className="pop-head text-white  ">
                   A journey that takes us from the comforts of our childhood
                   memories to the excitement of exploring new flavours from
