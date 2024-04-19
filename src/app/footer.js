@@ -1,13 +1,132 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import fb from "../../public/images/fb.svg";
 import insta from "../../public/images/insta.svg";
 import tiktok from "../../public/images/tiktok.svg";
 import google from "./assets/google.svg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/navigation";
+import axios from "axios";
 
 const Footer = () => {
+  const name = JSON.parse(localStorage.getItem("user_name"));
+  const token = JSON.parse(localStorage.getItem("user_token"));
+
+  // localStorage.removeItem("admin_token");
+  // const [isLoader, setLoader] = useState(false);
+  const router = useRouter();
+  const [isRefresh, setRefresh] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleToggle = () => {
+    setShowPassword(!showPassword);
+  };
+  const [loginDetails, setLoginDetails] = useState({
+    email: "",
+    password: "",
+  });
+
+  const InputHandler = (e) => {
+    setLoginDetails({ ...loginDetails, [e.target.name]: e.target.value });
+  };
+
+  const refreshData = () => {
+    setRefresh(!isRefresh);
+  };
+  // ==========Handle login==========
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // setLoader(true);
+    try {
+      const res = await axios.post(
+        "http://localhost:4000/api/auth/login",
+        loginDetails,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Login Response:", res);
+      if (res.data.success) {
+        toast.success("Login successful!");
+        handleClose();
+        refreshData();
+        localStorage.setItem("user_token", JSON.stringify(res?.data?.token));
+        localStorage.setItem(
+          "user_name",
+          JSON.stringify(res?.data?.user?.firstname)
+        );
+
+        // router.push("/user/user-dashboard");
+      } else {
+        toast.error("Login failed, please try again later!");
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+      if (error.response && error.response.data && error.response.data.error) {
+        toast.error(error.response.data.error);
+      } else {
+        toast.error("Server error!");
+        // dispatch(removeToken());
+      }
+    } finally {
+      // setLoader(false);
+    }
+  };
+
+  // ==========Handle logout==========
+
+  const handleLogout = async () => {
+    try {
+      const res = await axios.get("http://localhost:4000/api/auth/logout", {
+        headers: {
+          authorization: token,
+        },
+      });
+      if (res.status >= 200 && res.status < 300) {
+        toast.success("Logout successfully");
+        localStorage.removeItem("user_token");
+        localStorage.removeItem("user_name");
+        refreshData();
+        // router.push("/login");
+      } else {
+        toast.error("Logout failed");
+      }
+    } catch (error) {
+      console.error("Error logging out:", error);
+      toast.error("Logout failed");
+    }
+  };
+
+  // ======handle localStorage and popup=====
+
+  const handleClose = () => {
+    const modal = document.getElementById("my_modal_2");
+    modal.close();
+  };
+  const handleClosee = () => {
+    const modal = document.getElementById("my_modal_1" );
+    modal.close();
+  };
+
+  useEffect(() => {
+    // Check if user token exists in local storage
+    const userToken = localStorage.getItem("user_token");
+    setIsLoggedIn(!!userToken); // Set isLoggedIn to true if user token exists
+  }, [!isRefresh]);
+
+  const handleLoginClick = () => {
+    document.getElementById("my_modal_2").showModal();
+  };
+
+  const handleSignUpClick = () => {
+    document.getElementById("my_modal_1").showModal();
+  };
   return (
     <>
       <footer className="bg-[#F6F6F6] flex justify-center">
@@ -41,6 +160,9 @@ const Footer = () => {
                 </Link>
                 <Link href="/contact-us">
                   <p className="footer_text">Contact us</p>
+                </Link>
+                <Link href="/chef-radha">
+                  <p className="footer_text">Chef Dishes</p>
                 </Link>
               </div>
             </div>
@@ -138,7 +260,7 @@ const Footer = () => {
           <form method="dialog" className=" w-full h-full mt-0">
             {/* if there is a button in form, it will close the modal */}
             <div className="flex justify-center items-center border w-full 2xl:h-[80px] xl:h-[55px] h-[40px]">
-              <button className="absolute right-3">
+              <div className="absolute right-3" onClick={handleClosee}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -153,7 +275,7 @@ const Footer = () => {
                     d="M6 18 18 6M6 6l12 12"
                   />
                 </svg>
-              </button>
+              </div>
               <h1 className="fourth_p">Sign up</h1>
             </div>
             <div className=" my-3 px-[40px]">
@@ -230,7 +352,9 @@ const Footer = () => {
                     <div className="my-[12px] social_div">
                       <div className="social_btn">
                         <Image className="social_img " src={fb} />
-                        <h1 className="checkoutlable">Continue with Facebook</h1>
+                        <h1 className="checkoutlable">
+                          Continue with Facebook
+                        </h1>
                       </div>
                     </div>{" "}
                   </Link>
@@ -253,11 +377,11 @@ const Footer = () => {
           id="my_modal_2"
           className="modal rounded-[10px] 2xl:w-[1000px] 2xl:h-[632px] xl:w-[620px] xl:h-[450px] lg:w-[480px] h-[400px] 2xl:mt-40 xl:mt-24 mt-14 p-0"
         >
-          <form method="dialog" className=" mt-0">
+          <form method="dialog" className=" mt-0" onSubmit={handleSubmit}>
             {/* if there is a button in form, it will close the modal */}
             <div className=" ">
               <div className="flex justify-center items-center w-full ">
-                <button className="absolute right-3">
+                <div className="absolute right-3" onClick={handleClose}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -272,7 +396,7 @@ const Footer = () => {
                       d="M6 18 18 6M6 6l12 12"
                     />
                   </svg>
-                </button>
+                </div>
                 <h1 className="fourth_p">Login</h1>
               </div>
               <div className="2xl:w-[368px] xl:w-[280px] lg:w-[220px] sm:w-[] w-[]">
@@ -280,73 +404,48 @@ const Footer = () => {
                   <input
                     type="email"
                     name="email"
+                    onChange={InputHandler}
                     placeholder="Enter your mail id"
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
                   />
                 </div>
                 <div className="2xl:mt-[35px] mt-[25px]">
                   <input
                     type="password"
                     name="password"
-                    placeholder="Enter your mail id"
+                    onChange={InputHandler}
+                    placeholder="Enter your Password"
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
                   />
                 </div>
                 <div className="flex">
-                <button className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[280px] lg:w-[220px] xl:text-[16px] text-[12px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] mt-[15px] 2xl:h-[60px] xl:h-[40px] lg:h-[32px] text-center bg-[#DB5353]">
-                 Login
-                </button>
-              </div>
+                  <button
+                    type="submit"
+                    className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[280px] lg:w-[220px] xl:text-[16px] text-[12px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] mt-[15px] 2xl:h-[60px] xl:h-[40px] lg:h-[32px] text-center bg-[#DB5353]"
+                  >
+                    Login
+                  </button>
+                </div>
                 <div>
                   <h1 className="alata font-[400] 2xl:my-[20px] xl:my-[10px] text-[14px] leading-[26px] text-center">
                     or
                   </h1>
                 </div>
-                {/* <div className="2xl:mt-[20px]">
-                <Link
-                  href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dmy-activity%26utm_medium%3Dhome%26utm_campaign%26hl%3Den_GB%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1476156200%3A1712751508637500&theme=mn&ddm=0"
-                  target="_blank"
-                >
-                  <div className=" social_div">
-                    <div className="flex social_btn ">
-                      <Image className=" social_img " src={google} />
-                      <h1 className="">Continue with Google</h1>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="https://www.facebook.com/login/" target="_blank">
-                  <div className="my-[12px] social_div">
-                    <div className="social_btn">
-                      <Image className="social_img " src={fb} />
-                      <h1>Continue with Facebook</h1>
-                    </div>
-                  </div>{" "}
-                </Link>
-                <Link href="https://appleid.apple.com/sign-in" target="_blank">
-                  <div className="social_div">
-                    <div className="social_btn">
-                      <Image className="social_img " src={apple} />
-                      <h1> Continue with Apple</h1>
-                    </div>
-                  </div>
-                </Link>
-              </div> */}
+
                 <div className="my-[30px] flex justify-center">
-                <button
-                  onClick={() =>
-                    document.getElementById("my_modal_1").showModal()
-                  }
-                  className="nav_login1"
-                >
-                  <h1 className="text-[#DB5353] alata font-[400] text-[14px] leading-[26px] text-center mx-auto">
-                   Sign Up
-                  </h1>
+                  <button
+                    onClick={() =>
+                      document.getElementById("my_modal_1").showModal()
+                    }
+                    className="nav_login1"
+                  >
+                    <h1 className="text-[#DB5353] alata font-[400] text-[14px] leading-[26px] text-center mx-auto">
+                      Sign Up
+                    </h1>
                   </button>
                 </div>
               </div>

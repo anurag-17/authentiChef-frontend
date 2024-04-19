@@ -34,7 +34,7 @@ const data2 = [
   {
     id: "2",
     image: palakpaneer1,
-    chefImg: p2,
+    chefImg: p1,
     title: "Palak Paneer",
     spiceImg: spicemedium,
     price: "£8.50",
@@ -43,7 +43,7 @@ const data2 = [
   {
     id: "3",
     image: sarsoda1,
-    chefImg: p3,
+    chefImg: p1,
     title: "Sarso da saak makke di roti",
     spiceImg: spicemedium,
     price: "£8.50",
@@ -52,7 +52,7 @@ const data2 = [
   {
     id: "4",
     image: butterpaneer1,
-    chefImg: p4,
+    chefImg: p1,
     title: "Paneer butter masala",
     spiceImg: spicemedium,
     price: "£8.50 ",
@@ -162,10 +162,191 @@ const ChefDishes = () => {
         </div>
 
         <div className="2xl:mt-[250px] xl:mt-[200px] mt-[180px] ">
-          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto mnavbar">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:pt-[120px] xl:pt-[60px] pt-[40px] mx-auto mnavbar">
             <div className="">
               <div>
-                <h1 className="third_head">Popular Dishes</h1>
+                <h1 className="third_head">Starter</h1>
+              </div>
+            </div>
+            <div className=" flex flex-wrap justify-between  w-full px-10 md:px-0 mx-auto">
+              {data2.map((item) => (
+                <div
+                  key={item.id}
+                  className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] "
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={345}
+                    height={278}
+                    className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px]"
+                  />
+                  <div className="">
+                    <h1 className="alata font-[400] text-[#DB5353] 2xl:my-4 xl:my-3 my-2 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
+                      {item.title}
+                    </h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
+                      <Image
+                        alt="image"
+                        src={item.chefImg}
+                        className="four_img2 "
+                      />
+                      <div>
+                        <h1 className="fourth_name ">Chef Radha</h1>
+                        <p className="fourth_p text-[#6765EB]">Indian</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-5 2xl:my-[20px] xl:my-[15px] my-[12px]">
+                      <button className="four_btn">
+                        <Image
+                          alt="image"
+                          src={vegetarian}
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                        />
+                        <p className="fourth_day">Vegetarian</p>
+                      </button>
+                      <button className="four_btn">
+                        <Image
+                          alt="image"
+                          src={vegan}
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                        />
+                        <p className="fourth_day">Vegan</p>
+                      </button>
+                    </div>
+                    <div className="flex items-center gap-5  2xl:my-[20px] xl:my-[15px] my-[12px]">
+                      <h1 className="fourth_p">Spice level</h1>
+                      <button className="four_btn">
+                        <Image
+                          alt="image"
+                          src={item.spiceImg}
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                        />
+                        <p className="fourth_day">Meddium</p>
+                      </button>
+                    </div>
+
+                    <div className=" w-full bottom-0 flex justify-between items-center  2xl:my-[22px] xl:my-[18px] my-[15px]">
+                      <p className="alata font-[400] text-[#000] 2xl:text-[20px] 2xl:leading-[24px] xl:text-[14px] xl:leading-[18px] lg:text-[12px] lg:leading-[16px] text-[12px] leading-[16px] ">
+                        Serves 1 (500g){" "}
+                        <span className="text-[#DB5353]">£8.50</span>
+                      </p>
+                      <button
+                      // onClick={() => {
+                      //   addToCart(item);
+                      //   alert("Product Added");
+                      // }}
+                      >
+                        <Image
+                          src={item.image2}
+                          alt={item.title}
+                          className=" mr-8 2xl:w-[40px] 2xl:h-[40px] xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] w-[25px] h-[25px]"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="2xl:mt-[0px] xl:mt-[0px] mt-[0px] ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:pt-[85px] xl:pt-[30px] pt-[15px] mx-auto mnavbar">
+            <div className="">
+              <div>
+                <h1 className="third_head">Mains</h1>
+              </div>
+            </div>
+            <div className=" flex flex-wrap justify-between  w-full px-10 md:px-0 mx-auto">
+              {data2.map((item) => (
+                <div
+                  key={item.id}
+                  className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] "
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={345}
+                    height={278}
+                    className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px]"
+                  />
+                  <div className="">
+                    <h1 className="alata font-[400] text-[#DB5353] 2xl:my-4 xl:my-3 my-2 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
+                      {item.title}
+                    </h1>
+                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
+                      <Image
+                        alt="image"
+                        src={item.chefImg}
+                        className="four_img2 "
+                      />
+                      <div>
+                        <h1 className="fourth_name ">Chef Radha</h1>
+                        <p className="fourth_p text-[#6765EB]">Indian</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-5 2xl:my-[20px] xl:my-[15px] my-[12px]">
+                      <button className="four_btn">
+                        <Image
+                          alt="image"
+                          src={vegetarian}
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                        />
+                        <p className="fourth_day">Vegetarian</p>
+                      </button>
+                      <button className="four_btn">
+                        <Image
+                          alt="image"
+                          src={vegan}
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                        />
+                        <p className="fourth_day">Vegan</p>
+                      </button>
+                    </div>
+                    <div className="flex items-center gap-5  2xl:my-[20px] xl:my-[15px] my-[12px]">
+                      <h1 className="fourth_p">Spice level</h1>
+                      <button className="four_btn">
+                        <Image
+                          alt="image"
+                          src={item.spiceImg}
+                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                        />
+                        <p className="fourth_day">Meddium</p>
+                      </button>
+                    </div>
+
+                    <div className=" w-full bottom-0 flex justify-between items-center  2xl:my-[22px] xl:my-[18px] my-[15px]">
+                      <p className="alata font-[400] text-[#000] 2xl:text-[20px] 2xl:leading-[24px] xl:text-[14px] xl:leading-[18px] lg:text-[12px] lg:leading-[16px] text-[12px] leading-[16px] ">
+                        Serves 1 (500g){" "}
+                        <span className="text-[#DB5353]">£8.50</span>
+                      </p>
+                      <button
+                      // onClick={() => {
+                      //   addToCart(item);
+                      //   alert("Product Added");
+                      // }}
+                      >
+                        <Image
+                          src={item.image2}
+                          alt={item.title}
+                          className=" mr-8 2xl:w-[40px] 2xl:h-[40px] xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] w-[25px] h-[25px]"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="2xl:mt-[0px] xl:mt-[0px] mt-[0px] ">
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:pt-[85px] xl:pt-[30px] pt-[15px] mx-auto mnavbar">
+            <div className="">
+              <div>
+                <h1 className="third_head">Sides</h1>
               </div>
             </div>
             <div className=" flex flex-wrap justify-between  w-full px-10 md:px-0 mx-auto">

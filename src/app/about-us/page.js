@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Footer from "../footer";
+import aboutCheff from "./assets/aboutUs-f.png";
 import aboutDishes from "./assets/aboutUs-s.png";
 import aboutChef from "./assets/aboutUs-t.png";
 import Navbar from "../navbar";
@@ -9,7 +10,7 @@ const AboutUs = () => {
   return (
     <>
       <section>
-        <Navbar/>
+        <Navbar />
 
         <div className="2xl:pt-[116px] xl:pt pt-[50px] aboutusmain">
           <div className="aboutUsBanner h-screen ">
@@ -28,7 +29,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="bg-[#FFE8E8] 2xl:h-[937px] flex justify-center  2xl:py-[115px] xl:py-[60px] py-[40px]">
+          <div className="bg-[#FFE8E8] 2xl:h-[937px] flex justify-center  2xl:py-[115px] xl:py-[60px] py-[50px]">
             <div className="text-center 2xl:w-[1293px] xl:w-[870px] lg:w-[600px] sm:w-[] w-[]  mx-auto">
               <h1 className="aboutHead">The Ever-Growing Problem</h1>
               <p className="aboutPara 2xl:mt-[50px] xl:mt-[30px] mt-[15px]">
@@ -63,8 +64,22 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
+
+          <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  2xl:py-[140px] xl:py-[80px] py-[40px]  md:w-[700px] flex justify-between mx-auto  mnavbar">
+            <div>
+              <div className="2xl:w-[1031px] xl:w-[680px] lg:w-[520px]">
+                <Image
+                  src={aboutCheff}
+                  className=" 2xl:h-[617px] h-auto rounded-[15px] "
+                />
+              </div>
+            </div>
+          </div>
+
+
+
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto  mnavbar">
-            <div className="flex justify-between w-full 2xl:my-[140px] xl:my-[100px] my-[60px] ">
+            <div className="flex justify-between w-full 2xl:mb-[140px] xl:mb-[100px] mb-[60px] ">
               <div className="2xl:w-[760px] xl:w-[500px] lg:w-[380px] sm:w-[] w-[] aboutusbox ">
                 <Image
                   src={aboutDishes}

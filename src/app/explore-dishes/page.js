@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import emptyCart from "../../../public/images/emptyCart.svg";
 import Link from "next/link";
@@ -49,6 +49,7 @@ import dairyfree from "./assets/dairy-free.svg";
 import { useCart } from "../create-context/cart-context";
 import { CartProvider } from "../create-context/cart-context";
 import Navbar from "../navbar";
+import axios from "axios";
 
 const data2 = [
   {
@@ -216,10 +217,62 @@ const ExploreDishes = ({ item }) => {
     }
   };
 
+  const [getAllCuisines, setGetAllCuisines] = useState("");
+  const [getAllDietary, setGetAllDietary] = useState("");
+  const [getAllDishtype, setGetAllDishtype] = useState("");
+
+  useEffect(() => {
+    defaultCuisines();
+    defaultDietary();
+    defaultDishtype();
+  }, []);
+  const defaultCuisines = () => {
+    const option = {
+      method: "GET",
+      url: "http://localhost:4000/api/cuisines/getAllCuisines",
+    };
+    axios
+      .request(option)
+      .then((response) => {
+        setGetAllCuisines(response?.data?.cuisines);
+      })
+      .catch((error) => {
+        console.log(error, "Error");
+      });
+  };
+  const defaultDietary = () => {
+    const option = {
+      method: "GET",
+      url: "http://localhost:4000/api/dietary/dietaries",
+    };
+    axios
+      .request(option)
+      .then((response) => {
+        setGetAllDietary(response?.data?.dietaries);
+      })
+      .catch((error) => {
+        console.log(error, "Error");
+      });
+  };
+  const defaultDishtype = () => {
+    const option = {
+      method: "GET",
+      url: "http://localhost:4000/api/DishType/dishTypes",
+    };
+    axios
+      .request(option)
+      .then((response) => {
+        setGetAllDishtype(response?.data?.dishTypes);
+        // console.log(response?.data?.dishTypes, "dish");
+      })
+      .catch((error) => {
+        console.log(error, "Error");
+      });
+  };
   return (
     <>
       <section>
-     <Navbar/>
+        <Navbar />
 
         <div className="flex justify-center 2xl:py-20 xl:py-14 lg:py-8 hidden lg:block mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] mx-auto">
           <div className="2xl:pt-[130px] xl:pt-[90px] pt-[60px]">
@@ -234,14 +287,20 @@ const ExploreDishes = ({ item }) => {
                       id="cuisines"
                       className="2xl:w-[153px] third_select"
                     >
-                      <option disabled selected>
-                        All Cuisines
-                      </option>
-                      <option>a</option>
-                      <option>b</option>
-                      <option>c</option>
+                      <option value=""> All Cuisines</option>
+                      {Array.isArray(getAllCuisines) &&
+                        getAllCuisines.map((item) => (
+                          <option
+                            key={item._id}
+                            value={item._id}
+                            className="custom_dropdown_text "
+                          >
+                            {item.title}
+                          </option>
+                        ))}
                     </select>
                   </div>
+
                   {/* <details className="dropdown w-full">
                     <summary className="m-1 btn"> All Cuisines</summary>
                     <ul className="z-50 p-2 shadow menu dropdown-content bg-base-100 rounded-box w-full ">
@@ -256,12 +315,17 @@ const ExploreDishes = ({ item }) => {
 
                   <div className="">
                     <select id="dietary" className="2xl:w-[126px] third_select">
-                      <option disabled selected>
-                        Dietary
-                      </option>
-                      <option>d</option>
-                      <option>e</option>
-                      <option>f</option>
+                      <option value=""> All Dietary</option>
+                      {Array.isArray(getAllDietary) &&
+                        getAllDietary.map((item) => (
+                          <option
+                            key={item._id}
+                            value={item._id}
+                            className="custom_dropdown_text "
+                          >
+                            {item.title}
+                          </option>
+                        ))}
                     </select>
                   </div>
 
@@ -270,12 +334,17 @@ const ExploreDishes = ({ item }) => {
                       id="moreFilters"
                       className="2xl:w-[143px] third_select"
                     >
-                      <option disabled selected>
-                        More filters
-                      </option>
-                      <option>x</option>
-                      <option>y</option>
-                      <option>z</option>
+                      <option value="">More filters</option>
+                      {Array.isArray(getAllDishtype) &&
+                        getAllDishtype.map((item) => (
+                          <option
+                            key={item._id}
+                            value={item._id}
+                            className="custom_dropdown_text "
+                          >
+                            {item.title}
+                          </option>
+                        ))}
                     </select>
                   </div>
 

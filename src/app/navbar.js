@@ -135,7 +135,7 @@ const Navbar = () => {
     <>
       <ToastContainer className="mt-24" autoClose={1000} />
       <section>
-        <nav className=" flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full mnavbar-h fixed">
+        <nav className="z-50 flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full mnavbar-h fixed">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center mnavbar">
             <div className="w-1/3">
               {/* =======Side Drawer======= */}
@@ -276,28 +276,60 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="w-1/3 ">
+            <div className="w-1/3 flex justify-center ">
               <a href="/">
                 <Image alt="logo" src={logo} className="nav_logo" />
               </a>
             </div>
-            <div className="flex md:gap-7 gap-2">
-              {isLoggedIn ? (
-                <div className="nav_login1 flex gap-2">
-                  Welcome<p className="">{name}!</p>
-                  {/* Add logout button or other logged in content here */}
-                </div>
-              ) : (
-                <>
-                  <button onClick={handleLoginClick} className="nav_login1">
-                    Log In
-                  </button>
-                  <button onClick={handleSignUpClick} className="nav_signup">
-                    Sign Up
-                  </button>
-                  <button>{/* Add your Image component here */}</button>
-                </>
-              )}
+            <div className="w-1/3 flex justify-end ">
+              <div className="flex justify-end md:gap-7 gap-2">
+                {isLoggedIn ? (
+                  <div className="flex justify-end md:gap-7  gap-2 w-1/3">
+                    <div className="relative flex items-center">
+                      <input
+                        type="text"
+                        placeholder="Search dishes, chefs, cuisine "
+                        className="2xl:w-[258px] xl:w-[170px] 2xl:h-[44px] xl:h-[30px] w-[130px] h-[20px] bg-[#FF9C9C] text-[#AE6363] 2xl:px-[40px] xl:px-[30px]  px-[20px] outline-none placeholder:text-[#AE6363] 2xl:text-[16px]  xl:text-[12px] text-[9px]"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        className="absolute text-[#AE6363] 2xl:top-[10px] 2xl:left-[10px] xl:top-[8px] xl:left-[10px] top-[10px] left-[5px]  2xl:w-5 2xl:h-5 xl:w-4 xl:h-4 w-3 h-3 "
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div className="nav_login1 flex gap-2">
+                      Welcome<p className="">{name}!</p>
+                      {/* Add logout button or other logged in content here */}
+                    </div>
+                    <button>
+                      <Image
+                        src={beg}
+                        className="2xl:w-[28px] xl:w-[20px] w-[16px]"
+                      />
+                    </button>
+                  </div>
+                ) : (
+                  <>
+                    <button onClick={handleLoginClick} className="nav_login1">
+                      Log In
+                    </button>
+                    <button onClick={handleSignUpClick} className="nav_signup">
+                      Sign Up
+                    </button>
+                    <button>{/* Add your Image component here */}</button>
+                  </>
+                )}
+              </div>
             </div>
           </div>
         </nav>
@@ -313,7 +345,7 @@ const Navbar = () => {
           <form method="dialog" className=" w-full h-full mt-0">
             {/* if there is a button in form, it will close the modal */}
             <div className="flex justify-center items-center border w-full 2xl:h-[80px] xl:h-[55px] h-[40px]">
-              <button className="absolute right-3">
+            <div className="absolute right-3" onClick={handleClose}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -328,7 +360,7 @@ const Navbar = () => {
                     d="M6 18 18 6M6 6l12 12"
                   />
                 </svg>
-              </button>
+              </div>
               <h1 className="fourth_p">Sign up</h1>
             </div>
             <div className=" my-3 px-[40px]">
