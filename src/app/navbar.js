@@ -21,6 +21,8 @@ import axios from "axios";
 
 const Navbar = () => {
   const name = JSON.parse(localStorage.getItem("user_name"));
+  const token = JSON.parse(localStorage.getItem("user_token"));
+
   // localStorage.removeItem("admin_token");
   // const [isLoader, setLoader] = useState(false);
   const router = useRouter();
@@ -42,6 +44,7 @@ const Navbar = () => {
   const refreshData = () => {
     setRefresh(!isRefresh);
   };
+  // ==========Handle login==========
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -84,6 +87,32 @@ const Navbar = () => {
     }
   };
 
+  // ==========Handle logout==========
+
+  const handleLogout = async () => {
+    try {
+      const res = await axios.get("http://localhost:4000/api/auth/logout", {
+        headers: {
+          authorization: token,
+        },
+      });
+      if (res.status >= 200 && res.status < 300) {
+        toast.success("Logout successfully");
+        localStorage.removeItem("user_token");
+        localStorage.removeItem("user_name");
+        refreshData();
+        // router.push("/login");
+      } else {
+        toast.error("Logout failed");
+      }
+    } catch (error) {
+      console.error("Error logging out:", error);
+      toast.error("Logout failed");
+    }
+  };
+
+  // ======handle localStorage and popup=====
+
   const handleClose = () => {
     const modal = document.getElementById("my_modal_2");
     modal.close();
@@ -104,8 +133,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <ToastContainer autoClose={1000} />
-
+      <ToastContainer className="mt-24" autoClose={1000} />
       <section>
         <nav className=" flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full mnavbar-h fixed">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center mnavbar">
@@ -235,7 +263,12 @@ const Navbar = () => {
                           src={logout}
                           className="2xl:w-[17px] 2xl:h-[17px] h-auto xl:w-[12px] lg:w-[10px] sm:w-[] w-[] "
                         />
-                        <h2 className="text-[#DB5353] fourth_p">Logout</h2>
+                        <button
+                          onClick={handleLogout}
+                          className="text-[#DB5353] fourth_p"
+                        >
+                          Logout
+                        </button>
                       </div>
                     </div>
                   </ul>
