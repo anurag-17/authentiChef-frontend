@@ -3,13 +3,14 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../footer";
-import NavBar from "../navBar";
+import Navbar from "../navbar";
+
 
 const ChefDetail = () => {
   return (
     <>
       <section>
-      <NavBar/>
+      <Navbar/>
 
         <Footer />
       </section>

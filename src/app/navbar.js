@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "./assets/logo.png";
@@ -14,10 +14,98 @@ import faq from "./assets/FAQ.svg";
 import exploredish from "./assets/explore-dishes.svg";
 import beg from "./assets/beg.svg";
 import logout from "../app/assets/logout.svg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/navigation";
+import axios from "axios";
 
 const Navbar = () => {
+  const name = JSON.parse(localStorage.getItem("user_name"));
+  // localStorage.removeItem("admin_token");
+  // const [isLoader, setLoader] = useState(false);
+  const router = useRouter();
+  const [isRefresh, setRefresh] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleToggle = () => {
+    setShowPassword(!showPassword);
+  };
+  const [loginDetails, setLoginDetails] = useState({
+    email: "",
+    password: "",
+  });
+
+  const InputHandler = (e) => {
+    setLoginDetails({ ...loginDetails, [e.target.name]: e.target.value });
+  };
+
+  const refreshData = () => {
+    setRefresh(!isRefresh);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // setLoader(true);
+    try {
+      const res = await axios.post(
+        "http://localhost:4000/api/auth/login",
+        loginDetails,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Login Response:", res);
+      if (res.data.success) {
+        toast.success("Login successful!");
+        handleClose();
+        refreshData();
+        localStorage.setItem("user_token", JSON.stringify(res?.data?.token));
+        localStorage.setItem(
+          "user_name",
+          JSON.stringify(res?.data?.user?.firstname)
+        );
+
+        // router.push("/user/user-dashboard");
+      } else {
+        toast.error("Login failed, please try again later!");
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+      if (error.response && error.response.data && error.response.data.error) {
+        toast.error(error.response.data.error);
+      } else {
+        toast.error("Server error!");
+        // dispatch(removeToken());
+      }
+    } finally {
+      // setLoader(false);
+    }
+  };
+
+  const handleClose = () => {
+    const modal = document.getElementById("my_modal_2");
+    modal.close();
+  };
+
+  useEffect(() => {
+    // Check if user token exists in local storage
+    const userToken = localStorage.getItem("user_token");
+    setIsLoggedIn(!!userToken); // Set isLoggedIn to true if user token exists
+  }, [!isRefresh]);
+
+  const handleLoginClick = () => {
+    document.getElementById("my_modal_2").showModal();
+  };
+
+  const handleSignUpClick = () => {
+    document.getElementById("my_modal_1").showModal();
+  };
   return (
     <>
+      <ToastContainer autoClose={1000} />
+
       <section>
         <nav className=" flex justify-center bg-[#F38181] 2xl:h-[116px] xl:h-[80px] lg:h-[50px] sm:h-[45px] h-12 w-full mnavbar-h fixed">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] w-full px-10 md:px-0  flex justify-between items-center mnavbar">
@@ -160,29 +248,23 @@ const Navbar = () => {
                 <Image alt="logo" src={logo} className="nav_logo" />
               </a>
             </div>
-            <div className="flex md:gap-7  gap-2">
-              <button
-                onClick={() =>
-                  document.getElementById("my_modal_2").showModal()
-                }
-                className="nav_login1"
-              >
-                Log In
-              </button>
-              <button
-                onClick={() =>
-                  document.getElementById("my_modal_1").showModal()
-                }
-                className="nav_signup"
-              >
-                Sign Up
-              </button>
-              <button>
-                <Image
-                  src={beg}
-                  className="2xl:w-[28px] xl:w-[20px] w-[16px]"
-                />
-              </button>
+            <div className="flex md:gap-7 gap-2">
+              {isLoggedIn ? (
+                <div className="nav_login1 flex gap-2">
+                  Welcome<p className="">{name}!</p>
+                  {/* Add logout button or other logged in content here */}
+                </div>
+              ) : (
+                <>
+                  <button onClick={handleLoginClick} className="nav_login1">
+                    Log In
+                  </button>
+                  <button onClick={handleSignUpClick} className="nav_signup">
+                    Sign Up
+                  </button>
+                  <button>{/* Add your Image component here */}</button>
+                </>
+              )}
             </div>
           </div>
         </nav>
@@ -315,11 +397,11 @@ const Navbar = () => {
           id="my_modal_2"
           className="modal rounded-[10px] 2xl:w-[1000px] 2xl:h-[632px] xl:w-[620px] xl:h-[450px] lg:w-[480px] h-[400px] 2xl:mt-40 xl:mt-24 mt-14 p-0"
         >
-          <form method="dialog" className=" mt-0">
+          <form method="dialog" className=" mt-0" onSubmit={handleSubmit}>
             {/* if there is a button in form, it will close the modal */}
             <div className=" ">
               <div className="flex justify-center items-center w-full ">
-                <button className="absolute right-3">
+                <div className="absolute right-3" onClick={handleClose}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -334,7 +416,7 @@ const Navbar = () => {
                       d="M6 18 18 6M6 6l12 12"
                     />
                   </svg>
-                </button>
+                </div>
                 <h1 className="fourth_p">Login</h1>
               </div>
               <div className="2xl:w-[368px] xl:w-[280px] lg:w-[220px] sm:w-[] w-[]">
@@ -342,26 +424,29 @@ const Navbar = () => {
                   <input
                     type="email"
                     name="email"
+                    onChange={InputHandler}
                     placeholder="Enter your mail id"
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
                   />
                 </div>
                 <div className="2xl:mt-[35px] mt-[25px]">
                   <input
                     type="password"
                     name="password"
-                    placeholder="Enter your mail id"
+                    onChange={InputHandler}
+                    placeholder="Enter your Password"
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
                   />
                 </div>
                 <div className="flex">
-                  <button className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[280px] lg:w-[220px] xl:text-[16px] text-[12px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] mt-[15px] 2xl:h-[60px] xl:h-[40px] lg:h-[32px] text-center bg-[#DB5353]">
+                  <button
+                    type="submit"
+                    className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[280px] lg:w-[220px] xl:text-[16px] text-[12px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] mt-[15px] 2xl:h-[60px] xl:h-[40px] lg:h-[32px] text-center bg-[#DB5353]"
+                  >
                     Login
                   </button>
                 </div>
@@ -370,35 +455,7 @@ const Navbar = () => {
                     or
                   </h1>
                 </div>
-                {/* <div className="2xl:mt-[20px]">
-                <Link
-                  href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dmy-activity%26utm_medium%3Dhome%26utm_campaign%26hl%3Den_GB%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1476156200%3A1712751508637500&theme=mn&ddm=0"
-                  target="_blank"
-                >
-                  <div className=" social_div">
-                    <div className="flex social_btn ">
-                      <Image className=" social_img " src={google} />
-                      <h1 className="">Continue with Google</h1>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="https://www.facebook.com/login/" target="_blank">
-                  <div className="my-[12px] social_div">
-                    <div className="social_btn">
-                      <Image className="social_img " src={fb} />
-                      <h1>Continue with Facebook</h1>
-                    </div>
-                  </div>{" "}
-                </Link>
-                <Link href="https://appleid.apple.com/sign-in" target="_blank">
-                  <div className="social_div">
-                    <div className="social_btn">
-                      <Image className="social_img " src={apple} />
-                      <h1> Continue with Apple</h1>
-                    </div>
-                  </div>
-                </Link>
-              </div> */}
+
                 <div className="my-[30px] flex justify-center">
                   <button
                     onClick={() =>

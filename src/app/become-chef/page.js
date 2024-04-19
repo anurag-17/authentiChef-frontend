@@ -8,14 +8,14 @@ import boss from "./assets/own-boss.svg";
 import dishmenu from "./assets/dishes-menu.svg";
 import cook from "./assets/cook.svg";
 import Footer from "../footer";
-import NavBar from "../navBar";
+import Navbar from "../navbar";
 
 const BecomeChef = () => {
   return (
     <>
       <section>
         <div>
-       <NavBar/>
+       <Navbar/>
 
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex justify-between mx-auto 2xl:pt-[230px] xl:pt-[140px] pt-[90px] mnavbar">
             <div className="mx-auto">

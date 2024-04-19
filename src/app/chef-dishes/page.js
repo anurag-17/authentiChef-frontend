@@ -19,7 +19,7 @@ import fb from "./assets/fb.svg";
 import insta from "./assets/instagram.svg";
 import cook from "./assets/fi_4767107.svg";
 import cook2 from "./assets/fi_4718655.svg";
-import NavBar from "../navBar";
+import Navbar from "../navbar";
 
 const data2 = [
   {
@@ -64,7 +64,7 @@ const ChefDishes = () => {
   return (
     <>
       <section>
-        <NavBar />
+        <Navbar />
         <div className=" ">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] 2xl:pt-[220px] xl:pt-[140px] pt-[100px] 2xl:py-[100px] xl:py-[50px] py-[40px] mx-auto mnavbar">
             <div className="chefDishes-bg rounded-[15px] relative 2xl:h-[529px] xl:h-[360px] h-[280px] 2xl:pt-[295px] xl:pt-[200px] pt-[155px]">

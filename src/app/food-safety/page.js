@@ -7,13 +7,13 @@ import Techniques from "./assets/cook-Techniques.svg";
 import Ingredients from "./assets/Ingredients.svg";
 import expertise from "./assets/expertise.svg";
 import hygiene from "./assets/hygiene.svg";
-import NavBar from "../navBar";
+import Navbar from "../navbar";
 
 const FoodSefty = () => {
   return (
     <>
       <section>
-       <NavBar/>
+       <Navbar/>
 
         <div className="flex justify-center xl:py-28 lg:py-14 md:py-8 py-5 border-b-[1px] border-[#B1B1B1]">
           <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px] flex items-center flex-col-reverse lg:flex-row mnavbar 2xl:pt-[135px] xl:pt-[60px] pt-[40px]">

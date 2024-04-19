@@ -6,7 +6,7 @@ import Footer from "../footer";
 import img from "./assets/checkout-img.png";
 import plus from "../../../public/images/plus.svg";
 import minus from "../../../public/images/minus.svg";
-import NavBar from "../navBar";
+import Navbar from "../navbar";
 
 const Checkout = () => {
   const [count, setCount] = useState(0);
@@ -23,7 +23,7 @@ const Checkout = () => {
   return (
     <>
       <section>
-        <NavBar/>
+        <Navbar/>
         <div className=" 2xl:pt-[116px] xl:pt-[80px] pt-[50px]">
 
         <div className="flex justify-center bg-[#F5F5F5] 2xl:h-[90px] xl:h-[60px] lg:h-[50px] sm:h-[45px] h-12">

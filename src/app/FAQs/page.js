@@ -3,12 +3,13 @@ import Image from "next/image";
 import NavBar from "../navBar";
 import Footer from "../footer";
 import circle from "../assets/FAQ-circle.svg";
+import Navbar from "../navbar";
 
 const FAQs = () => {
   return (
     <>
       <section>
-        <NavBar />
+        <Navbar />
         <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  mx-auto 2xl:py-[150px] xl:py-[120px] py-[70px] mnavbar">
           <div className=" mx-auto text-center ">
             <h2 className="faqhead ">Your Questions Answered</h2>

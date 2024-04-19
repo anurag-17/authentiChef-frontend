@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import NavBar from "../navBar";
 import Footer from "../footer";
 import aboutDishes from "./assets/aboutUs-s.png";
 import aboutChef from "./assets/aboutUs-t.png";
+import Navbar from "../navbar";
 
 const AboutUs = () => {
   return (
     <>
       <section>
-        <NavBar />
+        <Navbar/>
 
         <div className="2xl:pt-[116px] xl:pt pt-[50px] aboutusmain">
           <div className="aboutUsBanner h-screen ">

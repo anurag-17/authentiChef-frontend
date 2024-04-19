@@ -2,12 +2,13 @@
 import React from "react";
 import NavBar from "../navBar";
 import Footer from "../footer";
+import Navbar from "../navbar";
 
 const TermCondition = () => {
   return (
     <>
       <section>
-        <NavBar />
+        <Navbar />
         <div className="2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  mx-auto 2xl:py-[150px] xl:py-[120px] py-[70px] mnavbar">
           <div
             className="max-w-3xl mx-auto px-4 md:px-6 text-xl text-gray-800 leading-normal"

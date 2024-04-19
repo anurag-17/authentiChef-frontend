@@ -3,12 +3,13 @@ import NavBar from "../navBar";
 import Footer from "../footer";
 import Image from "next/image";
 import poster from "./assets/global-banner.png";
+import Navbar from "../navbar";
 
 const GlobalCusines = () => {
   return (
     <>
       <section>
-        <NavBar />
+        <Navbar />
 
         <div className="2xl:pt-[116px] xl:pt pt-[50px]">
           <div className="2xl:w-[859px] xl:w-[] lg:w-[] sm:w-[] w-[] text-center mx-auto 2xl:pt-[90px] xl:pt pt-[70px] ">

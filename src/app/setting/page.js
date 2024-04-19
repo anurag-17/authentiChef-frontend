@@ -10,6 +10,7 @@ import profile from "./assets/profile-icon.svg";
 import logout from "./assets/logout-icon.svg";
 import Footer from "../footer";
 import NavBar from "../navBar";
+import Navbar from "../navbar";
 
 const Setting = () => {
   const menulist = [
@@ -50,7 +51,7 @@ const Setting = () => {
   return (
     <>
       <section>
-        <NavBar />
+        <Navbar />
 
         <div className="2xl:pt-[100px] xl:pt-[80px] pt-[50px]">
           <div className=" mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] md:w-[700px] flex justify-between mx-auto 2xl:pt-[70px] xl:pt-[40px] pt-[30px]">

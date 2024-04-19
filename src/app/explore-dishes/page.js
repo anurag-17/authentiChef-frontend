@@ -48,7 +48,7 @@ import organic from "./assets/organic.svg";
 import dairyfree from "./assets/dairy-free.svg";
 import { useCart } from "../create-context/cart-context";
 import { CartProvider } from "../create-context/cart-context";
-import NavBar from "../navBar";
+import Navbar from "../navbar";
 
 const data2 = [
   {
@@ -219,7 +219,7 @@ const ExploreDishes = ({ item }) => {
   return (
     <>
       <section>
-     <NavBar/>
+     <Navbar/>
 
         <div className="flex justify-center 2xl:py-20 xl:py-14 lg:py-8 hidden lg:block mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px] mx-auto">
           <div className="2xl:pt-[130px] xl:pt-[90px] pt-[60px]">
