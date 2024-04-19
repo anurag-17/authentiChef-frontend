@@ -11,27 +11,8 @@ import cuisinemediterranean from "../assets/cuisine-mediterranean.png";
 import cuisineitalian from "../assets/cuisine-italian.png";
 import cuisinemiddleEastern from "../assets/cuisine-middleEastern.png";
 import cuisinesoutheast from "../assets/cuisine-southeast-asian.png";
-import punjabithali1 from "./assets/punjabi-thali1.png";
-import palakpaneer1 from "./assets/palak-paneer1.png";
-import sarsoda1 from "./assets/sarsoda1.png";
-import butterpaneer1 from "./assets/butterpaneer1.png";
-import punjabithali2 from "./assets/punjabi-thali2.png";
-import palakpaneer2 from "./assets/palak-paneer2.png";
-import sarsoda2 from "./assets/sarsoda2.png";
-import butterpaneer2 from "./assets/butterpaneer2.png";
-import punjabithali3 from "./assets/punjabi-thali3.png";
-import palakpaneer3 from "./assets/palak-paneer3.png";
-import sarsoda3 from "./assets/sarsoda3.png";
-import butterpaneer3 from "./assets/butterpaneer3.png";
-import punjabithali4 from "./assets/punjabi-thali4.png";
-import palakpaneer4 from "./assets/palak-paneer4.png";
-import sarsoda4 from "./assets/sarsoda4.png";
-import butterpaneer4 from "./assets/butterpaneer4.png";
 import addCart from "../../../public/images/addCart.svg";
 import p1 from "../assets/ellipse119.png";
-import p2 from "../assets/ellipse220.png";
-import p3 from "../assets/ellipse321.png";
-import p4 from "../assets/ellipse422.png";
 import vegetarian from "./assets/vegetarian.svg";
 import vegan from "./assets/vegan.svg";
 import popimg from "./assets/pop-img.png";
@@ -51,156 +32,6 @@ import { CartProvider } from "../create-context/cart-context";
 import Navbar from "../navbar";
 import axios from "axios";
 
-const data2 = [
-  {
-    id: "1",
-    image: punjabithali1,
-    chefImg: p1,
-    title: "Punjabi Thali",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "2",
-    image: palakpaneer1,
-    chefImg: p2,
-    title: "Palak Paneer",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "3",
-    image: sarsoda1,
-    chefImg: p3,
-    title: "Sarso da saak makke di roti",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "4",
-    image: butterpaneer1,
-    chefImg: p4,
-    title: "Paneer butter masala",
-    spiceImg: spicemedium,
-    price: "£8.50 ",
-    image2: addCart,
-  },
-
-  {
-    id: "5",
-    image: punjabithali2,
-    chefImg: p1,
-    title: "Punjabi Thali",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "6",
-    image: palakpaneer2,
-    chefImg: p2,
-    title: "Palak Paneer",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "7",
-    image: sarsoda2,
-    chefImg: p3,
-    title: "Sarso da saak makke di roti",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "8",
-    image: butterpaneer2,
-    chefImg: p4,
-    title: "Paneer butter masala",
-    spiceImg: spicemedium,
-    price: "£8.50 ",
-    image2: addCart,
-  },
-
-  {
-    id: "9",
-    image: punjabithali3,
-    chefImg: p1,
-    title: "Punjabi Thali",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "10",
-    image: palakpaneer3,
-    chefImg: p2,
-    title: "Palak Paneer",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "11",
-    image: sarsoda3,
-    chefImg: p3,
-    title: "Sarso da saak makke di roti",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "12",
-    image: butterpaneer3,
-    chefImg: p4,
-    title: "Paneer butter masala",
-    spiceImg: spicemedium,
-    price: "£8.50 ",
-    image2: addCart,
-  },
-
-  {
-    id: "13",
-    image: punjabithali4,
-    chefImg: p1,
-    title: "Punjabi Thali",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "14",
-    image: palakpaneer4,
-    chefImg: p2,
-    title: "Palak Paneer",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "15",
-    image: sarsoda4,
-    chefImg: p3,
-    title: "Sarso da saak makke di roti",
-    spiceImg: spicemedium,
-    price: "£8.50",
-    image2: addCart,
-  },
-  {
-    id: "16",
-    image: butterpaneer4,
-    chefImg: p4,
-    title: "Paneer butter masala",
-    spiceImg: spicemedium,
-    price: "£8.50 ",
-    image2: addCart,
-  },
-];
-
 const ExploreDishes = ({ item }) => {
   const { addToCart } = useCart();
   const { cart, removeFromCart, clearCart } = useCart();
@@ -217,15 +48,67 @@ const ExploreDishes = ({ item }) => {
     }
   };
 
-  const [getAllCuisines, setGetAllCuisines] = useState("");
-  const [getAllDietary, setGetAllDietary] = useState("");
-  const [getAllDishtype, setGetAllDishtype] = useState("");
-
   useEffect(() => {
     defaultCuisines();
     defaultDietary();
     defaultDishtype();
+    defaultDish();
   }, []);
+
+  // ========= Get All Dish  =============
+
+  const [getAllDish, setGetAllDish] = useState("");
+
+  const defaultDish = () => {
+    const option = {
+      method: "GET",
+      url: "http://localhost:4000/api/menu/menuItems",
+    };
+    axios
+      .request(option)
+      .then((response) => {
+        setGetAllDish(response?.data?.menuItems);
+        // console.log(response?.data, "DATA");
+      })
+      .catch((error) => {
+        console.log(error, "Error");
+      });
+  };
+
+  // ========= Search Dish  =============
+  const [isRefresh, setRefresh] = useState(false);
+
+  const refreshData = () => {
+    setRefresh(!isRefresh);
+  };
+
+  const handleSearch = (e) => {
+    const search = e.target.value;
+    if (search.trim() === "") {
+      refreshData();
+    } else {
+      const option = {
+        method: "GET",
+        url: `http://localhost:4000/api/menu/menuItems?search=${search}`,
+      };
+      axios
+        .request(option)
+        .then((response) => {
+          setGetAllDish(response?.data?.menuItems);
+          refreshData();
+        })
+        .catch((error) => {
+          alert("Failed to fetch data");
+        });
+    }
+  };
+
+  // ========= Cuisines , Dietary ,DishType =============
+
+  const [getAllCuisines, setGetAllCuisines] = useState("");
+  const [getAllDietary, setGetAllDietary] = useState("");
+  const [getAllDishtype, setGetAllDishtype] = useState("");
+
   const defaultCuisines = () => {
     const option = {
       method: "GET",
@@ -293,7 +176,7 @@ const ExploreDishes = ({ item }) => {
                           <option
                             key={item._id}
                             value={item._id}
-                            className="custom_dropdown_text "
+                            className="custom_dropdown_text  capitalize"
                           >
                             {item.title}
                           </option>
@@ -321,7 +204,7 @@ const ExploreDishes = ({ item }) => {
                           <option
                             key={item._id}
                             value={item._id}
-                            className="custom_dropdown_text "
+                            className="custom_dropdown_text  capitalize"
                           >
                             {item.title}
                           </option>
@@ -340,7 +223,7 @@ const ExploreDishes = ({ item }) => {
                           <option
                             key={item._id}
                             value={item._id}
-                            className="custom_dropdown_text "
+                            className="custom_dropdown_text  capitalize"
                           >
                             {item.title}
                           </option>
@@ -365,7 +248,9 @@ const ExploreDishes = ({ item }) => {
                     </svg>
 
                     <input
-                      type=" search"
+                      type="search"
+                      name="search"
+                      onChange={handleSearch}
                       placeholder="Search"
                       className=" third_input text-[#F38181]"
                     />
@@ -471,8 +356,8 @@ const ExploreDishes = ({ item }) => {
           </div>
         </div>
 
-        <div className="2xl:my-[120px] xl:my-[60px] my-[50px] bg-[#F9F2F2]">
-          <div className="mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[120px] xl:py-[60px] py-[40px] mx-auto">
+        <div className="2xl:my-[20px] xl:my-[20px] my-[50px] bg-[#F9F2F2]">
+          <div className="mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]  2xl:py-[60px] xl:py-[60px] py-[40px] mx-auto">
             <div className="flex justify-center">
               <div>
                 <h1 className="third_head text-center">Explore Dishes</h1>
@@ -483,99 +368,96 @@ const ExploreDishes = ({ item }) => {
               </div>
             </div>
             <div className=" flex flex-wrap justify-between  w-full px-10 md:px-0 mx-auto">
-              {data2.map((item) => (
-                <div
-                  key={item.id}
-                  className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] mexploreD "
-                >
-                  <button
-                    className=""
-                    onClick={() =>
-                      document.getElementById("my_modal_1").showModal()
-                    }
+              {Array.isArray(getAllDish) &&
+                getAllDish.map((item) => (
+                  <div
+                    key={item.id}
+                    className="  my-5 2xl:w-[345px] 2xl:h-[560px] lg:w-[23%]  md:w-[31%] w-[45%]  relative  rounded-[9.8px] mexploreD "
                   >
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={345}
-                      height={278}
-                      className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px] mexplorimg"
-                    />
-                  </button>
-                  <div className="">
-                    <h1 className="alata font-[400] text-[#DB5353] 2xl:my-4 xl:my-3 my-2 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
-                      {item.title}
-                    </h1>
-                    <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                      <Image
-                        alt="image"
-                        src={item.chefImg}
-                        className="four_img2 "
+                    <button
+                      className=""
+                      onClick={() =>
+                        document.getElementById("my_modal_1").showModal()
+                      }
+                    >
+                      <img
+                        src={item.ProfileImage}
+                        alt={item.title}
+                        width={345}
+                        height={278}
+                        className="w-full h-auto 2xl:w-[365.5px] 2xl:h-[278px] rounded-[10px] mexplorimg"
                       />
-                      <div>
-                        <h1 className="fourth_name ">Chef Radha</h1>
-                        <p className="fourth_p text-[#6765EB]">Indian</p>
+                    </button>
+                    <div className="">
+                      <h1 className="alata capitalize font-[400] text-[#DB5353] 2xl:my-4 xl:my-3 my-2 2xl:text-[20px] 2xl:leading-[20px]  xl:text-[14px] xl:leading-[18px] lg:text-[10px] lg:leading-[16px] text-[10px]">
+                        {item.name}
+                      </h1>
+                      <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
+                        <Image alt="image" src={p1} className="four_img2 " />
+                        <div>
+                          <h1 className="fourth_name ">Chef Radha</h1>
+                          <p className="fourth_p text-[#6765EB]">Indian</p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-5 2xl:my-[20px] xl:my-[15px] my-[12px]">
+                        <button className="four_btn">
+                          <Image
+                            alt="image"
+                            src={vegetarian}
+                            className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                          />
+                          <p className="fourth_day">Vegetarian</p>
+                        </button>
+                        <button className="four_btn">
+                          <Image
+                            alt="image"
+                            src={vegan}
+                            className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                          />
+                          <p className="fourth_day">Vegan</p>
+                        </button>
+                      </div>
+                      <div className="flex items-center gap-5  2xl:my-[20px] xl:my-[15px] my-[12px]">
+                        <h1 className="fourth_p">Spice level</h1>
+                        <button className="four_btn">
+                          <Image
+                            alt="image"
+                            src={spicemedium}
+                            className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
+                          />
+                          <p className="fourth_day">Meddium</p>
+                        </button>
+                      </div>
+
+                      <div className=" w-full bottom-0 flex justify-between items-center  2xl:my-[22px] xl:my-[18px] my-[15px]">
+                        <p className="alata font-[400] text-[#000] 2xl:text-[20px] 2xl:leading-[24px] xl:text-[14px] xl:leading-[18px] lg:text-[12px] lg:leading-[16px] text-[12px] leading-[16px] ">
+                          Serves 1 (500g){" "}
+                          <span className="text-[#DB5353]">£8.50</span>
+                        </p>
+                        <button
+                          onClick={() => {
+                            addToCart(item);
+                          }}
+                        >
+                          <div className="drawer-content">
+                            {/* Page content here */}
+                            <label
+                              htmlFor="my-drawer-4"
+                              className="drawer-button"
+                            >
+                              <Image
+                                src={addCart}
+                                alt={item.title}
+                                className=" 2xl:w-[40px] 2xl:h-[40px] xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] w-[25px] h-[25px]"
+                              />
+                            </label>
+                          </div>
+                        </button>
                       </div>
                     </div>
-
-                    <div className="flex gap-5 2xl:my-[20px] xl:my-[15px] my-[12px]">
-                      <button className="four_btn">
-                        <Image
-                          alt="image"
-                          src={vegetarian}
-                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
-                        />
-                        <p className="fourth_day">Vegetarian</p>
-                      </button>
-                      <button className="four_btn">
-                        <Image
-                          alt="image"
-                          src={vegan}
-                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
-                        />
-                        <p className="fourth_day">Vegan</p>
-                      </button>
-                    </div>
-                    <div className="flex items-center gap-5  2xl:my-[20px] xl:my-[15px] my-[12px]">
-                      <h1 className="fourth_p">Spice level</h1>
-                      <button className="four_btn">
-                        <Image
-                          alt="image"
-                          src={item.spiceImg}
-                          className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
-                        />
-                        <p className="fourth_day">Meddium</p>
-                      </button>
-                    </div>
-
-                    <div className=" w-full bottom-0 flex justify-between items-center  2xl:my-[22px] xl:my-[18px] my-[15px]">
-                      <p className="alata font-[400] text-[#000] 2xl:text-[20px] 2xl:leading-[24px] xl:text-[14px] xl:leading-[18px] lg:text-[12px] lg:leading-[16px] text-[12px] leading-[16px] ">
-                        Serves 1 (500g){" "}
-                        <span className="text-[#DB5353]">£8.50</span>
-                      </p>
-                      <button
-                        onClick={() => {
-                          addToCart(item);
-                        }}
-                      >
-                        <div className="drawer-content">
-                          {/* Page content here */}
-                          <label
-                            htmlFor="my-drawer-4"
-                            className="drawer-button"
-                          >
-                            <Image
-                              src={item.image2}
-                              alt={item.title}
-                              className=" 2xl:w-[40px] 2xl:h-[40px] xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] w-[25px] h-[25px]"
-                            />
-                          </label>
-                        </div>
-                      </button>
-                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>
@@ -583,7 +465,7 @@ const ExploreDishes = ({ item }) => {
         <div className="flex justify-center lg:my-14 xl:my-28 my-10">
           <div className="mnavbar 2xl:w-[1600px] xl:w-[1100px] lg:w-[850px]  md:w-[700px]">
             <h1 className="nine_head">Testimonials</h1>
-            <p className="nine_p">
+            <p className="nine_p text-center">
               All our chefs have fans raving about their food
             </p>
 
