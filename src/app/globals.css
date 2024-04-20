@@ -653,6 +653,13 @@ td {
 .globaltext {
   @apply alata font-[400] text-[#555555] 2xl:text-[18px] 2xl:leading-[38px] xl:text-[14px] xl:leading-[28px] lg:text-[12px] lg:leading-[18px] text-[10px] leading-[18px];
 }
+
+/* .collapse-arrow{
+  @apply block;
+} */
+.collapse-arrow > .collapse-title:after{
+  @apply hidden;
+}
 /* .{
   @apply
   2xl:w-[] xl:w-[] lg:w-[] sm:w-[] w-[] 
