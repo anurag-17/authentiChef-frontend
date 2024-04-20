@@ -63,11 +63,17 @@ const ExploreDishes = ({ item }) => {
     const option = {
       method: "GET",
       url: "http://localhost:4000/api/menu/menuItems",
+      params: {
+        Cuisines_id: cuisinesFilter,
+        Dietary_id: dietaryFilter,
+        Dishtype_id: moreFilters,
+      },
     };
     axios
       .request(option)
       .then((response) => {
         setGetAllDish(response?.data?.menuItems);
+        console.log(response?.data?.menuItems, "dish");
         // console.log(response?.data, "DATA");
       })
       .catch((error) => {
@@ -152,6 +158,104 @@ const ExploreDishes = ({ item }) => {
         console.log(error, "Error");
       });
   };
+
+  // ========= Filter By Cuisines =======
+  const [cuisinesFilter, setCuisinesFilter] = useState("");
+  const handleSearchCuisines = (e) => {
+    // setLoader(true);
+    try {
+      // setSubcuisinesFilter("");
+      setCuisinesFilter(e.target.value);
+      const options = {
+        method: "GET",
+        url: `http://localhost:4000/api/menu/menuItem/sort?Cuisines_id=${e.target.value}&Dietary_id=${dietaryFilter}&Dishtype_id=${moreFilters}`,
+      };
+      axios
+        .request(options)
+        .then((response) => {
+          if (response.status === 200) {
+            setGetAllDish(response?.data?.menuItem);
+            console.log(response?.data ,"sort");
+
+            // setLoader(false);
+          } else {
+            // setLoader(false);
+            return;
+          }
+        })
+        .catch(function (error) {
+          console.error(error);
+          // setLoader(false);
+        });
+    } catch {
+      console.error(error);
+      // setLoader(false);
+    }
+  };
+
+  // ========= Filter By Dietary =======
+  const [dietaryFilter, setDietaryFilter] = useState("");
+  const handleSearchDietary = (e) => {
+    // setLoader(true);
+    try {
+      setDietaryFilter(e.target.value);
+      const options = {
+        method: "GET",
+        url: `http://localhost:4000/api/menu/menuItem/sort?Dietary_id=${e.target.value}&Cuisines_id=${cuisinesFilter}&Dishtype_id=${moreFilters}`,
+      };
+      axios
+        .request(options)
+        .then((response) => {
+          if (response.status === 200) {
+            setGetAllDish(response?.data?.menuItem);
+            // setLoader(false);
+          } else {
+            // setLoader(false);
+            return;
+          }
+        })
+        .catch(function (error) {
+          console.error(error);
+          // setLoader(false);
+        });
+    } catch {
+      console.error(error);
+      // setLoader(false);
+    }
+  };
+
+  // ========= Filter By MoreFilter =======
+
+  const [moreFilters, setMoreFilters] = useState("");
+
+  const handleSearchMoreFilter = (e) => {
+    // setLoader(true);
+    try {
+      setMoreFilters(e.target.value);
+      const options = {
+        method: "GET",
+        url: `http://localhost:4000/api/menu/menuItem/sort?Dishtype_id=${e.target.value}&Cuisines_id=${cuisinesFilter}&Dietary_id=${dietaryFilter}`,
+      };
+      axios
+        .request(options)
+        .then((response) => {
+          if (response.status === 200) {
+            setGetAllDish(response?.data?.menuItem);
+            // setLoader(false);
+          } else {
+            // setLoader(false);
+            return;
+          }
+        })
+        .catch(function (error) {
+          console.error(error);
+          // setLoader(false);
+        });
+    } catch {
+      console.error(error);
+      // setLoader(false);
+    }
+  };
   return (
     <>
       <section>
@@ -165,10 +269,15 @@ const ExploreDishes = ({ item }) => {
               </div>
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
+                  {/* =================Cuisines========================== */}
+
                   <div className="">
                     <select
                       id="cuisines"
                       className="2xl:w-[153px] third_select"
+                      onChange={(e) => {
+                        handleSearchCuisines(e);
+                      }}
                     >
                       <option value=""> All Cuisines</option>
                       {Array.isArray(getAllCuisines) &&
@@ -184,20 +293,16 @@ const ExploreDishes = ({ item }) => {
                     </select>
                   </div>
 
-                  {/* <details className="dropdown w-full">
-                    <summary className="m-1 btn"> All Cuisines</summary>
-                    <ul className="z-50 p-2 shadow menu dropdown-content bg-base-100 rounded-box w-full ">
-                      <li>
-                        <Link>Item 1</a>
-                      </li>
-                      <li>
-                        <Link>Item 2</a>
-                      </li>
-                    </ul>
-                  </details> */}
+                  {/* =================Dietary========================== */}
 
                   <div className="">
-                    <select id="dietary" className="2xl:w-[126px] third_select">
+                    <select
+                      id="dietary"
+                      className="2xl:w-[126px] third_select"
+                      onChange={(e) => {
+                        handleSearchDietary(e);
+                      }}
+                    >
                       <option value=""> All Dietary</option>
                       {Array.isArray(getAllDietary) &&
                         getAllDietary.map((item) => (
@@ -212,10 +317,15 @@ const ExploreDishes = ({ item }) => {
                     </select>
                   </div>
 
+                  {/* =================More Filter========================== */}
+
                   <div className="">
                     <select
                       id="moreFilters"
                       className="2xl:w-[143px] third_select"
+                      onChange={(e) => {
+                        handleSearchMoreFilter(e);
+                      }}
                     >
                       <option value="">More filters</option>
                       {Array.isArray(getAllDishtype) &&
@@ -367,7 +477,7 @@ const ExploreDishes = ({ item }) => {
                 </p>
               </div>
             </div>
-            <div className=" flex flex-wrap justify-between  w-full px-10 md:px-0 mx-auto">
+            <div className=" flex flex-wrap gap-[30px] 2xl:gap-[70px] w-full px-10 md:px-0 mx-auto">
               {Array.isArray(getAllDish) &&
                 getAllDish.map((item) => (
                   <div
@@ -393,9 +503,13 @@ const ExploreDishes = ({ item }) => {
                         {item.name}
                       </h1>
                       <div className="flex items-center 2xl:gap-3 xl:gap-2 lg:gap-2  gap-2 xl:my-3 lg:my-2 my-2">
-                        <Image alt="image" src={p1} className="four_img2 " />
+                        <img
+                          alt="image"
+                          src={item.chef_id.images}
+                          className="four_img2 "
+                        />
                         <div>
-                          <h1 className="fourth_name ">Chef Radha</h1>
+                          <h1 className="fourth_name ">{item.chef_id.name}</h1>
                           <p className="fourth_p text-[#6765EB]">Indian</p>
                         </div>
                       </div>
@@ -407,7 +521,7 @@ const ExploreDishes = ({ item }) => {
                             src={vegetarian}
                             className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
                           />
-                          <p className="fourth_day">Vegetarian</p>
+                          <p className="fourth_day">{item.Dietary_id.title}</p>
                         </button>
                         <button className="four_btn">
                           <Image
@@ -426,7 +540,9 @@ const ExploreDishes = ({ item }) => {
                             src={spicemedium}
                             className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
                           />
-                          <p className="fourth_day">Meddium</p>
+                          <p className="fourth_day">
+                            {item.spice_level_id.title}
+                          </p>
                         </button>
                       </div>
 
