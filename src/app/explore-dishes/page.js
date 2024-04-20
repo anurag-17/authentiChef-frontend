@@ -31,6 +31,8 @@ import { useCart } from "../create-context/cart-context";
 import { CartProvider } from "../create-context/cart-context";
 import Navbar from "../navbar";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ExploreDishes = ({ item }) => {
   const { addToCart } = useCart();
@@ -53,6 +55,7 @@ const ExploreDishes = ({ item }) => {
     defaultDietary();
     defaultDishtype();
     defaultDish();
+    defaultSpicelevel();
   }, []);
 
   // ========= Get All Dish  =============
@@ -109,11 +112,12 @@ const ExploreDishes = ({ item }) => {
     }
   };
 
-  // ========= Cuisines , Dietary ,DishType =============
+  // ========= Cuisines , Dietary ,DishType , Spice level =============
 
   const [getAllCuisines, setGetAllCuisines] = useState("");
   const [getAllDietary, setGetAllDietary] = useState("");
   const [getAllDishtype, setGetAllDishtype] = useState("");
+  const [getAllSpiceL, setGetAllSpiceL] = useState("");
 
   const defaultCuisines = () => {
     const option = {
@@ -158,6 +162,21 @@ const ExploreDishes = ({ item }) => {
         console.log(error, "Error");
       });
   };
+  const defaultSpicelevel = () => {
+    const option = {
+      method: "GET",
+      url: "http://localhost:4000/api/SpiceLevel/spiceLevels",
+    };
+    axios
+      .request(option)
+      .then((response) => {
+        setGetAllSpiceL(response?.data?.spiceLevels);
+        console.log(response?.data?.spiceLevels, "spice");
+      })
+      .catch((error) => {
+        console.log(error, "Error");
+      });
+  };
 
   // ========= Filter By Cuisines =======
   const [cuisinesFilter, setCuisinesFilter] = useState("");
@@ -175,7 +194,7 @@ const ExploreDishes = ({ item }) => {
         .then((response) => {
           if (response.status === 200) {
             setGetAllDish(response?.data?.menuItem);
-            console.log(response?.data ,"sort");
+            console.log(response?.data, "sort");
 
             // setLoader(false);
           } else {
@@ -256,8 +275,103 @@ const ExploreDishes = ({ item }) => {
       // setLoader(false);
     }
   };
+
+  // ========= Add to Cart =======
+
+  const handleAddToCart = async (id) => {
+    // setLoader(true);
+    try {
+      const response = await axios.post(
+        "http://localhost:4000/api/Orders/AddtoCart",
+        {
+          menuItem: id,
+        }
+      );
+
+      if (response.status === 200) {
+        // toast.success("Added to Cart!");
+        refreshData();
+        // setLoader(false);
+      } else {
+        // toast.error("Failed. Something went wrong!");
+        // setLoader(false);
+      }
+    } catch (error) {
+      console.error(error);
+      // toast.error("Failed. Something went wrong!");
+    }
+  };
+  // ========= Get Cart Item =======
+  const [getCartItem, setGetCartItem] = useState("");
+
+  useEffect(() => {
+    defaultCartItem();
+  }, []);
+  const defaultCartItem = () => {
+    const option = {
+      method: "GET",
+      url: "http://localhost:4000/api/Orders/getCartItems",
+    };
+    axios
+      .request(option)
+      .then((response) => {
+        setGetCartItem(response?.data?.cart);
+        console.log(response?.data?.cart, "cart");
+      })
+      .catch((error) => {
+        console.log(error, "Error");
+      });
+  };
+
+  // ========= Delete Cart Item =======
+
+  const handleRemove = async (id) => {
+    setLoader(true);
+
+    try {
+      const response = await axios.delete(`DeleteById/${id}`);
+
+      if (response.status === 200) {
+        toast.success("Item remove successfully!");
+        refreshData();
+      } else {
+        toast.error("Failed. Something went wrong!");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed. Something went wrong!");
+    } finally {
+      setLoader(false);
+    }
+  };
+
+  // ========= Clear Cart Item =======
+
+  const handleAllClear = async () => {
+    setLoader(true);
+
+    try {
+      const response = await axios.delete(
+        "http://localhost:4000/api/Orders/deleteAllCartItem"
+      );
+
+      if (response.status === 200) {
+        toast.success("Items remove successfully!");
+        refreshData();
+      } else {
+        toast.error("Failed. Something went wrong!");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed. Something went wrong!");
+    } finally {
+      setLoader(false);
+    }
+  };
+
   return (
     <>
+      <ToastContainer autoClose={1000} />
       <section>
         <Navbar />
 
@@ -267,8 +381,78 @@ const ExploreDishes = ({ item }) => {
               <div className="">
                 <h1 className="third_head">Select Cuisine</h1>
               </div>
+
               <div className="flex justify-between 2xl:gap-10 xl:gap-5 lg:gap-4 items-center">
                 <div className="flex 2xl:gap-5 xl:gap-3 lg:gap-2">
+                  {/* Open the modal using document.getElementById('ID').showModal() method */}
+                  <button
+                    className=" border py-1 px-2"
+                    onClick={() =>
+                      document.getElementById("my_modal_3").showModal()
+                    }
+                  >
+                    open modal
+                  </button>
+                  <dialog
+                    id="my_modal_3"
+                    className="modal flex justify-center items-center xl:mt-52 2xl:mt-72 h-[520px] 2xl:px-[0px] 2xl:py-[75px] xl:px-[90px] xl:py-[40px]"
+                  >
+                    <div className=" flex flex-wrap gap-[20px]  2xl:w-[1602px] h-auto mx-auto">
+                      {/* ================= Cuisines =========== */}
+
+                      {Array.isArray(getAllCuisines) &&
+                        getAllCuisines.map((item) => (
+                          <div key={item._id} className="dropbox">
+                            <h1>{item.title}</h1>
+                          </div>
+                        ))}
+
+                      {/* ================= Dietary=========== */}
+
+                      {/* <div className=" flex flex-wrap gap-[20px]  2xl:w-[1602px] h-auto mx-auto">
+                      {Array.isArray(getAllDietary) &&
+                        getAllDietary.map((item) => (
+                          <div key={item._id} className="dropbox">
+                            <h1>{item.title}</h1>
+                          </div>
+                        ))}
+                    </div> */}
+
+                      {/* ================= Dish Type =========== */}
+
+                      {/* <div className="flex justify-between 2xl:w-[1602px] h-auto mx-auto">
+                        <div>
+                          <h1 className="alata font-[400] 2xl:text-[20px] xl:text-[14px] lg:text-[10px] sm:text-[] text-[] my-1 ">
+                            Dish Type
+                          </h1>
+                          <div className=" flex flex-wrap gap-[20px]  ">
+                            {Array.isArray(getAllDishtype) &&
+                              getAllDishtype.map((item) => (
+                                <div key={item._id} className="dropbox3">
+                                  <h1>{item.title}</h1>
+                                </div>
+                              ))}
+                          </div>
+                        </div>
+                        <div>
+                          <h1 className="alata font-[400] 2xl:text-[20px] xl:text-[14px] lg:text-[10px] sm:text-[] text-[] my-1 ">
+                            Spice Level
+                          </h1>
+                          <div className=" flex flex-wrap gap-[20px] ">
+                            {Array.isArray(getAllSpiceL) &&
+                              getAllSpiceL.map((item) => (
+                                <div key={item._id} className="dropbox3">
+                                  <h1>{item.title}</h1>
+                                </div>
+                              ))}
+                          </div>
+                        </div>
+                      </div> */}
+                    </div>
+                    <form method="dialog" className="modal-backdrop">
+                      <button>close</button>
+                    </form>
+                  </dialog>
                   {/* =================Cuisines========================== */}
 
                   <div className="">
@@ -553,7 +737,8 @@ const ExploreDishes = ({ item }) => {
                         </p>
                         <button
                           onClick={() => {
-                            addToCart(item);
+                            // addToCart(item);
+                            handleAddToCart(item?._id);
                           }}
                         >
                           <div className="drawer-content">
@@ -978,7 +1163,8 @@ const ExploreDishes = ({ item }) => {
                 <h1 className="alata font-[400] text-[#111] 2xl:my-0 2xl:text-[22px] text-[22px] 2xl:leading-[32px]  xl:text-[18px] xl:leading-[24px] lg:text-[14px] lg:leading-[20px]">
                   My Basket
                 </h1>
-                {cart.length === 0 ? (
+
+                {getCartItem.length === 0 ? (
                   <div>
                     <div className="2xl:mt-40">
                       <Image
@@ -1000,11 +1186,19 @@ const ExploreDishes = ({ item }) => {
                   </div>
                 ) : (
                   <div className="">
-                    {cart.map((item) => (
+                    <div
+                      className=" flex justify-end mt-10 md:mr-5"
+                      onClick={() => handleAllClear()}
+                    >
+                      <button className="border p-2 text-[20px]">
+                        All Clear
+                      </button>
+                    </div>
+                    {getCartItem.map((item) => (
                       <div key={item.id}>
                         <div className="flex justify-between items-center 2xl:my-6 my-2">
                           <div className="flex items-center gap-2 2xl:gap-4 xl:h-[70px]">
-                            <Image
+                            <img
                               src={item.image}
                               alt={item.name}
                               className="2xl:w-[70px] 2xl:h-[70px] xl:w-[50px] xl:h-[50px] lg:w-[40px] lg:h-[40px] rounded-[5.8px]"
@@ -1047,6 +1241,12 @@ const ExploreDishes = ({ item }) => {
                             </button>
                           </div>
                         </div>
+                        <button
+                          className="px-4 text-[13px] border rounded h-[25px] text-[red] hover:bg-[#efb3b38a]"
+                          onClick={() => handleRemove(item?._id)}
+                        >
+                          Remove
+                        </button>
                       </div>
                     ))}
                     <div className="flex justify-between items-center mt-20">

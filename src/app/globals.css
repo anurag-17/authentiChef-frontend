@@ -352,7 +352,9 @@ td {
 .footer_text_b {
   @apply alata font-[400] text-[#111111] 2xl:text-[16px] 2xl:leading-[30px] xl:text-[12px] xl:leading-[22px] lg:text-[12px] lg:leading-[18px] text-[12px] leading-[18px];
 }
-
+.dropdown-content{
+  width: 50% !important;
+}
 /* ==================Modal=================== */
 
 .modal {
@@ -659,6 +661,18 @@ td {
 } */
 .collapse-arrow > .collapse-title:after{
   @apply hidden;
+}
+.dropbox{
+  @apply alata font-[400] flex flex-wrap justify-center items-center border rounded-[3px]  
+  2xl:w-[304px] xl:w-[220px] lg:w-[] sm:w-[] w-[] 
+  2xl:h-[106px] xl:h-[80px] lg:h-[] sm:h-[] h-[]
+  2xl:text-[] xl:text-[] lg:text-[] sm:text-[] text-[]
+}
+.dropbox3{
+  @apply alata font-[400] flex flex-wrap justify-center items-center border rounded-[3px]  
+  2xl:w-[213px] xl:w-[160px] lg:w-[] sm:w-[] w-[] 
+  2xl:h-[80px] xl:h-[400px] lg:h-[] sm:h-[] h-[]
+  2xl:text-[] xl:text-[] lg:text-[] sm:text-[] text-[]
 }
 /* .{
   @apply
