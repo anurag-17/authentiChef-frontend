@@ -22,6 +22,13 @@ import axios from "axios";
 const Navbar = () => {
   const name = JSON.parse(localStorage.getItem("user_name"));
   const token = JSON.parse(localStorage.getItem("user_token"));
+  const [userDetail, setUserDetail] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+    role: "",
+  });
 
   // localStorage.removeItem("admin_token");
   // const [isLoader, setLoader] = useState(false);
@@ -36,6 +43,38 @@ const Navbar = () => {
     email: "",
     password: "",
   });
+  const inputHandlers = (e) => {
+    const { name, value } = e.target;
+    setUserDetail((prevDetails) => ({
+      ...prevDetails,
+      [name]: value,
+    }));
+  };
+
+  // ===================Signup===============
+  const handleSubmits = async (e) => {
+    e.preventDefault();
+    try {
+      // setLoader(true);
+      const response = await axios.post(
+        "http://localhost:4000/api/auth/register",
+        userDetail
+      );
+      if (response.status === 201) {
+        toast.success("Registration Successful!");
+        // router.push("/user/user-login");
+        // setUserId(response?.data?.user);
+        // handleSendOTP(response?.data?.user);
+      } else {
+        toast.error("Failed to Register. Please try again later.");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("An error occurred while registering.");
+    } finally {
+      // setLoader(false);
+    }
+  };
 
   const InputHandler = (e) => {
     setLoginDetails({ ...loginDetails, [e.target.name]: e.target.value });
@@ -115,6 +154,10 @@ const Navbar = () => {
 
   const handleClose = () => {
     const modal = document.getElementById("my_modal_2");
+    modal.close();
+  };
+  const handleClosee = () => {
+    const modal = document.getElementById("my_modal_1");
     modal.close();
   };
 
@@ -253,7 +296,7 @@ const Navbar = () => {
                     <hr className=" mx-auto 2xl:w-[345px] xl:w-[260px] lg:w-[180px] sm:w-[] w-[] 2xl:mt-[75px] xl:mt-[40px] lg:mt-[20px] sm:mt-[] mt-[]" />
                     <div className="text-center 2xl:mt-[35px] xl:mt-[15px] lg:mt-[10px] sm:mt-[8px] mt-[]">
                       <h1 className="alata font-[400] 2xl:text-[20px] xl:text-[14px] lg:text-[10px] 2xl:leading-[30px] sm:text-[12px] sm:leading-[33px]">
-                        Ajay Hardiya
+                        {name}
                       </h1>
                       <p className="text-[#555555] alata font-[400] 2xl:text-[14px] xl:text-[10px] lg:text-[9px] sm:text-[10px] text-[] 2xl:leading-[26px] xl:leading-[22px] lg:leading-[16px] sm:leading-[16px] leading-[]">
                         ajay1489hardiyamail.com
@@ -342,10 +385,14 @@ const Navbar = () => {
           id="my_modal_1"
           className="modal rounded-[10px] 2xl:w-[1000px] 2xl:h-[665px] xl:w-[620px] xl:h-[480px] lg:w-[480px] h-[400px] 2xl:mt-40 xl:mt-24 mt-14 p-0"
         >
-          <form method="dialog" className=" w-full h-full mt-0">
+          <form
+            method="dialog"
+            className=" w-full h-full mt-0"
+            onSubmit={handleSubmits}
+          >
             {/* if there is a button in form, it will close the modal */}
             <div className="flex justify-center items-center border w-full 2xl:h-[80px] xl:h-[55px] h-[40px]">
-            <div className="absolute right-3" onClick={handleClose}>
+              <div className="absolute right-3" onClick={handleClosee}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -367,24 +414,26 @@ const Navbar = () => {
               <div className="flex flex-wrap justify-between 2xl:w-[775px] xl:w-[480px] mx-auto ">
                 <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px] w-[190px]">
                   <input
-                    type="email"
-                    name="email"
+                    type="text"
+                    name="firstname"
                     placeholder="First Name"
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
+                    onChange={inputHandlers}
+                    value={userDetail.firstname}
                   />
                 </div>
                 <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px] w-[190px]">
                   <input
-                    type="email"
-                    name="email"
+                    type="text"
+                    name="lastname"
                     placeholder="Last Name"
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
+                    onChange={inputHandlers}
+                    value={userDetail.lastname}
                   />
                 </div>
                 <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px] w-[190px]">
@@ -395,23 +444,25 @@ const Navbar = () => {
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
+                    onChange={inputHandlers}
+                    value={userDetail.email}
                   />
                 </div>
                 <div className="2xl:mt-[35px] mt-[25px] 2xl:w-[368px] xl:w-[230px] w-[190px]">
                   <input
-                    type="email"
-                    name="email"
+                    type="password"
+                    name="password"
                     placeholder="Password"
                     className="alata font-[400] login-inputad  w-full"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="enter valid email ex. abc@gmail.com"
-                    // onChange={InputHandler}
+                    onChange={inputHandlers}
+                    value={userDetail.password}
                   />
                 </div>
               </div>
               <div className="flex">
-                <button className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[230px] lg:w-[190px] xl:text-[16px] text-[12px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] mt-[10px] 2xl:h-[60px] xl:h-[40px] lg:h-[32px] text-center bg-[#DB5353]">
+                <button className="w-full mx-auto alata text-white 2xl:text-[20px] 2xl:w-[368px] xl:w-[230px] lg:w-[190px] xl:text-[14px] text-[12px] rounded-[5px] 2xl:mt-[20px] xl:mt-[15px] mt-[10px] 2xl:h-[60px] xl:h-[40px] lg:h-[32px] text-center bg-[#DB5353]">
                   Create Account
                 </button>
               </div>

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import emptyCart from "../../../public/images/emptyCart.svg";
@@ -33,8 +33,10 @@ import Navbar from "../navbar";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import allCuisines from "./assets/all-cuisines.png";
 
 const ExploreDishes = ({ item }) => {
+  const token = JSON.parse(localStorage.getItem("user_token"));
   const { addToCart } = useCart();
   const { cart, removeFromCart, clearCart } = useCart();
   const [count, setCount] = useState(0);
@@ -183,7 +185,6 @@ const ExploreDishes = ({ item }) => {
   const handleSearchCuisines = (e) => {
     // setLoader(true);
     try {
-      // setSubcuisinesFilter("");
       setCuisinesFilter(e.target.value);
       const options = {
         method: "GET",
@@ -310,7 +311,11 @@ const ExploreDishes = ({ item }) => {
   const defaultCartItem = () => {
     const option = {
       method: "GET",
-      url: "http://localhost:4000/api/Orders/getCartItems",
+      url: "http://localhost:4000/api/Orders/getCartItem",
+
+      headers: {
+        Authorization: token,
+      },
     };
     axios
       .request(option)
@@ -395,14 +400,48 @@ const ExploreDishes = ({ item }) => {
                   </button>
                   <dialog
                     id="my_modal_3"
-                    className="modal flex justify-center items-center xl:mt-52 2xl:mt-72 h-[520px] 2xl:px-[0px] 2xl:py-[75px] xl:px-[90px] xl:py-[40px]"
+                    className="modal relative bg-base-100 flex justify-center items-center xl:mt-52 2xl:mt-72 2xl:w-[1660px] xl:w-[1100px] lg:w-[850px] 2xl:h-[520px] xl:h-[350px] 2xl:px-[0px] 2xl:py-[75px] xl:px-[30px] xl:py-[40px] "
                   >
-                    <div className=" flex flex-wrap gap-[20px]  2xl:w-[1602px] h-auto mx-auto">
+                    <form method="dialog" className="modal-backdrop ">
+                      <button
+                        onClick={() =>
+                          document.getElementById("my_modal_3").close()
+                        }
+                        className="absolute 2xl:top-2 2xl:right-4 xl:top-2 xl:right-2 xl:w-6 2xl:w-auto"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="text-black 2xl:w-10 2xl:h-10 xl:w-[8] xl:h-[8]"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18 18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </button>
+                    </form>
+                    <div className=" flex flex-wrap gap-[20px]  2xl:w-[1602px] xl:w-[1200px] h-auto mx-[0px]">
                       {/* ================= Cuisines =========== */}
+                      <div className="dropbox">
+                        <Image
+                          src={allCuisines}
+                          className="rounded-[5px] 2xl:w-[74px] 2xl:h-[74px] h-auto xl:w-[50px] lg:w-[] sm:w-[] w-[]  "
+                        />
+                        <h1>All Cuisines</h1>
+                      </div>
 
                       {Array.isArray(getAllCuisines) &&
                         getAllCuisines.map((item) => (
                           <div key={item._id} className="dropbox">
+                            <img
+                              src={item.ProfileImage}
+                              className="rounded-[5px] 2xl:w-[74px] 2xl:h-[74px] h-auto xl:w-[50px] lg:w-[] sm:w-[] w-[]  "
+                            />
                             <h1>{item.title}</h1>
                           </div>
                         ))}
@@ -449,9 +488,6 @@ const ExploreDishes = ({ item }) => {
                         </div>
                       </div> */}
                     </div>
-                    <form method="dialog" className="modal-backdrop">
-                      <button>close</button>
-                    </form>
                   </dialog>
                   {/* =================Cuisines========================== */}
 
@@ -661,7 +697,7 @@ const ExploreDishes = ({ item }) => {
                 </p>
               </div>
             </div>
-            <div className=" flex flex-wrap gap-[30px] 2xl:gap-[70px] w-full px-10 md:px-0 mx-auto">
+            <div className=" flex flex-wrap gap-[20px] xl:gap-[25px] 2xl:gap-[70px] w-full px-10 md:px-0 mx-auto">
               {Array.isArray(getAllDish) &&
                 getAllDish.map((item) => (
                   <div
@@ -705,7 +741,7 @@ const ExploreDishes = ({ item }) => {
                             src={vegetarian}
                             className="2xl:w-[13px] 2xl:h-[13px] lg:w-[10px] lg:h-[10px] w-[10px] h-auto"
                           />
-                          <p className="fourth_day">{item.Dietary_id.title}</p>
+                          <p className="fourth_day">{item?.Dietary_id?.title}</p>
                         </button>
                         <button className="four_btn">
                           <Image

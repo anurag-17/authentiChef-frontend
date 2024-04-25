@@ -663,20 +663,23 @@ td {
   @apply hidden;
 }
 .dropbox{
-  @apply alata font-[400] flex flex-wrap justify-center items-center border rounded-[3px]  
-  2xl:w-[304px] xl:w-[220px] lg:w-[] sm:w-[] w-[] 
-  2xl:h-[106px] xl:h-[80px] lg:h-[] sm:h-[] h-[]
-  2xl:text-[] xl:text-[] lg:text-[] sm:text-[] text-[]
+  @apply alata font-[400] flex flex-wrap items-center border rounded-[3px]   hover:border-[#F38181] hover:bg-[#FFECEC] cursor-pointer
+  2xl:w-[304px] xl:w-[190px] lg:w-[] sm:w-[] w-[] 
+  2xl:h-[106px] xl:h-[65px] lg:h-[] sm:h-[] h-[]
+  2xl:text-[20px] xl:text-[14px] lg:text-[10px] sm:text-[] text-[]
+  2xl:gap-[30px] xl:gap-[20px] gap-[10]
+  2xl:px-[15px] xl:px-[5px] lg:px-[7px] sm:px-[] px-[]
+
 }
 .dropbox3{
-  @apply alata font-[400] flex flex-wrap justify-center items-center border rounded-[3px]  
+  @apply alata font-[400] flex flex-wrap justify-center items-center border rounded-[3px] 
   2xl:w-[213px] xl:w-[160px] lg:w-[] sm:w-[] w-[] 
   2xl:h-[80px] xl:h-[400px] lg:h-[] sm:h-[] h-[]
   2xl:text-[] xl:text-[] lg:text-[] sm:text-[] text-[]
 }
 /* .{
   @apply
-  2xl:w-[] xl:w-[] lg:w-[] sm:w-[] w-[] 
+  2xl:w-[] 2xl:h-[] h-auto xl:w-[] lg:w-[] sm:w-[] w-[] 
   2xl:h-[] xl:h-[] lg:h-[] sm:h-[] h-[]
   2xl:text-[] xl:text-[] lg:text-[] sm:text-[] text-[]
   2xl:leading-[] xl:leading-[] lg:leading-[] sm:leading-[] leading-[]
